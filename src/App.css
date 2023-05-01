@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap');
+
+  html{
+    font-family: 'Source Sans Pro', cursive;
+}
+.banner-back{
+  background: url("images/genxs-main-banner.jpeg") center center;
+  background-size: cover;
+}

@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap');
+@layer base {
+  html{
+    @apply font-[Source+Sans+Pro]
+}
+button{
+    @apply px-4 py-2
+}
+li{
+    @apply text-[16px]
+}
+}
+
