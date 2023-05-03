@@ -1,10 +1,10 @@
-
-export const info = {
+import mudd from "../images/itsme.png";
+export let info = {
     firstName: "Muddassir",
     lastName: "Hassan",
     position: "Frontend UX/UI Designer and Full Stack Developer",
-    baseColor: colors[0],
-    miniBio: [ // these are just some "tidbits" about yourself. You can look at mine https://paytonjewell.github.io/#/ for an example if you'd like
+    selfPortrait: mudd,
+    miniBio: [ 
         {
             text: 'become energetic with RC Cars'
         },
@@ -44,61 +44,38 @@ export const info = {
         }
 
     ],
-    bio: "Hello! I'm John. I'm a systems engineer for Google. I studied CompSci at Harvard, I enjoy long walks on the beach, and I believe artificial intelligence will inevitably rule us all one day. You should hire me!",
+    bio: "Hi guys ! This is MUDD here as my friends call me. On papers though the world knows me as Muddassir. Who am I? To put it short, the answer to your questions, the solution to your problems, the way out for your business miseries. The graphic designer and front-end developer who has delivered nothing short of the very best to his hundreds of satisfied clients the world over since my companys inception in 2006. Looking forward for not a business collaboration but a life long friendship as I don’t make clients. I just make friends.",
     skills:
         {
             proficientWith: ['html5', 'CSS3', 'git', 'github', 'bootstrap', 'react', 'figma', 'xd'],
             exposedTo: ['adobe photoshop', 'adobe illustrator']
         }
     ,
-    hobbies: [
-        {
-            label: 'reading',
-            emoji: '📖'
-        },
-        {
-            label: 'theater',
-            emoji: '🎭'
-        },
-        {
-            label: 'movies',
-            emoji: '🎥'
-        },
-        {
-            label: 'cooking',
-            emoji: '🌶'
-        }
-    ],
-    portfolio: [ // This is where your portfolio projects will be detailed
+    portfolio: [ 
         {
             title: "Project 1",
-            live: "https://paytonpierce.dev", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
-            source: "https://github.com/paytonjewell", // this should be a link to the **repository** of the project, where the code is hosted.
-            image: mock1
+            live: "https://paytonpierce.dev", 
+            image: "https://genxsmedia.com/wp-content/uploads/2019/02/lazy5vets-1.jpg"
         },
         {
             title: "Project 2",
             live: "https://paytonpierce.dev",
-            source: "https://github.com/paytonjewell",
-            image: mock2
+            image: "https://genxsmedia.com/wp-content/uploads/2019/02/lazy5vets-1.jpg"
         },
         {
             title: "Project 3",
             live: "https://paytonpierce.dev",
-            source: "https://github.com/paytonjewell",
-            image: mock3
+            image: "https://genxsmedia.com/wp-content/uploads/2019/02/lazy5vets-1.jpg"
         },
         {
             title: "Project 4",
             live: "https://paytonpierce.dev",
-            source: "https://github.com/paytonjewell",
-            image: mock4
+            image: "https://genxsmedia.com/wp-content/uploads/2019/02/lazy5vets-1.jpg"
         },
         {
             title: "Project 5",
             live: "https://paytonpierce.dev",
-            source: "https://github.com/paytonjewell",
-            image: mock5
+            image: "https://genxsmedia.com/wp-content/uploads/2019/02/lazy5vets-1.jpg"
         }
     ]
 }

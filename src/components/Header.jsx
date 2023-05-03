@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from "react-router-dom";
 import logo from '../images/genxsmedia-01-01.svg'
 import {AiOutlineMenu, AiOutlineClose} from "react-icons/ai"
 const Header = () => {
@@ -14,9 +15,9 @@ const Header = () => {
                     <AiOutlineMenu onClick={()=>setToggle(!toggle)} className='text-blue text-2xl md:hidden block'/>   
                 }   
                     <ul className="menu-area hidden md:flex gap-4 text-transform: uppercase">
-                        <li>Home</li>
+                        <li><Link className="link" to="/">Home</Link></li>
                         <li>Portfolio</li>
-                        <li>About Me</li>
+                        <li><Link className="link" to="/about-me">About Me</Link></li>
                         <li>contact</li>
                     </ul>
                 {/*Responsive menu*/}

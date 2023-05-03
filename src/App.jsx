@@ -1,22 +1,20 @@
 import './App.css';
-import Banner from './components/Banner';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Footer from './components/Footer';
-import GetTouch from './components/GetTouch';
 import Header from './components/Header';
-import HomePortfolio from './components/HomePortfolio';
-import ServicesBody from './components/ServicesBody';
-import Testimonials from './components/Testimonials';
-
+import Home from './pages/Home';
+import About from './pages/About';
 function App() {
   return (
-    <>
+    <>     
+      <BrowserRouter>
       <Header/>
-      <Banner/>
-      <ServicesBody/>
-      <HomePortfolio/>
-      <Testimonials/>
-      <GetTouch/>
-      <Footer/>
+      <Routes>
+        <Route path="/" element={<Home/>}></Route>
+        <Route path="/about-me" element={<About/>}></Route>
+      </Routes>
+    </BrowserRouter>
+    <Footer/>
     </>
   );
 }
