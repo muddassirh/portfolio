@@ -3,6 +3,7 @@ export let info = {
     firstName: "Muddassir",
     lastName: "Hassan",
     position: "Frontend UX/UI Designer and Full Stack Developer",
+    portfoliohead:"It’s all about my Passion",
     selfPortrait: mudd,
     miniBio: [ 
         {
@@ -53,9 +54,32 @@ export let info = {
     ,
     portfolio: [ 
         {
-            title: "Project 1",
-            live: "https://paytonpierce.dev", 
+            title: "LAZY5VETS",
+            live: "https://lazy5vets.com/", 
             image: "https://genxsmedia.com/wp-content/uploads/2019/02/lazy5vets-1.jpg"
+        },
+        {
+            title: "KETTLE CORN NYC",
+            live: "https://www.kettlecornnyc.com/",
+            image: "https://genxsmedia.com/wp-content/uploads/2019/11/kettlecorn.jpg"
+        },
+        {
+            title: "LEPTOURGOS BABY",
+            live: "http://babyleptourgos.com/",
+            image: "https://genxsmedia.com/wp-content/uploads/2019/11/baby.jpg"
+        },
+        {
+            title: "WELCH'S GIG",
+            live: "http://welchsgig.com/",
+            image: "https://genxsmedia.com/wp-content/uploads/2019/11/Layer-8.png"
+        }
+    ]
+    ,
+    services: [ 
+        {
+            image: "https://genxsmedia.com/wp-content/uploads/2019/02/lazy5vets-1.jpg",
+            title: "Design",
+            speciality: ["India","Australia","England","South Africa","West Indies","Newzealand"]            
         },
         {
             title: "Project 2",

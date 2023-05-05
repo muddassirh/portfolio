@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from '../images/genxsmedia-01-01.svg'
 import {AiOutlineMenu, AiOutlineClose} from "react-icons/ai"
 const Header = () => {
-    const [toggle, setToggle]=useState(false);
+    const [toggle, setToggle]=useState(false);    
     return (
         <div className='shadow-md p-4 sticky top-0 z-40 w-full backdrop-blur bg-white/75 supports-backdrop-blur:bg-white/60'>
             <div className="max-w-[1240px] mx-auto flex justify-between items-center">
@@ -15,9 +15,9 @@ const Header = () => {
                     <AiOutlineMenu onClick={()=>setToggle(!toggle)} className='text-blue text-2xl md:hidden block'/>   
                 }   
                     <ul className="menu-area hidden md:flex gap-4 text-transform: uppercase">
-                        <li><Link className="link" to="/">Home</Link></li>
-                        <li>Portfolio</li>
-                        <li><Link className="link" to="/about-me">About Me</Link></li>
+                        <li><NavLink to="/"  className={({ isActive }) => isActive ? "text-blue-700" : ""}>Home</NavLink></li>
+                        <li><NavLink to="/portfolio"  className={({ isActive }) => isActive ? "text-blue-700" : ""}>Portfolio</NavLink></li>
+                        <li><NavLink to="/about-me"  className={({ isActive }) => isActive ? "text-blue-700" : ""}>About Me</NavLink></li>
                         <li>contact</li>
                     </ul>
                 {/*Responsive menu*/}

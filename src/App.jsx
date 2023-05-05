@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import Home from './pages/Home';
 import About from './pages/About';
+import Portfolio from './pages/Portfolio'
 function App() {
   return (
     <>     
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>}></Route>
         <Route path="/about-me" element={<About/>}></Route>
+        <Route path="/portfolio" element={<Portfolio/>}></Route>
       </Routes>
     </BrowserRouter>
     <Footer/>
