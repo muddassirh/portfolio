@@ -24,9 +24,9 @@ const Header = () => {
                 <ul className = {`duration-300 menu-area p-5 text-white md:hidden fixed top-[88px] bg-black w-full
                             ${toggle ? 'left-[0]' : 'left-[-100%]'}
                 `}>
-                        <li>Home</li>
-                        <li>Portfolio</li>
-                        <li>About Me</li>
+                         <li><NavLink to="/"  className={({ isActive }) => isActive ? "text-blue-700" : ""}>Home</NavLink></li>
+                        <li><NavLink to="/portfolio"  className={({ isActive }) => isActive ? "text-blue-700" : ""}>Portfolio</NavLink></li>
+                        <li><NavLink to="/about-me"  className={({ isActive }) => isActive ? "text-blue-700" : ""}>About Me</NavLink></li>
                         <li>contact</li>
                     </ul>
             </div>
