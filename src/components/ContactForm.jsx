@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { useForm } from "react-hook-form";
 import {
   LoadCanvasTemplate,
@@ -11,6 +11,8 @@ const ContactForm = () => {
   const [isSending, setIsSending] = useState(false);
   const [validation, setValidation] = useState("");
   const [checkboxError, setCheckboxError] = useState("");
+  const formRef = useRef(null); // Add useRef for the form
+
   const {
     register,
     handleSubmit,
@@ -42,6 +44,7 @@ const ContactForm = () => {
       !watchAIServices
     ) {
       setCheckboxError("Please select at least one service.");
+      formRef.current.scrollIntoView({ behavior: "smooth" }); // Scroll to the top of the form
       return;
     } else {
       setCheckboxError("");
@@ -69,7 +72,7 @@ const ContactForm = () => {
   }, []);
 
   return (
-    <div>
+    <div ref={formRef}>
       <h1 className="text-3xl mb-5 sm:text-5xl font-extrabold">Get in Touch</h1>
       <p className="text-xl">
         If you think we’d make a good team, contact us via your preferred method
