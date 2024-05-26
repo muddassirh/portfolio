@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import logo from "../images/genxsmedia-01-01.svg";
+import logo from "../images/genxsmedia.png";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 const Header = () => {
   const [toggle, setToggle] = useState(false);

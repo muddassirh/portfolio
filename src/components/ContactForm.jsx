@@ -1,7 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
-import toast from "react-hot-toast";
 import {
   LoadCanvasTemplate,
   loadCaptchaEnginge,
@@ -10,7 +9,8 @@ import {
 
 const ContactForm = () => {
   const [isSending, setIsSending] = useState(false);
-  const [validation, setValidation] = useState();
+  const [validation, setValidation] = useState("");
+  const [checkboxError, setCheckboxError] = useState("");
   const {
     register,
     handleSubmit,
@@ -22,18 +22,40 @@ const ContactForm = () => {
     mode: "onBlur",
   });
 
+  const watchCustomWebsite = watch("customWebsite");
+  const watchECommerce = watch("eCommerce");
+  const watchBranding = watch("branding");
+  const watchLeadGeneration = watch("leadGeneration");
+  const watchDigitalMarketing = watch("digitalMarketing");
+  const watchAIServices = watch("aiservices");
+
   const submitForm = async (data) => {
     const formDataToSend = data;
+
+    // Check if at least one service is selected
+    if (
+      !watchCustomWebsite &&
+      !watchECommerce &&
+      !watchBranding &&
+      !watchLeadGeneration &&
+      !watchDigitalMarketing &&
+      !watchAIServices
+    ) {
+      setCheckboxError("Please select at least one service.");
+      return;
+    } else {
+      setCheckboxError("");
+    }
+
     if (validateCaptcha(formDataToSend.captchaValue)) {
       setValidation("Captcha Matched");
       setIsSending(true);
       try {
         await axios.post("/api/quickcontact/", formDataToSend);
         reset();
-        toast.success("Form submitted successfully!");
+        setValidation("");
       } catch (error) {
         console.error("Error occurred while submitting form:", error);
-        toast.error("Failed to submit form. Please try again later.");
       } finally {
         setIsSending(false);
       }
@@ -115,6 +137,9 @@ const ContactForm = () => {
               />
               <span>AI Services</span>
             </label>
+            {checkboxError && (
+              <p className="text-red-600 text-xl">{checkboxError}</p>
+            )}
           </div>
         </div>
         <div className="lg:flex space-y-3 lg:items-center lg:justify-center mb-10">
@@ -198,16 +223,14 @@ const ContactForm = () => {
             </select>
             <select
               {...register("maxBudget", { required: true })}
-              defaultValue="$300"
+              defaultValue="$1000"
               className="py-2 border-b-2 lg:w-1/2 focus:outline-none border-gray-500 placeholder:text-xl placeholder:font-normal font-semibold text-2xl w-full"
             >
-              <option value="$300">$300+</option>
-              <option value="$400">$400+</option>
-              <option value="$500">$500+</option>
-              <option value="$600">$600+</option>
-              <option value="$700">$700+</option>
-              <option value="$800">$800+</option>
-              <option value="$900">$900+</option>
+              <option value="$500">$500</option>
+              <option value="$600">$600</option>
+              <option value="$700">$700</option>
+              <option value="$800">$800</option>
+              <option value="$900">$900</option>
               <option value="$1000">$1000+</option>
             </select>
           </div>
