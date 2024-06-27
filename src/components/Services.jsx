@@ -30,25 +30,25 @@ const AccordionItem = ({ question, answer, isOpen, onClick }) => {
   const contentHeight = useRef();
 
   return (
-    <div className={`p-3 text-2xl ${isOpen ? 'rounded-[48px] bg-white text-black' : 'rounded-full border border-2 '}  overflow-hidden`}>
+    <div className={`p-3 text-xl md:text-2xl ${isOpen ? 'rounded-[48px] bg-white text-black' : 'rounded-full border border-2 '}  overflow-hidden`}>
       <button
-        className={`flex items-center justify-between w-full font-medium  bg-transparent border-none cursor-pointer ${isOpen ? "text-black bg-gray-100" : ""}`}
+        className={`flex items-center text-start justify-between w-full font-medium  bg-transparent border-none cursor-pointer ${isOpen ? "text-black bg-gray-100" : ""}`}
         onClick={onClick}
       >
         <p>{question}</p>
-        <RiArrowDropDownLine className={`text-3xl transition-transform ${isOpen ? "rotate-180 text-green-500" : ""}`} />
+        <RiArrowDropDownLine className={`text-xl md:text-3xl transition-transform ${isOpen ? "rotate-180 text-green-500" : ""}`} />
       </button>
 
       <div
         ref={contentHeight}
-        className="transition-height duration-700 ease-in-out"
+        className="transition-height duration-300 ease-in-out"
         style={
           isOpen
             ? { height: contentHeight.current.scrollHeight }
             : { height: "0px" }
         }
       >
-        <p className="px-4 py-3  text-2xl font-thin">{answer}</p>
+        <p className="px-2 md:px-4 py-3 text-lg md:text-2xl font-light md:font-thin">{answer}</p>
       </div>
     </div>
   );
@@ -81,10 +81,10 @@ function Services() {
   return (
     <div>            <section className="bg-[#0d74e2] py-[70px] text-white">
     <div className="">
-      <div className=" flex">
-        <div className="px-20 w-1/2">
+      <div className=" flex flex-col md:flex-row">
+        <div className="text-center px-8 md:px-20 md:w-1/2">
           <div  className="">
-            <h2 className="text-[20px] md:text-[75px] flex flex-col tracking-tighter font-black md:leading-[60px]">
+            <h2 className="text-[40px] md:text-[75px] flex flex-col tracking-tighter font-black leading-[32px] md:leading-[60px]">
               WE DON'T DO
               <span>
                 <span className="">
@@ -94,38 +94,22 @@ function Services() {
               STRATEGIES
             </h2>
           </div>
-          <p  className="text-2xl font-light py-12">
+          <p  className="text-xl md:text-2xl font-light py-8 md:py-12">
             Xugar offers industry-leading digital marketing, web design and development services.&nbsp;<br /><br />There is no “one size fits all” solution. We work with you to create a solution that hits the sweet spot to deliver incredible results. Hiring a full-service digital marketing agency has many perks like shorter turnaround times, effective cross-communication across advertising channels and, of course, it's a lot cheaper than hiring multiple companies.
           </p>
-          <a className='rounded-md bg-white text-black text-2xl font-black px-16 py-5  hover:bg-blue-500 cursor-pointer hover:text-white shadow-lg'>GET IN TOUCH WITH US TODAY!</a>
+          <div className="hidden md:block">
+      <a className='rounded-md bg-white text-black text-md md:text-2xl font-black px-2 md:px-16 py-5  hover:bg-blue-500 cursor-pointer hover:text-white shadow-lg'>GET IN TOUCH WITH US TODAY!</a>
+      </div>
         </div>
-        <div className="p-16 w-1/2">
-          <h3  className="text-5xl font-extrabold">How can we help you with Digital Marketing?</h3>
-          {/* <div  className="flex flex-col">
-            <div id="code_block-222-26" className="ct-code-block">
-              
-            </div>
-            <div id="div_block-223-26" className="ct-div-block oxel_accordion__row">
-              <div id="div_block-224-26" className="ct-div-block oxel_accordion__row_left">
-                <h4 id="text_block-226-26" className="ct-text-block oxel_accordion__row__label">SEO</h4>
-              </div>
-              <div id="fancy_icon-227-26" className="ct-fancy-icon oxel_accordion__icon">
-                <svg id="svg-fancy_icon-227-26"><use xlinkHref="#FontAwesomeicon-chevron-down" /></svg>
-              </div>
-            </div>
-            <div id="div_block-228-26" className="ct-div-block oxel_accordion__content oxel_accordion__content__hidden">
-              <div id="div_block-229-26" className="ct-div-block">
-                <p id="text_block-230-26" className="ct-text-block">
-                  Search Engine Optimisation is one of the best Digital Marketing strategies - it aims to improve the ranking & visibility of a website in Google’s search engine results. SEO involves optimising different website elements like content, keywords, metadata, schema, backlinks, and other similar factors.<br />
-                </p>
-              </div>
-            </div>
-     
-          </div> */}
+        <div className="p-8 md:p-16 md:w-1/2">
+          <h3  className="text-[25px] md:text-5xl flex text-center tracking-tighter font-black leading-[40px] md:leading-[60px]">How can we help you with Digital Marketing?</h3>
 
           <Accordion/>
         
         </div>
+      </div>
+      <div className="w-full flex justify-center md:hidden">
+      <a className='rounded-md bg-white text-black text-md md:text-2xl font-black px-4 md:px-16 py-5  hover:bg-blue-500 cursor-pointer hover:text-white shadow-lg'>GET IN TOUCH WITH US TODAY!</a>
       </div>
     </div>
   </section></div>
