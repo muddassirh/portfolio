@@ -1,84 +1,131 @@
 import axios from "axios";
 import React, { useEffect, useState, useRef } from "react";
+import CallIcon from '@mui/icons-material/Call';
+import EmailIcon from '@mui/icons-material/Email';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import PublicIcon from '@mui/icons-material/Public';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import YouTubeIcon from '@mui/icons-material/YouTube';
 import { useForm } from "react-hook-form";
 import {
   LoadCanvasTemplate,
   loadCaptchaEnginge,
   validateCaptcha,
 } from "react-simple-captcha";
+import 'react-phone-input-2/lib/style.css';
+import PhoneInput from 'react-phone-input-2';
 
 const ContactForm = () => {
-  const [isSending, setIsSending] = useState(false);
-  const [validation, setValidation] = useState("");
-  const [checkboxError, setCheckboxError] = useState("");
-  const formRef = useRef(null); // Add useRef for the form
 
-  const {
-    register,
-    handleSubmit,
-    reset,
-    watch,
-    formState: { errors },
-  } = useForm({
-    reValidateMode: "onChange",
-    mode: "onBlur",
-  });
+  const [inputStyle, setInputStyle] = useState({
+    width: '100%',
+    padding: '2.5rem',
+    fontSize: '1.5rem',
+    borderRadius: '0.5rem',
+    borderColor: '#d1d5db',
+    backgroundColor: '#FAFAFA',
+    color: '#000'
+});
+  // const [isSending, setIsSending] = useState(false);
+  // const [validation, setValidation] = useState("");
+  // const [checkboxError, setCheckboxError] = useState("");
+  // const formRef = useRef(null); // Add useRef for the form
 
-  const watchCustomWebsite = watch("customWebsite");
-  const watchECommerce = watch("eCommerce");
-  const watchBranding = watch("branding");
-  const watchLeadGeneration = watch("leadGeneration");
-  const watchDigitalMarketing = watch("digitalMarketing");
-  const watchAIServices = watch("aiservices");
+  // const {
+  //   register,
+  //   handleSubmit,
+  //   reset,
+  //   watch,
+  //   formState: { errors },
+  // } = useForm({
+  //   reValidateMode: "onChange",
+  //   mode: "onBlur",
+  // });
 
-  const submitForm = async (data) => {
-    const formDataToSend = data;
+  // const watchCustomWebsite = watch("customWebsite");
+  // const watchECommerce = watch("eCommerce");
+  // const watchBranding = watch("branding");
+  // const watchLeadGeneration = watch("leadGeneration");
+  // const watchDigitalMarketing = watch("digitalMarketing");
+  // const watchAIServices = watch("aiservices");
 
-    // Check if at least one service is selected
-    if (
-      !watchCustomWebsite &&
-      !watchECommerce &&
-      !watchBranding &&
-      !watchLeadGeneration &&
-      !watchDigitalMarketing &&
-      !watchAIServices
-    ) {
-      setCheckboxError("Please select at least one service.");
-      formRef.current.scrollIntoView({ behavior: "smooth" }); // Scroll to the top of the form
-      return;
-    } else {
-      setCheckboxError("");
-    }
+  // const submitForm = async (data) => {
+  //   const formDataToSend = data;
 
-    if (validateCaptcha(formDataToSend.captchaValue)) {
-      setValidation("Captcha Matched");
-      setIsSending(true);
-      try {
-        await axios.post("/api/quickcontact/", formDataToSend);
-        reset();
-        setValidation("");
-      } catch (error) {
-        console.error("Error occurred while submitting form:", error);
-      } finally {
-        setIsSending(false);
-      }
-    } else {
-      setValidation("Captcha not matched, try again!");
-    }
-  };
+  //   // Check if at least one service is selected
+  //   if (
+  //     !watchCustomWebsite &&
+  //     !watchECommerce &&
+  //     !watchBranding &&
+  //     !watchLeadGeneration &&
+  //     !watchDigitalMarketing &&
+  //     !watchAIServices
+  //   ) {
+  //     setCheckboxError("Please select at least one service.");
+  //     formRef.current.scrollIntoView({ behavior: "smooth" }); // Scroll to the top of the form
+  //     return;
+  //   } else {
+  //     setCheckboxError("");
+  //   }
 
-  useEffect(() => {
-    loadCaptchaEnginge(6, "blue", "white");
-  }, []);
+  //   if (validateCaptcha(formDataToSend.captchaValue)) {
+  //     setValidation("Captcha Matched");
+  //     setIsSending(true);
+  //     try {
+  //       await axios.post("/api/quickcontact/", formDataToSend);
+  //       reset();
+  //       setValidation("");
+  //     } catch (error) {
+  //       console.error("Error occurred while submitting form:", error);
+  //     } finally {
+  //       setIsSending(false);
+  //     }
+  //   } else {
+  //     setValidation("Captcha not matched, try again!");
+  //   }
+  // };
+
+  // useEffect(() => {
+  //   loadCaptchaEnginge(6, "blue", "white");
+  // }, []);
 
   return (
-    <div ref={formRef}>
-      <h1 className="text-3xl mb-5 sm:text-5xl font-extrabold">Get in Touch</h1>
-      <p className="text-xl">
-        If you think we’d make a good team, contact us via your preferred method
-        and introduce your project.
-      </p>
-      <form className="py-20" onSubmit={handleSubmit(submitForm)}>
+    <div >
+      <h1 className="text-5xl text-center mb-5 sm:text-5xl font-extrabold">Get in Touch</h1>
+      <div className="flex justify-between">
+        <div className="w-1/3 flex flex-col gap-y-6 py-10">
+          <div className="flex items-center gap-x-4">
+            <div className="text-blue-500"><CallIcon fontSize="large"/></div>
+            <div>
+              <h1 className="text-blue-500 text-4xl font-black">CALL US</h1>
+              <p className="text-3xl font-light tracking-tight">12345678901</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-x-4">
+            <div className="text-blue-500"><EmailIcon fontSize="large" /></div>
+            <div>
+              <h1 className="text-blue-500 text-4xl font-black">EMAIL US!</h1>
+              <p className="text-3xl font-light tracking-tight">abc@gmail.com</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-x-4">
+            <div className="text-blue-500"><LocationOnIcon fontSize="large" /></div>
+            <div>
+              <h1 className="text-blue-500 text-4xl font-black">DRIVE TO US!</h1>
+              <p className="text-3xl font-light tracking-tight">Addres</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-x-4">
+            <div className="text-blue-500"><PublicIcon fontSize="large" /></div>
+            <div>
+              <h1 className="text-blue-500 text-4xl font-black">FOLLOW US!</h1>
+              <div className="text-blue-500"><InstagramIcon fontSize="large"/><FacebookIcon fontSize="large"/><LinkedInIcon fontSize="large"/><YouTubeIcon fontSize="large"/></div>
+            </div>
+          </div>
+        </div>
+        {/* <form className="w-2/3 py-20" onSubmit={handleSubmit(submitForm)}>
         <div className="w-full lg:flex lg:justify-center mb-10">
           <p className="font-bold lg:w-1/2 text-3xl mb-5 lg:mb-0">
             What Services are you looking for?{" "}
@@ -298,7 +345,119 @@ const ContactForm = () => {
             </button>
           </div>
         </div>
-      </form>
+      </form> */}
+      <form className="">
+                
+                        <div className="flex flex-col md:flex-row gap-y-4 my-5 gap-x-4">
+                            <div className="relative z-0 w-full group">
+                                <input 
+                                    type="text" 
+                                    name="firstName" 
+                                    id="firstName" 
+                                    // value={formData.firstName}
+                                    // onChange={handleChange}
+                                    className="block p-4 md:p-6 w-full text-xl md:text-2xl text-gray-900 bg-[#FAFAFA] border-2 border-gray-300 rounded-lg dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                                <label htmlFor="firstName" 
+                                    className="peer-focus:font-medium absolute text-xl md:text-2xl text-gray-900 dark:text-gray-400 duration-300 transform -translate-y-4 md:-translate-y-6 scale-75 top-4 md:top-6 left-4 md:left-6 z-10 origin-[0] peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 md:peer-focus:-translate-y-6">First Name *</label>
+                                {/* {errors.firstName && <span className="text-red-500">{errors.firstName}</span>} */}
+                            </div>
+                            <div className="relative z-0 w-full group">
+                                <input 
+                                    type="email" 
+                                    name="email" 
+                                    id="email" 
+                                    // value={formData.email}
+                                    // onChange={handleChange}
+                                    className="block p-4 md:p-6 w-full text-xl md:text-2xl text-gray-900 bg-[#FAFAFA] border-2 border-gray-300 rounded-lg dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                                <label htmlFor="email" 
+                                     className="peer-focus:font-medium absolute text-xl md:text-2xl text-gray-900 dark:text-gray-400 duration-300 transform -translate-y-4 md:-translate-y-6 scale-75 top-4 md:top-6 left-4 md:left-6 z-10 origin-[0] peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 md:peer-focus:-translate-y-6">Email *</label>
+                                {/* {errors.email && <span className="text-red-500">{errors.email}</span>} */}
+                            </div>
+                        </div>
+                  
+                  
+                        <div className="flex flex-col md:flex-row gap-y-4 my-5 gap-x-4">
+                        <div className="relative z-0 w-full group">
+                                <PhoneInput
+                                    country={'us'}
+                                    // value={formData.phone}
+                                    // onChange={handlePhoneChange}
+                                    id="number"
+                                    inputStyle={inputStyle}
+                                    containerStyle={{
+                                        width: '100%',
+                                        color: '#000'
+                                    }}
+                                    inputProps={{
+                                        name: 'phone',
+                                        required: true,
+                                    }}
+                                />
+                                <label htmlFor="number" 
+                                     className="peer-focus:font-medium absolute text-xl md:text-2xl text-gray-900 dark:text-gray-400 duration-300 transform -translate-y-4 md:-translate-y-6 scale-75 top-4 md:top-6 left-12 md:left-12 z-10 origin-[0] peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 md:peer-focus:-translate-y-6">Phone Number *</label>
+                                {/* {errors.phone && <span className="text-red-500">{errors.phone}</span>} */}
+                            </div>
+                            <div className="relative z-0 w-full group">
+                                <input 
+                                    type="text" 
+                                    name="company" 
+                                    id="company" 
+                                    // value={formData.company}
+                                    // onChange={handleChange}
+                                    className="block p-4 md:p-6 w-full text-xl md:text-2xl text-gray-900 bg-[#FAFAFA] border-2 border-gray-300 rounded-lg dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                                <label htmlFor="company" 
+                                      className="peer-focus:font-medium absolute text-xl md:text-2xl text-gray-900 dark:text-gray-400 duration-300 transform -translate-y-4 md:-translate-y-6 scale-75 top-4 md:top-6 left-4 md:left-6 z-10 origin-[0] peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 md:peer-focus:-translate-y-6">Company Name *</label>
+                            </div>
+                        </div>
+
+                        <div className="flex flex-col gap-y-4">
+                        <div className="relative z-0 w-full group">
+                            <input 
+                                type="text" 
+                                name="website" 
+                                id="website" 
+                                // value={formData.website}
+                                // onChange={handleChange}
+                                className="block p-4 md:p-6 w-full text-xl md:text-2xl text-gray-900 bg-[#FAFAFA] border-2 border-gray-300 rounded-lg dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                            <label htmlFor="website" 
+                                 className="peer-focus:font-medium absolute text-xl md:text-2xl text-gray-900 dark:text-gray-400 duration-300 transform -translate-y-4 md:-translate-y-6 scale-75 top-4 md:top-6 left-4 md:left-6 z-10 origin-[0] peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 md:peer-focus:-translate-y-6">Website *</label>
+                        </div>
+                  
+                   
+                        <div className="relative z-0 w-full group">
+                            <textarea 
+                                name="description" 
+                                id="description" 
+                                // value={formData.description}
+                                // onChange={handleChange}
+                                className="block p-4 md:p-6 w-full text-xl md:text-2xl text-gray-900 bg-[#FAFAFA] border-2 border-gray-300 rounded-lg dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                            <label htmlFor="description" 
+                                className="peer-focus:font-medium absolute text-xl md:text-2xl text-gray-900 dark:text-gray-400 duration-300 transform -translate-y-4 md:-translate-y-6 scale-75 top-4 md:top-6 left-4 md:left-6 z-10 origin-[0] peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 md:peer-focus:-translate-y-6">Tell us how can we help you *</label>
+                        </div>
+                  
+               
+                        <div className="relative z-0 w-full group">
+                            <select
+                                name="hearAboutUs"
+                                id="hearAboutUs"
+                                // value={}
+                                // onChange={}
+                                 className="block p-4 md:p-6 w-full text-xl md:text-2xl text-gray-900 bg-[#FAFAFA] border-2 border-gray-300 rounded-lg dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"  required >
+                                <option value="" disabled>Select an option</option>
+                                <option value="Google">Google</option>
+                                <option value="Social Media">Social Media</option>
+                                <option value="Friend">Friend</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <label htmlFor="hearAboutUs" 
+                                 className="peer-focus:font-medium absolute text-xl md:text-2xl text-gray-900 dark:text-gray-400 duration-300 transform -translate-y-4 md:-translate-y-6 scale-75 top-4 md:top-6 left-4 md:left-6 z-10 origin-[0] peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 md:peer-focus:-translate-y-6">How did you hear about us? *</label>
+                        </div>
+                        </div>
+                        <div className={`flex md:justify-start gap-x-4 mt-5`}>
+                        <button type="submit" className='rounded-md bg-blue-500 text-white text-xl md:text-2xl font-black px-10 py-3 md:px-16 md:py-5 hover:bg-white hover:border hover:border-blue-500 hover:text-blue-500 shadow-lg'>SUBMIT</button>
+                    </div>
+                </form>
+      </div>
     </div>
   );
 };
