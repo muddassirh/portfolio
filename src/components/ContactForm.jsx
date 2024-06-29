@@ -28,6 +28,32 @@ const ContactForm = () => {
     backgroundColor: '#FAFAFA',
     color: '#000'
 });
+
+useEffect(() => {
+  const handleResize = () => {
+      if (window.innerWidth >= 768) {
+          setInputStyle((prevStyle) => ({
+              ...prevStyle,
+              padding: '2.5rem',
+              fontSize: '1.5rem'
+          }));
+      } else {
+          setInputStyle((prevStyle) => ({
+              ...prevStyle,
+              padding: '2rem 2.5rem',
+              fontSize: '1.2rem'
+          }));
+      }
+  };
+
+  window.addEventListener('resize', handleResize);
+  handleResize(); // Set initial style
+
+  return () => {
+      window.removeEventListener('resize', handleResize);
+  };
+}, []);
+
   // const [isSending, setIsSending] = useState(false);
   // const [validation, setValidation] = useState("");
   // const [checkboxError, setCheckboxError] = useState("");
@@ -94,8 +120,8 @@ const ContactForm = () => {
   return (
     <div >
       <h1 className="text-5xl text-center mb-5 sm:text-5xl font-extrabold">Get in Touch</h1>
-      <div className="flex justify-between">
-        <div className="w-1/3 flex flex-col gap-y-6 py-10">
+      <div className="flex flex-col md:flex-row md:justify-between">
+        <div className="w-full md:w-1/3 flex flex-col gap-y-6 py-10">
           <div className="flex items-center gap-x-4">
             <div className="text-blue-500"><CallIcon fontSize="large"/></div>
             <div>

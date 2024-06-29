@@ -5,8 +5,8 @@ import Wrapper from "../components/Wrapper";
 const Contact = () => {
   return (<>
   <div className="banner-back w-full text-white py-28">
-  <h1 className="text-[100px] text-center mb-5 font-extrabold">CONTACT US</h1>
-      <p className="text-2xl text-center">
+  <h1 className="text-[50px] md:text-[100px] text-center mb-5 font-extrabold">CONTACT US</h1>
+      <p className="text-lg md:text-2xl text-center px-2">
         If you think we’d make a good team, contact us via your preferred method
         and introduce your project.
       </p>
