@@ -1,8 +1,19 @@
-import React, { useState, useEffect } from 'react';
+import React, {useState, useEffect} from "react";
 import 'react-phone-input-2/lib/style.css';
 import PhoneInput from 'react-phone-input-2';
 
-const Banner = () => {
+import { Link } from "react-router-dom";
+import bgimg from "./assets/img/banner/banner_img.png";
+import bannerbg from  "./assets/img/banner/banner_bg.jpg"
+import img1 from "./assets/img/banner/banner_shape01.png"
+import img2 from "./assets/img/banner/banner_shape02.png"
+import img3 from "./assets/img/banner/banner_shape03.png"
+import img4 from "./assets/img/banner/banner_shape04.png"
+import img5 from "./assets/img/banner/banner_shape05.png"
+import img6 from "./assets/img/banner/banner_shape06.png"
+import img7 from "./assets/img/banner/banner_shape07.png"
+
+const Banner1 = () => {
     const [step, setStep] = useState(1);
     const [formData, setFormData] = useState({
         firstName: '',
@@ -98,13 +109,21 @@ const Banner = () => {
     };
 
     return (
-        <div className='w-100 banner-back'>
-            <div className='max-w-[1040px] text-center md:text-start py-[80px] text-white px-5 md:px-10'>
-                <h2 className='text-[35px] md:text-[100px] font-black md:leading-[100px]'>LET'S DESIGN A DIGITAL EXPERIENCE TOGETHER!</h2>
-                <h3 className='text-[14px] md:whitespace-nowrap md:text-[28px] font-thin'>Committed to delivering high-end design services to any industry from small to large scale.</h3>
-                <form onSubmit={nextStep} className="">
-                    {step === 1 && (
-                        <div className="flex flex-col md:flex-row gap-y-4 my-5 gap-x-4">
+        <section className="banner-area banner-bg" style={{backgroundImage: './assets/img/banner/banner_bg.jpg'}}>
+            <div className="container">
+                <div className="row align-items-center">
+                    <div className="col-lg-6">
+                        <div className="banner-img wow fadeInLeft" data-wow-delay=".4s">
+                            <img src={bgimg} alt="" />
+                        </div>
+                    </div>
+                    <div className="col-lg-6">
+                        <div className="banner-content">
+                            <span className="sub-title wow fadeInUp" data-wow-delay=".2s">Amazing <strong>Starts</strong> Here</span>
+                            <h2 className="title wow fadeInUp" data-wow-delay=".4s">Grow Your Business Using Our Services</h2>
+                            <form onSubmit={nextStep} className="">
+                            {step === 1 && (
+                        <div className="flex flex-col md:flex-row gap-y-4 mb-4 gap-x-4">
                             <div className="relative z-0 w-full group">
                                 <input 
                                     type="text" 
@@ -112,7 +131,7 @@ const Banner = () => {
                                     id="firstName" 
                                     value={formData.firstName}
                                     onChange={handleChange}
-                                    className="block p-4 md:p-6 w-full text-xl md:text-2xl text-gray-900 bg-[#FAFAFA] border-2 border-gray-300 rounded-lg dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                                    className="block p-4 md:p-6 w-full text-md md:text-lg text-gray-900 bg-[#FAFAFA] border-2 border-gray-300 rounded-lg dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
                                 <label htmlFor="firstName" 
                                     className="peer-focus:font-medium absolute text-xl md:text-2xl text-gray-900 dark:text-gray-400 duration-300 transform -translate-y-4 md:-translate-y-6 scale-75 top-4 md:top-6 left-4 md:left-6 z-10 origin-[0] peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 md:peer-focus:-translate-y-6">First Name *</label>
                                 {errors.firstName && <span className="text-red-500">{errors.firstName}</span>}
@@ -124,7 +143,7 @@ const Banner = () => {
                                     id="email" 
                                     value={formData.email}
                                     onChange={handleChange}
-                                    className="block p-4 md:p-6 w-full text-xl md:text-2xl text-gray-900 bg-[#FAFAFA] border-2 border-gray-300 rounded-lg dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                                    className="block p-4 md:p-6 w-full text-md md:text-lg text-gray-900 bg-[#FAFAFA] border-2 border-gray-300 rounded-lg dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
                                 <label htmlFor="email" 
                                      className="peer-focus:font-medium absolute text-xl md:text-2xl text-gray-900 dark:text-gray-400 duration-300 transform -translate-y-4 md:-translate-y-6 scale-75 top-4 md:top-6 left-4 md:left-6 z-10 origin-[0] peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 md:peer-focus:-translate-y-6">Email *</label>
                                 {errors.email && <span className="text-red-500">{errors.email}</span>}
@@ -132,7 +151,7 @@ const Banner = () => {
                         </div>
                     )}
                     {step === 2 && (
-                        <div className="flex flex-col md:flex-row gap-y-4 my-5 gap-x-4">
+                        <div className="flex flex-col md:flex-row gap-y-4 mb-4 gap-x-4">
                         <div className="relative z-0 w-full group">
                                 <PhoneInput
                                     country={'us'}
@@ -150,7 +169,7 @@ const Banner = () => {
                                     }}
                                 />
                                 <label htmlFor="number" 
-                                     className="peer-focus:font-medium absolute text-xl md:text-2xl text-gray-900 dark:text-gray-400 duration-300 transform -translate-y-4 md:-translate-y-6 scale-75 top-4 md:top-6 left-12 md:left-12 z-10 origin-[0] peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 md:peer-focus:-translate-y-6">Phone Number *</label>
+                                     className="peer-focus:font-medium absolute text-md md:text-lg text-gray-900 dark:text-gray-400 duration-300 transform -translate-y-4 md:-translate-y-6 scale-75 top-4 md:top-6 left-12 md:left-12 z-10 origin-[0] peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 md:peer-focus:-translate-y-6">Phone Number *</label>
                                 {errors.phone && <span className="text-red-500">{errors.phone}</span>}
                             </div>
                             <div className="relative z-0 w-full group">
@@ -160,45 +179,46 @@ const Banner = () => {
                                     id="company" 
                                     value={formData.company}
                                     onChange={handleChange}
-                                    className="block p-4 md:p-6 w-full text-xl md:text-2xl text-gray-900 bg-[#FAFAFA] border-2 border-gray-300 rounded-lg dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                                    className="block p-4 md:p-6 w-full text-md md:text-lg text-gray-900 bg-[#FAFAFA] border-2 border-gray-300 rounded-lg dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
                                 <label htmlFor="company" 
                                       className="peer-focus:font-medium absolute text-xl md:text-2xl text-gray-900 dark:text-gray-400 duration-300 transform -translate-y-4 md:-translate-y-6 scale-75 top-4 md:top-6 left-4 md:left-6 z-10 origin-[0] peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 md:peer-focus:-translate-y-6">Company Name *</label>
                             </div>
                         </div>
                     )}
                     {step === 3 && (
-                        <div className="relative z-0 w-full group">
+                        <div className="relative z-0 w-full group mb-4">
                             <input 
                                 type="text" 
                                 name="website" 
                                 id="website" 
                                 value={formData.website}
                                 onChange={handleChange}
-                                className="block p-4 md:p-6 w-full text-xl md:text-2xl text-gray-900 bg-[#FAFAFA] border-2 border-gray-300 rounded-lg dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                                className="block p-4 md:p-6 w-full text-md md:text-lg text-gray-900 bg-[#FAFAFA] border-2 border-gray-300 rounded-lg dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
                             <label htmlFor="website" 
                                  className="peer-focus:font-medium absolute text-xl md:text-2xl text-gray-900 dark:text-gray-400 duration-300 transform -translate-y-4 md:-translate-y-6 scale-75 top-4 md:top-6 left-4 md:left-6 z-10 origin-[0] peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 md:peer-focus:-translate-y-6">Website *</label>
                         </div>
                     )}
+
                     {step === 4 && (
-                        <div className="relative z-0 w-full group">
+                        <div className="relative z-0 w-full group mb-4">
                             <textarea 
                                 name="description" 
                                 id="description" 
                                 value={formData.description}
                                 onChange={handleChange}
-                                className="block p-4 md:p-6 w-full text-xl md:text-2xl text-gray-900 bg-[#FAFAFA] border-2 border-gray-300 rounded-lg dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                                className="block p-4 md:p-6 w-full text-md md:text-lg text-gray-900 bg-[#FAFAFA] border-2 border-gray-300 rounded-lg dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
                             <label htmlFor="description" 
                                 className="peer-focus:font-medium absolute text-xl md:text-2xl text-gray-900 dark:text-gray-400 duration-300 transform -translate-y-4 md:-translate-y-6 scale-75 top-4 md:top-6 left-4 md:left-6 z-10 origin-[0] peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 md:peer-focus:-translate-y-6">Tell us how can we help you *</label>
                         </div>
                     )}
                     {step === 5 && (
-                        <div className="relative z-0 w-full group">
+                        <div className="relative z-0 w-full group mb-4">
                             <select
                                 name="hearAboutUs"
                                 id="hearAboutUs"
                                 value={formData.hearAboutUs}
                                 onChange={handleChange}
-                                 className="block p-4 md:p-6 w-full text-xl md:text-2xl text-gray-900 bg-[#FAFAFA] border-2 border-gray-300 rounded-lg dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"  required >
+                                 className="block p-4 md:p-6 w-full text-md md:text-lg text-gray-900 bg-[#FAFAFA] border-2 border-gray-300 rounded-lg dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"  required >
                                 <option value="" disabled>Select an option</option>
                                 <option value="Google">Google</option>
                                 <option value="Social Media">Social Media</option>
@@ -209,16 +229,33 @@ const Banner = () => {
                                  className="peer-focus:font-medium absolute text-xl md:text-2xl text-gray-900 dark:text-gray-400 duration-300 transform -translate-y-4 md:-translate-y-6 scale-75 top-4 md:top-6 left-4 md:left-6 z-10 origin-[0] peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 md:peer-focus:-translate-y-6">How did you hear about us? *</label>
                         </div>
                     )}
-                    <div className={`flex  ${ step > 1 && 'justify-center'} md:justify-start gap-x-4 mt-5`}>
-                        {step > 1 && (
-                            <button type="button" onClick={prevStep} className='rounded-md bg-white text-black text-xl md:text-2xl font-black px-10 md:px-16 py-3 md:py-5 hover:bg-blue-500 hover:text-white shadow-lg'>BACK</button>
-                        )}
-                        <button type="submit" className='rounded-md bg-white text-black text-xl md:text-2xl font-black px-10 py-3 md:px-16 md:py-5 hover:bg-blue-500 hover:text-white shadow-lg'>{step === 5 ? 'SUBMIT' : 'NEXT'}</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    );
-}
 
-export default Banner;
+
+
+                    <div className={`flex  ${ step > 1 && 'justify-center'} md:justify-start gap-x-4 mt-0`}>
+                        {step > 1 && (
+                            <button type="button" onClick={prevStep} className="btn wow fadeInUp" data-wow-delay=".6s">BACK <span/></button>
+                        )}
+                        <button type="submit" data-wow-delay=".6s" className="btn wow fadeInUp">{step === 5 ? 'SUBMIT' : 'NEXT'} <span/></button>
+                    </div>
+
+                            </form>
+                            {/* <Link to="/contact" className="btn wow fadeInUp" data-wow-delay=".6s">Contact Us <span /></Link> */}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="banner-shape-wrap">
+                <img src={img1} alt="" />
+                <img src={img2} alt="" className="animationFramesOne" />
+                <img src={img3} alt="" className="contactSwimmer" />
+                <img src={img4} alt="" className="rotateme" />
+                <img src={img5} alt="" className="animation1" />
+                <img src={img6} alt="" className="ribbonRotate" />
+                <img src={img7} alt="" className="float-bob-x" />
+            </div>
+        </section>
+    );
+};
+
+export default Banner1;
