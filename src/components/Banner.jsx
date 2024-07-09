@@ -120,7 +120,7 @@ const Banner1 = () => {
                     <div className="col-lg-6">
                         <div className="banner-content">
                             <span className="sub-title wow fadeInUp" data-wow-delay=".2s">Amazing <strong>Starts</strong> Here</span>
-                            <h2 className="title wow fadeInUp" data-wow-delay=".4s">Grow Your Business Using Our Services</h2>
+                            <h2 className="title wow fadeInUp" data-wow-delay=".4s">Designing the Future, One Pixel at a Time</h2>
                             <form onSubmit={nextStep} className="">
                             {step === 1 && (
                         <div className="flex flex-col md:flex-row gap-y-4 mb-4 gap-x-4">

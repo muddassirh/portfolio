@@ -16,7 +16,7 @@ export default function Services1() {
                                     <img src={icon1} alt="" />
                                 </div>
                                 <div className="services-content">
-                                    <h4 className="title"><Link to="/services-details">UIUX Design</Link></h4>
+                                    <h4 className="title"><Link to="/services-details">Product & Experience Design</Link></h4>
                                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                                 </div>
                             </div>
@@ -27,7 +27,7 @@ export default function Services1() {
                                     <img src={icon2} alt="" />
                                 </div>
                                 <div className="services-content">
-                                    <h4 className="title"><Link to="/services-details">Product Design</Link></h4>
+                                    <h4 className="title"><Link to="/services-details">Frontend Design/Development</Link></h4>
                                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                                 </div>
                             </div>
@@ -38,7 +38,7 @@ export default function Services1() {
                                     <img src={icon3} alt="" />
                                 </div>
                                 <div className="services-content">
-                                    <h4 className="title"><Link to="/services-details">Website Design</Link></h4>
+                                    <h4 className="title"><Link to="/services-details">Campaign & Content Design</Link></h4>
                                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                                 </div>
                             </div>
@@ -49,7 +49,7 @@ export default function Services1() {
                                     <img src={icon4} alt="" />
                                 </div>
                                 <div className="services-content">
-                                    <h4 className="title"><Link to="/services-details">Branding Design</Link></h4>
+                                    <h4 className="title"><Link to="/services-details">AI Solutions</Link></h4>
                                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                                 </div>
                             </div>
