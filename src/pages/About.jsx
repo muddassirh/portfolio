@@ -151,7 +151,9 @@ export default function AboutUs() {
                                 <div className="section-title title-style-two mb-30">
                                     <h2 className="title">Content Has to Be More That Just Brilliant</h2>
                                 </div>
-                                <p>Lorem ipsum dolor sit amet, sed nulla ante amet, elementum tincidunt arcu sed laoreet, natoque ac eget imperdiet. Ac scelerisque nibh dolores consectetuer, nulla aptent est pede. Scelerisque euismod varius mi, congue eget sed vestibulum, ornare cras sed nec.</p>
+                                <p>At Genxsmedia Solutions, we've spent over 15 years perfecting our craft, providing innovative and results-driven creative design, frontend development, branding, and AI solutions to businesses seeking to elevate their online presence and drive growth.</p>
+                                <p>Our team of experts takes the time to understand your unique challenges, goals, and values, crafting personalized strategies that unlock your brand's full potential. Whether you need to revitalize your brand identity, create engaging digital experiences, or harness the power of AI to streamline operations and boost efficiency, we offer tailored solutions that meet your specific needs.</p>
+                                <p>Since 2007, we've been dedicated to helping businesses like yours thrive in an ever-changing digital landscape. Let us help you achieve your vision and take your business to new heights.</p>
                                 <img src={sine} alt="" />
                                 <div className="content-bottom">
                                     <h4 className="title-two">Davis Levin</h4>

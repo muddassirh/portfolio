@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import AboutIMG from "./assets/img/images/about_img.jpg";
+import AboutIMG from "./assets/img/images/about_img.png";
 import icon1 from "./assets/img/icon/about_icon01.png"
 import icon2 from "./assets/img/icon/about_icon02.png"
 
@@ -18,32 +18,13 @@ export default function About1() {
                             <div className="col-54">
                                 <div className="about-content">
                                     <div className="section-title mb-25">
-                                        <span className="sub-title">About Company</span>
-                                        <h2 className="title">A Full Service Design and Branding Agency</h2>
+                                        <span className="sub-title-white">About Company</span>
+                                        <h2 className="title">Transforming visions into digital realities</h2>
                                     </div>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
-                                    <ul className="list-wrap">
-                                        <li>
-                                            <div className="icon">
-                                                <img src={icon1} alt="" />
-                                            </div>
-                                            <div className="content">
-                                                <h4 className="title">Concept Creation</h4>
-                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div className="icon">
-                                                <img src={icon2} alt="" />
-                                            </div>
-                                            <div className="content">
-                                                <h4 className="title">Sketch Drawing</h4>
-                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                            </div>
-                                        </li>
-                                    </ul>
+                                    <p>At Genxsmedia Solutions, we've been empowering businesses with cutting-edge creative design and frontend development services since 2007. Our expertise spans branding, AI solutions, and more. We believe every business has a unique story and identity, which is why we deliver 100% personalized strategies that drive real results.</p>
+                                    <h3 className="title">Think. Ideate. Elevate.</h3>
                                     <div className="about-content-bottom">
-                                        <span>Think Creative Agency Are a Full Service Design</span>
+                                        <span className="sub-title-white">This is not the end!!! Our story is about to begun</span>
                                         <div className="read-more-btn">
                                             <Link to="/about-us" className="btn">Read More <span /></Link>
                                         </div>

@@ -17,7 +17,7 @@ export default function Services1() {
                                 </div>
                                 <div className="services-content">
                                     <h4 className="title"><Link to="/services-details">Product & Experience Design</Link></h4>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                    <p>We craft intuitive designs that delight users and drive business results. By combining human insight with design expertise, we create seamless experiences that set our clients apart.</p>
                                 </div>
                             </div>
                         </div>
@@ -28,7 +28,7 @@ export default function Services1() {
                                 </div>
                                 <div className="services-content">
                                     <h4 className="title"><Link to="/services-details">Frontend Design/Development</Link></h4>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                    <p>We bring designs to life with clean, efficient code that scales. With a focus on usability and performance, we build digital products that look great and work smoothly on all devices.</p>
                                 </div>
                             </div>
                         </div>
@@ -39,7 +39,7 @@ export default function Services1() {
                                 </div>
                                 <div className="services-content">
                                     <h4 className="title"><Link to="/services-details">Campaign & Content Design</Link></h4>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                    <p>Compelling narratives and visual stories that capture attention and drive action. We help our clients stand out, build their brand, and inspire engagement.</p>
                                 </div>
                             </div>
                         </div>
@@ -50,7 +50,7 @@ export default function Services1() {
                                 </div>
                                 <div className="services-content">
                                     <h4 className="title"><Link to="/services-details">AI Solutions</Link></h4>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                    <p>Unlocking the power of AI to drive innovation and transform industries. We develop intelligent solutions that help businesses make better decisions, improve efficiency, and reduce costs.</p>
                                 </div>
                             </div>
                         </div>

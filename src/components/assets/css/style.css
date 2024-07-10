@@ -71,10 +71,10 @@ li{
     --tg-heading-font-family     : 'Poppins', sans-serif;
     --tg-primary-color           : #3482FF;
     --tg-secondary-color         : #F89E52;
-    --tg-body-font-color         : #666666;
+    --tg-body-font-color         : #272727;
     --tg-heading-font-color      : #0B0B0B;
     --tg-banner-title-color      : #2A2A2A;
-    --tg-paragraph-color         : #666666;
+    --tg-paragraph-color         : #272727;
     --tg-body-font-size          : 16px;
     --tg-body-font-weight        : 400;
     --tg-heading-font-weight     : 700;
@@ -120,7 +120,7 @@ li{
     --tg-gray-six                : #F7F7F7;
     --tg-gray-seven              : #6C7183;
     --tg-gray-eight              : #F4F4F4;
-    --tg-granite-gray            : #6B645D;
+    --tg-granite-gray            : #2A2A2A;
     --tg-bright-gray             : #EDEEF1;
     --tg-spanish-gray            : #989898;
     --tg-cadet-grey              : #92A5B4;
@@ -2391,7 +2391,13 @@ label {
     color        : var(--tg-primary-color);
     margin-bottom: 20px;
 }
-
+.section-title .sub-title-white {
+    font-size    : 20px;
+    font-weight  : 500;
+    display      : block;
+    color        : var(--tg-white);
+    margin-bottom: 20px;
+}
 .section-title .title {
     font-size    : 50px;
     margin-bottom: 0;

@@ -28,9 +28,9 @@ export default function Team1() {
                             <div className="team-content">
                                 <div className="section-title mb-25">
                                     <span className="sub-title">Our Team</span>
-                                    <h2 className="title">An Essential Aspect of Creativity is Not Being Afraid to Fail</h2>
+                                    <h2 className="title">Empowering Your Success with Creative Excellence</h2>
                                 </div>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
+                                <p>At Genxsmedia, we pride ourselves on having a team that embodies the spirit of creative excellence. Our talented professionals are the backbone of our success, and we're proud to showcase their strengths.</p>
                                 <Link to="/team" className="btn">Meet Our Team <span /></Link>
                             </div>
                         </div>
