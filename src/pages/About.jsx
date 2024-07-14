@@ -105,7 +105,7 @@ export default function AboutUs() {
                                                 <img src={innerCounterIcon01} alt="" />
                                             </div>
                                             <div className="content">
-                                                <h2 className="count"><CounterUp className="odometer" count={210} />+</h2>
+                                                <h2 className="count"><CounterUp className="odometer" count={150} />+</h2>
                                                 <p>Satisfied <span>Customers</span></p>
                                             </div>
                                         </div>
@@ -116,33 +116,11 @@ export default function AboutUs() {
                                                 <img src={innerCounterIcon02} alt="" />
                                             </div>
                                             <div className="content">
-                                                <h2 className="count"><CounterUp className="odometer" count={15} />k+</h2>
+                                                <h2 className="count"><CounterUp className="odometer" count={600} />+</h2>
                                                 <p>Project <span>Finished</span></p>
                                             </div>
                                         </div>
-                                    </li>
-                                    <li>
-                                        <div className="counter-item-three">
-                                            <div className="icon">
-                                                <img src={innerCounterIcon03} alt="" />
-                                            </div>
-                                            <div className="content">
-                                                <h2 className="count"><CounterUp className="odometer" count={110} />+</h2>
-                                                <p>Our <span>Employees</span></p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div className="counter-item-three">
-                                            <div className="icon">
-                                                <img src={innerCounterIcon04} alt="" />
-                                            </div>
-                                            <div className="content">
-                                                <h2 className="count"><CounterUp className="odometer" count={12} />+</h2>
-                                                <p>International <span>Awards</span></p>
-                                            </div>
-                                        </div>
-                                    </li>
+                                    </li>                                  
                                 </ul>
                             </div>
                         </div>
@@ -172,7 +150,7 @@ export default function AboutUs() {
                         <div className="col-xl-7">
                             <div className="section-title title-style-two text-center mb-70">
                                 <h2 className="title">Meet The Squad</h2>
-                                <p>Lorem ipsum dolor sit amet, sed nulla ante amet, elementum tincidunt arcu sed laoreet, natoque ac eget imperdiet. Ac scelerisque nibh dolores</p>
+                                <p>At Genxsmedia, we pride ourselves on having a team of experts who are passionate about delivering exceptional results. Our talented professionals have years of experience in their respective fields, and are dedicated to providing innovative solutions that exceed client expectations.</p>
                             </div>
                         </div>
                     </div>
@@ -183,8 +161,8 @@ export default function AboutUs() {
                                     <Link to="/team-details"><img src={team1} alt="" /></Link>
                                 </div>
                                 <div className="team-content">
-                                    <h2 className="title"><Link to="/team-details">Alena Rosser</Link></h2>
-                                    <span>CEO Kawasaki Inc.</span>
+                                    <h2 className="title"><Link to="/team-details">Muddassir AKA Mudd</Link></h2>
+                                    <span>CEO, Founder</span>
                                     <div className="team-social">
                                         <ul className="list-wrap">
                                             <li><Link to="#"><i className="fab fa-facebook-f" /></Link></li>
@@ -202,8 +180,8 @@ export default function AboutUs() {
                                     <Link to="/team-details"><img src={team2} alt="" /></Link>
                                 </div>
                                 <div className="team-content">
-                                    <h2 className="title"><Link to="/team-details">Tiana Dokidis</Link></h2>
-                                    <span>CEO Kawasaki Inc.</span>
+                                    <h2 className="title"><Link to="/team-details">Danish</Link></h2>
+                                    <span>Senior Frontend Engineer</span>
                                     <div className="team-social">
                                         <ul className="list-wrap">
                                             <li><Link to="#"><i className="fab fa-facebook-f" /></Link></li>
@@ -221,8 +199,8 @@ export default function AboutUs() {
                                     <Link to="/team-details"><img src={team3} alt="" /></Link>
                                 </div>
                                 <div className="team-content">
-                                    <h2 className="title"><Link to="/team-details">Ryan Vetrovs</Link></h2>
-                                    <span>CEO Kawasaki Inc.</span>
+                                    <h2 className="title"><Link to="/team-details">Zain</Link></h2>
+                                    <span>Senior Frontend Engineer</span>
                                     <div className="team-social">
                                         <ul className="list-wrap">
                                             <li><Link to="#"><i className="fab fa-facebook-f" /></Link></li>
@@ -240,8 +218,8 @@ export default function AboutUs() {
                                     <Link to="/team-details"><img src={team4} alt="" /></Link>
                                 </div>
                                 <div className="team-content">
-                                    <h2 className="title"><Link to="/team-details">Emerson Saris</Link></h2>
-                                    <span>CEO Kawasaki Inc.</span>
+                                    <h2 className="title"><Link to="/team-details">Moanam</Link></h2>
+                                    <span>Frontend Developer</span>
                                     <div className="team-social">
                                         <ul className="list-wrap">
                                             <li><Link to="#"><i className="fab fa-facebook-f" /></Link></li>
@@ -259,8 +237,8 @@ export default function AboutUs() {
                                     <Link to="/team-details"><img src={team5} alt="" /></Link>
                                 </div>
                                 <div className="team-content">
-                                    <h2 className="title"><Link to="/team-details">Lindsey Schleifer</Link></h2>
-                                    <span>CEO Kawasaki Inc.</span>
+                                    <h2 className="title"><Link to="/team-details">Tahir Ali</Link></h2>
+                                    <span>Shopify Developer/Frontend Developer</span>
                                     <div className="team-social">
                                         <ul className="list-wrap">
                                             <li><Link to="#"><i className="fab fa-facebook-f" /></Link></li>
@@ -337,179 +315,13 @@ export default function AboutUs() {
                 </section>
                 {/* consultation-area-end */}
                 {/* services-area */}
-                <section className="inner-services-area px-24 pt-110 pb-100">
-                    <div className="container">
-                        <div className="row justify-content-center">
-                            <div className="col-lg-6">
-                                <div className="section-title title-style-two text-center mb-60">
-                                    <span className="sub-title">Graphic Service</span>
-                                    <h2 className="title">Creative  Branding Design</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="inner-services-item-wrap">
-                            <div className="row justify-content-center">
-                                <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
-                                    <div className="services-item-four">
-                                        <div className="services-icon-four">
-                                            <img src={ServicesIcon1} alt="" />
-                                        </div>
-                                        <div className="services-content-four">
-                                            <h2 className="title"><Link href="/services-details">Advertising</Link></h2>
-                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
-                                    <div className="services-item-four">
-                                        <div className="services-icon-four">
-                                            <img src={ServicesIcon2} alt="" />
-                                        </div>
-                                        <div className="services-content-four">
-                                            <h2 className="title"><Link href="/services-details">Development</Link></h2>
-                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
-                                    <div className="services-item-four">
-                                        <div className="services-icon-four">
-                                            <img src={ServicesIcon3} alt="" />
-                                        </div>
-                                        <div className="services-content-four">
-                                            <h2 className="title"><Link href="/services-details">Branding</Link></h2>
-                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
-                                    <div className="services-item-four">
-                                        <div className="services-icon-four">
-                                            <img src={ServicesIcon4} alt="" />
-                                        </div>
-                                        <div className="services-content-four">
-                                            <h2 className="title"><Link href="/services-details">Product Design</Link></h2>
-                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
-                                    <div className="services-item-four">
-                                        <div className="services-icon-four">
-                                            <img src={ServicesIcon5} alt="" />
-                                        </div>
-                                        <div className="services-content-four">
-                                            <h2 className="title"><Link href="/services-details">Software</Link></h2>
-                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
-                                    <div className="services-item-four">
-                                        <div className="services-icon-four">
-                                            <img src={ServicesIcon6} alt="" />
-                                        </div>
-                                        <div className="services-content-four">
-                                            <h2 className="title"><Link href="/services-details">Marketing</Link></h2>
-                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
-                                    <div className="services-item-four">
-                                        <div className="services-icon-four">
-                                            <img src={ServicesIcon7} alt="" />
-                                        </div>
-                                        <div className="services-content-four">
-                                            <h2 className="title"><Link href="/services-details">Cinematography</Link></h2>
-                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
-                                    <div className="services-item-four">
-                                        <div className="services-icon-four">
-                                            <img src={ServicesIcon8} alt="" />
-                                        </div>
-                                        <div className="services-content-four">
-                                            <h2 className="title"><Link href="/services-details">Strategy Services</Link></h2>
-                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                
                 {/* services-area-end */}
                 {/* success-area */}
-                <section className="success-area px-24 pb-120">
-                    <div className="container">
-                        <div className="row align-items-center">
-                            <div className="col-lg-6 order-0 order-lg-2">
-                                <div className="success-img">
-                                    <img src={SuccessImg} alt="" />
-                                </div>
-                            </div>
-                            <div className="col-lg-6">
-                                <div className="success-content">
-                                    <div className="section-title title-style-two mb-30">
-                                        <span className="sub-title">Company Success</span>
-                                        <h2 className="title">A Company’s Success is An Ongoing Stream of Happiness</h2>
-                                    </div>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
-                                    <div className="success-list">
-                                        <ul className="list-wrap">
-                                            <li>
-                                                <div className="content">
-                                                    <img src={SuccessIcon1} alt="" />
-                                                    <span>App Design 85%</span>
-                                                </div>
-                                                <div className="progress">
-                                                    <div className="progress-bar" role="progressbar" style={{ width: '85%' }} aria-valuenow={85} aria-valuemin={0} aria-valuemax={100} />
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div className="content">
-                                                    <img src={SuccessIcon2} alt="" />
-                                                    <span>Website Design 75%</span>
-                                                </div>
-                                                <div className="progress">
-                                                    <div className="progress-bar" role="progressbar" style={{ width: '75%' }} aria-valuenow={75} aria-valuemin={0} aria-valuemax={100} />
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div className="content">
-                                                    <img src={SuccessIcon3} alt="" />
-                                                    <span>Product Design 95%</span>
-                                                </div>
-                                                <div className="progress">
-                                                    <div className="progress-bar" role="progressbar" style={{ width: '95%' }} aria-valuenow={95} aria-valuemin={0} aria-valuemax={100} />
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div className="content">
-                                                    <img src={SuccessIcon4} alt="" />
-                                                    <span>Development 99%</span>
-                                                </div>
-                                                <div className="progress">
-                                                    <div className="progress-bar" role="progressbar" style={{ width: '99%' }} aria-valuenow={99} aria-valuemin={0} aria-valuemax={100} />
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="success-shape-wrap">
-                        <img src={SuccessShape1} alt="" />
-                        <img src={SuccessShape2} alt="" />
-                    </div>
-                </section>
+                
                 {/* success-area-end */}
                 {/* history-area */}
-                <section className="history-area ">
+                {/*<section className="history-area ">
                     <div className="container">
                         <div className="row justify-content-center">
                             <div className="col-xl-6 col-lg-8">
@@ -580,7 +392,7 @@ export default function AboutUs() {
                         <img src={HistoryShape1} alt="" />
                         <img src={HistoryShape2} alt="" />
                     </div>
-                </section>
+                </section>*/}
                 {/* history-area-end */}
             {/* testimonial-area */}
             <section className="testimonial-area-three testimonial-area-four">
