@@ -1,6 +1,9 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect, useRef } from "react";
+import emailjs from "@emailjs/browser";
 import 'react-phone-input-2/lib/style.css';
 import PhoneInput from 'react-phone-input-2';
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Layout from '../components/Layout/Layout';
 import { Link } from 'react-router-dom'; 
 import locationIcon from '../components/assets/img/icon/loction_icon03.png';
@@ -18,6 +21,17 @@ export default function Contact() {
     backgroundColor: '#FAFAFA',
     color: '#000'
 });
+const [formData, setFormData] = useState({
+    firstName: '',
+    email: '',
+    phone: '',
+    company: '',
+    website: '',
+    description: '',
+    hearAboutUs: ''
+});
+const formRef = useRef();
+const [errors, setErrors] = useState({});
 
 useEffect(() => {
   const handleResize = () => {
@@ -43,6 +57,50 @@ useEffect(() => {
       window.removeEventListener('resize', handleResize);
   };
 }, []);
+
+const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+        ...formData,
+        [name]: value
+    });
+    setErrors({
+        ...errors,
+        [name]: ''
+    });
+};
+
+const handlePhoneChange = (value) => {
+    setFormData({
+        ...formData,
+        phone: value
+    });
+    setErrors({
+        ...errors,
+        phone: ''
+    });
+};
+
+const sendEmail = (e) => {
+    e.preventDefault();
+
+
+    emailjs.sendForm(
+        "service_xs9j53r",
+        "template_tu150qc",
+        formRef.current,
+        "SsMpfjuxC-v27-HjT"
+    ).then(
+        (result) => {
+            console.log(result.text);
+            console.log("message sent");
+            toast.success("Email Sent")
+        },
+        (error) => {
+            console.log(error.text);
+        }
+    );
+};
 
     return (
         <>
@@ -79,7 +137,7 @@ useEffect(() => {
                                             </div>
                                             <button type="submit" className="btn">Send Message <span /></button>
                                         </form> */}
-                                        <form className="">
+                                        <form ref={formRef} onSubmit={sendEmail} className="">
                 
                 <div className="flex flex-col md:flex-row gap-y-4 md:my-4 gap-x-4">
                     <div className="relative z-0 w-full group">
@@ -87,34 +145,34 @@ useEffect(() => {
                             type="text" 
                             name="firstName" 
                             id="firstName" 
-                            // value={formData.firstName}
-                            // onChange={handleChange}
+                            value={formData.firstName}
+                            onChange={handleChange}
                             className="block p-4 md:p-6 w-full text-xl md:text-2xl text-gray-900 bg-[#FAFAFA] border-2 border-gray-300 rounded-lg dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
                         <label htmlFor="firstName" 
                             className="peer-focus:font-medium absolute text-xl md:text-2xl text-gray-900 dark:text-gray-400 duration-300 transform -translate-y-4 md:-translate-y-6 scale-75 top-4 md:top-6 left-4 md:left-6 z-10 origin-[0] peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 md:peer-focus:-translate-y-6">First Name *</label>
-                        {/* {errors.firstName && <span className="text-red-500">{errors.firstName}</span>} */}
+                        {errors.firstName && <span className="text-red-500">{errors.firstName}</span>}
                     </div>
                     <div className="relative z-0 w-full group">
                         <input 
                             type="email" 
                             name="email" 
                             id="email" 
-                            // value={formData.email}
-                            // onChange={handleChange}
+                            value={formData.email}
+                            onChange={handleChange}
                             className="block p-4 md:p-6 w-full text-xl md:text-2xl text-gray-900 bg-[#FAFAFA] border-2 border-gray-300 rounded-lg dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
                         <label htmlFor="email" 
                              className="peer-focus:font-medium absolute text-xl md:text-2xl text-gray-900 dark:text-gray-400 duration-300 transform -translate-y-4 md:-translate-y-6 scale-75 top-4 md:top-6 left-4 md:left-6 z-10 origin-[0] peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 md:peer-focus:-translate-y-6">Email *</label>
-                        {/* {errors.email && <span className="text-red-500">{errors.email}</span>} */}
+                        {errors.email && <span className="text-red-500">{errors.email}</span>}
                     </div>
                 </div>
           
           
                 <div className="flex flex-col md:flex-row gap-y-4 md:my-4 gap-x-4">
-                <div className="relative z-0 w-full group">
+                <div className="relative z-10 w-full group">
                         <PhoneInput
                             country={'us'}
-                            // value={formData.phone}
-                            // onChange={handlePhoneChange}
+                            value={formData.phone}
+                            onChange={handlePhoneChange}
                             id="number"
                             inputStyle={inputStyle}
                             containerStyle={{
@@ -128,15 +186,15 @@ useEffect(() => {
                         />
                         <label htmlFor="number" 
                              className="peer-focus:font-medium absolute text-xl md:text-2xl text-gray-900 dark:text-gray-400 duration-300 transform -translate-y-4 md:-translate-y-6 scale-75 top-4 md:top-6 left-12 md:left-12 z-10 origin-[0] peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 md:peer-focus:-translate-y-6">Phone Number *</label>
-                        {/* {errors.phone && <span className="text-red-500">{errors.phone}</span>} */}
+                        {errors.phone && <span className="text-red-500">{errors.phone}</span>}
                     </div>
                     <div className="relative z-0 w-full group">
                         <input 
                             type="text" 
                             name="company" 
                             id="company" 
-                            // value={formData.company}
-                            // onChange={handleChange}
+                            value={formData.company}
+                            onChange={handleChange}
                             className="block p-4 md:p-6 w-full text-xl md:text-2xl text-gray-900 bg-[#FAFAFA] border-2 border-gray-300 rounded-lg dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
                         <label htmlFor="company" 
                               className="peer-focus:font-medium absolute text-xl md:text-2xl text-gray-900 dark:text-gray-400 duration-300 transform -translate-y-4 md:-translate-y-6 scale-75 top-4 md:top-6 left-4 md:left-6 z-10 origin-[0] peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 md:peer-focus:-translate-y-6">Company Name *</label>
@@ -149,8 +207,8 @@ useEffect(() => {
                         type="text" 
                         name="website" 
                         id="website" 
-                        // value={formData.website}
-                        // onChange={handleChange}
+                        value={formData.website}
+                        onChange={handleChange}
                         className="block p-4 md:p-6 w-full text-xl md:text-2xl text-gray-900 bg-[#FAFAFA] border-2 border-gray-300 rounded-lg dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
                     <label htmlFor="website" 
                          className="peer-focus:font-medium absolute text-xl md:text-2xl text-gray-900 dark:text-gray-400 duration-300 transform -translate-y-4 md:-translate-y-6 scale-75 top-4 md:top-6 left-4 md:left-6 z-10 origin-[0] peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 md:peer-focus:-translate-y-6">Website *</label>
@@ -161,8 +219,8 @@ useEffect(() => {
                     <textarea 
                         name="description" 
                         id="description" 
-                        // value={formData.description}
-                        // onChange={handleChange}
+                        value={formData.description}
+                        onChange={handleChange}
                         className="block p-4 md:p-6 w-full text-xl md:text-2xl text-gray-900 bg-[#FAFAFA] border-2 border-gray-300 rounded-lg dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
                     <label htmlFor="description" 
                         className="peer-focus:font-medium absolute text-xl md:text-2xl text-gray-900 dark:text-gray-400 duration-300 transform -translate-y-4 md:-translate-y-6 scale-75 top-4 md:top-6 left-4 md:left-6 z-10 origin-[0] peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 md:peer-focus:-translate-y-6">Tell us how can we help you *</label>
@@ -173,8 +231,8 @@ useEffect(() => {
                     <select
                         name="hearAboutUs"
                         id="hearAboutUs"
-                        // value={}
-                        // onChange={}
+                        value={formData.hearAboutUs}
+                        onChange={handleChange}
                          className="block p-4 md:p-6 w-full text-xl md:text-2xl text-gray-900 bg-[#FAFAFA] border-2 border-gray-300 rounded-lg dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"  required >
                         <option value="" disabled>Select an option</option>
                         <option value="Google">Google</option>
@@ -242,6 +300,7 @@ useEffect(() => {
                             </div>
                         </div>
                     </div>
+                    <ToastContainer/>
                 </section>
             </Layout>
         </>

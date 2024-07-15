@@ -1,17 +1,22 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect, useRef } from "react";
+import emailjs from "@emailjs/browser";
 import 'react-phone-input-2/lib/style.css';
 import PhoneInput from 'react-phone-input-2';
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import { Link } from "react-router-dom";
 import bgimg from "./assets/img/banner/banner_img.png";
-import bannerbg from  "./assets/img/banner/banner_bg.jpg"
-import img1 from "./assets/img/banner/banner_shape01.png"
-import img2 from "./assets/img/banner/banner_shape02.png"
-import img3 from "./assets/img/banner/banner_shape03.png"
-import img4 from "./assets/img/banner/banner_shape04.png"
-import img5 from "./assets/img/banner/banner_shape05.png"
-import img6 from "./assets/img/banner/banner_shape06.png"
-import img7 from "./assets/img/banner/banner_shape07.png"
+import bannerbg from "./assets/img/banner/banner_bg.jpg";
+import img1 from "./assets/img/banner/banner_shape01.png";
+import img2 from "./assets/img/banner/banner_shape02.png";
+import img3 from "./assets/img/banner/banner_shape03.png";
+import img4 from "./assets/img/banner/banner_shape04.png";
+import img5 from "./assets/img/banner/banner_shape05.png";
+import img6 from "./assets/img/banner/banner_shape06.png";
+import img7 from "./assets/img/banner/banner_shape07.png";
+
+
 
 const Banner1 = () => {
     const [step, setStep] = useState(1);
@@ -24,6 +29,8 @@ const Banner1 = () => {
         description: '',
         hearAboutUs: ''
     });
+    const formRef = useRef();
+
     const [errors, setErrors] = useState({});
     const [inputStyle, setInputStyle] = useState({
         width: '100%',
@@ -53,13 +60,12 @@ const Banner1 = () => {
         };
 
         window.addEventListener('resize', handleResize);
-        handleResize(); // Set initial style
+        handleResize(); 
 
         return () => {
             window.removeEventListener('resize', handleResize);
         };
     }, []);
-
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -108,8 +114,30 @@ const Banner1 = () => {
         setStep(step - 1);
     };
 
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+       
+
+        emailjs.sendForm(
+            "service_xs9j53r",
+            "template_tu150qc",
+            formRef.current,
+            "SsMpfjuxC-v27-HjT"
+        ).then(
+            (result) => {
+                console.log(result.text);
+                console.log("message sent");
+                toast.success("Email Sent")
+            },
+            (error) => {
+                console.log(error.text);
+            }
+        );
+    };
+
     return (
-        <section className="banner-area banner-bg" style={{backgroundImage: './assets/img/banner/banner_bg.jpg'}}>
+        <section className="banner-area banner-bg" style={{ backgroundImage: `url(${bannerbg})` }}>
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-lg-6">
@@ -121,7 +149,7 @@ const Banner1 = () => {
                         <div className="banner-content">
                             <span className="sub-title wow fadeInUp" data-wow-delay=".2s">Amazing <strong>Starts</strong> Here</span>
                             <h2 className="title wow fadeInUp" data-wow-delay=".4s">Designing the Future, One Pixel at a Time</h2>
-                            <form onSubmit={nextStep} className="">
+                            <form ref={formRef} onSubmit={step === 5 ? sendEmail : nextStep} className="">
                             {step === 1 && (
                         <div className="flex flex-col md:flex-row gap-y-4 mb-4 gap-x-4">
                             <div className="relative z-0 w-full group">
@@ -152,7 +180,7 @@ const Banner1 = () => {
                     )}
                     {step === 2 && (
                         <div className="flex flex-col md:flex-row gap-y-4 mb-4 gap-x-4">
-                        <div className="relative z-0 w-full group">
+                        <div className="relative z-10 w-full group">
                                 <PhoneInput
                                     country={'us'}
                                     value={formData.phone}
@@ -230,7 +258,12 @@ const Banner1 = () => {
                         </div>
                     )}
 
-
+                    <input type="hidden" name="firstName" value={formData.firstName} />
+                                <input type="hidden" name="email" value={formData.email} />
+                                <input type="hidden" name="phone" value={formData.phone} />
+                                <input type="hidden" name="company" value={formData.company} />
+                                <input type="hidden" name="website" value={formData.website} />
+                                <input type="hidden" name="description" value={formData.description} />
 
                     <div className={`flex  ${ step > 1 && 'justify-center'} md:justify-start gap-x-4 mt-0`}>
                         {step > 1 && (
@@ -239,21 +272,22 @@ const Banner1 = () => {
                         <button type="submit" data-wow-delay=".6s" className="btn wow fadeInUp">{step === 5 ? 'SUBMIT' : 'NEXT'} <span/></button>
                     </div>
 
+
                             </form>
-                            {/* <Link to="/contact" className="btn wow fadeInUp" data-wow-delay=".6s">Contact Us <span /></Link> */}
+                            <div className="banner-shape-wrap">
+                                <img src={img1} alt="" className="shape-one" />
+                                <img src={img2} alt="" className="shape-two" />
+                                <img src={img3} alt="" className="shape-three" />
+                                <img src={img4} alt="" className="shape-four" />
+                                <img src={img5} alt="" className="shape-five" />
+                                <img src={img6} alt="" className="shape-six" />
+                                <img src={img7} alt="" className="shape-seven" />
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="banner-shape-wrap">
-                <img src={img1} alt="" />
-                <img src={img2} alt="" className="animationFramesOne" />
-                <img src={img3} alt="" className="contactSwimmer" />
-                <img src={img4} alt="" className="rotateme" />
-                <img src={img5} alt="" className="animation1" />
-                <img src={img6} alt="" className="ribbonRotate" />
-                <img src={img7} alt="" className="float-bob-x" />
-            </div>
+            <ToastContainer className="custom-toast-container" />
         </section>
     );
 };
