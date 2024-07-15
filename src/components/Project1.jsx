@@ -64,10 +64,10 @@ export default function Project1() {
                         <div className="col-xl-4">
                             <div className="project-content">
                                 <div className="section-title white-title mb-30">
-                                    <span className="sub-title">Our Complete Craft</span>
-                                    <h2 className="title">Some of Our Work in Craft Digital Agency</h2>
+                                    <span className="sub-title-white">A Collection of Our Finest Work</span>
+                                    <h2 className="title">Limitless Creativity, Exceptional Results</h2>
                                 </div>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
+                                <p>Explore the intersection of creativity and innovation, where ideas come to life and brands thrive. Dive into our portfolio, where passion meets purpose, and discover how we've helped businesses like yours achieve remarkable results. Get inspired by the success stories within, and let's co-create your own!</p>
                                 <div className="content-bottom">
                                     <Link to="/about-me" className="btn">View All Project <span /></Link>
                                     <div className="project-nav">
