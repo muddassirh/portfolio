@@ -1,6 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
+import emailjs from "@emailjs/browser";
 import 'react-phone-input-2/lib/style.css';
 import PhoneInput from 'react-phone-input-2';
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import newsletterBgShape from './assets/img/images/newsletter_bg_shape.png'; // Adjust the path according to your file structure
 import newsletterShape01 from './assets/img/images/newsletter_shape01.png';
 import newsletterShape02 from './assets/img/images/newsletter_shape02.png';
@@ -21,6 +24,8 @@ export default function Newsletter1() {
         description: '',
         hearAboutUs: ''
     });
+
+    const formRef = useRef();
     const [errors, setErrors] = useState({});
     const [inputStyle, setInputStyle] = useState({
         width: '100%',
@@ -104,6 +109,27 @@ export default function Newsletter1() {
         setStep(step - 1);
     };
 
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+    
+        emailjs.sendForm(
+            "service_xs9j53r",
+            "template_tu150qc",
+            formRef.current,
+            "SsMpfjuxC-v27-HjT"
+        ).then(
+            (result) => {
+                console.log(result.text);
+                console.log("message sent");
+                toast.success("Email Sent")
+            },
+            (error) => {
+                console.log(error.text);
+            }
+        );
+    };
+
     return (
         <>
             <section className="newsletter-area px-24 pt-110 pb-120 ">
@@ -123,7 +149,7 @@ export default function Newsletter1() {
                                     <input type="email" placeholder="Enter your email address" />
                                     <button type="submit" className="btn">Subscribe <span /></button>
                                 </form> */}
-                                <form onSubmit={nextStep} className="">
+                                <form ref={formRef} onSubmit={step === 5 ? sendEmail : nextStep} className="">
                             {step === 1 && (
                         <div className="flex flex-col md:flex-row gap-y-4 mb-4 gap-x-4">
                             <div className="relative z-0 w-full group">
@@ -154,7 +180,7 @@ export default function Newsletter1() {
                     )}
                     {step === 2 && (
                         <div className="flex flex-col md:flex-row gap-y-4 mb-4 gap-x-4">
-                        <div className="relative z-0 w-full group">
+                        <div className="relative z-10 w-full group">
                                 <PhoneInput
                                     country={'us'}
                                     value={formData.phone}
@@ -232,7 +258,12 @@ export default function Newsletter1() {
                         </div>
                     )}
 
-
+                    <input type="hidden" name="firstName" value={formData.firstName} />
+                                <input type="hidden" name="email" value={formData.email} />
+                                <input type="hidden" name="phone" value={formData.phone} />
+                                <input type="hidden" name="company" value={formData.company} />
+                                <input type="hidden" name="website" value={formData.website} />
+                                <input type="hidden" name="description" value={formData.description} />
 
                     <div className={`flex  ${ step > 1 && 'justify-center'} md:justify-start gap-x-4 mt-0`}>
                         {step > 1 && (
@@ -240,6 +271,7 @@ export default function Newsletter1() {
                         )}
                         <button type="submit" data-wow-delay=".6s" className="btn wow fadeInUp">{step === 5 ? 'SUBMIT' : 'NEXT'} <span/></button>
                     </div>
+
 
                             </form>
                             </div>
@@ -256,6 +288,7 @@ export default function Newsletter1() {
                     <img src={newsletterShape05} alt="" className="shape-five" />
                     <img src={newsletterShape06} alt="" className="shape-six" />
                 </div>
+                <ToastContainer/>
             </section>
         </>
     )

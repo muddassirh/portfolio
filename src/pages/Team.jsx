@@ -1,6 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from "react";
+import emailjs from "@emailjs/browser";
 import 'react-phone-input-2/lib/style.css';
 import PhoneInput from 'react-phone-input-2';
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { Link } from 'react-router-dom';
 import Layout from '../components/Layout/Layout';
 
@@ -23,6 +26,7 @@ import brandImg4 from '../components/assets/img/brand/h3_brand_img04.png';
 import brandImg5 from '../components/assets/img/brand/h3_brand_img05.png';
 import brandImg6 from '../components/assets/img/brand/h3_brand_img06.png';
 import Newsletter1 from '../components/Newsletter1';
+import zIndex from "@mui/material/styles/zIndex";
 
 export default function Team() {
 
@@ -36,6 +40,9 @@ export default function Team() {
         description: '',
         hearAboutUs: ''
     });
+
+    const formRef = useRef();
+
     const [errors, setErrors] = useState({});
     const [inputStyle, setInputStyle] = useState({
         width: '100%',
@@ -44,7 +51,8 @@ export default function Team() {
         borderRadius: '0.5rem',
         borderColor: '#d1d5db',
         backgroundColor: '#FAFAFA',
-        color: '#000'
+        color: '#000',
+        
     });
 
     useEffect(() => {
@@ -120,6 +128,28 @@ export default function Team() {
     };
 
 
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+    
+        emailjs.sendForm(
+            "service_xs9j53r",
+            "template_tu150qc",
+            formRef.current,
+            "SsMpfjuxC-v27-HjT"
+        ).then(
+            (result) => {
+                console.log(result.text);
+                console.log("message sent");
+                toast.success("Email Sent")
+            },
+            (error) => {
+                console.log(error.text);
+            }
+        );
+    };
+
+
     return (
         <Layout breadcrumbTitle="Team Members" footerStyle={2} breadcrumbCls=" breadcrumb-area-two pt-175">
             {/* community-area */}
@@ -183,7 +213,7 @@ export default function Team() {
                     <div className="row justify-content-center">
                         <div className="col-lg-8">
                             <div className="newsletter-form">
-                                <form onSubmit={nextStep} className="">
+                            <form ref={formRef} onSubmit={step === 5 ? sendEmail : nextStep} className="">
                             {step === 1 && (
                         <div className="flex flex-col md:flex-row gap-y-4 mb-4 gap-x-4">
                             <div className="relative z-0 w-full group">
@@ -214,7 +244,7 @@ export default function Team() {
                     )}
                     {step === 2 && (
                         <div className="flex flex-col md:flex-row gap-y-4 mb-4 gap-x-4">
-                        <div className="relative z-0 w-full group">
+                        <div className="relative z-10 w-full group">
                                 <PhoneInput
                                     country={'us'}
                                     value={formData.phone}
@@ -292,7 +322,12 @@ export default function Team() {
                         </div>
                     )}
 
-
+                    <input type="hidden" name="firstName" value={formData.firstName} />
+                                <input type="hidden" name="email" value={formData.email} />
+                                <input type="hidden" name="phone" value={formData.phone} />
+                                <input type="hidden" name="company" value={formData.company} />
+                                <input type="hidden" name="website" value={formData.website} />
+                                <input type="hidden" name="description" value={formData.description} />
 
                     <div className={`flex  ${ step > 1 && 'justify-center'} md:justify-start gap-x-4 mt-0`}>
                         {step > 1 && (
@@ -300,6 +335,7 @@ export default function Team() {
                         )}
                         <button type="submit" data-wow-delay=".6s" className="btn wow fadeInUp">{step === 5 ? 'SUBMIT' : 'NEXT'} <span/></button>
                     </div>
+
 
                             </form>
                             </div>
@@ -313,6 +349,7 @@ export default function Team() {
                         </div>
                     </div>
                 </div>
+                <ToastContainer/>
             </section>
             {/* newsletter-area-end */}
 
