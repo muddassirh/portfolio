@@ -15,6 +15,7 @@ import newsletterShape06 from './assets/img/images/newsletter_shape06.png';
 export default function Newsletter1() {
 
     const [step, setStep] = useState(1);
+    const [submitted, setSubmitted] = useState(false)
     const [formData, setFormData] = useState({
         firstName: '',
         email: '',
@@ -112,7 +113,7 @@ export default function Newsletter1() {
     const sendEmail = (e) => {
         e.preventDefault();
     
-    
+    // setSubmitted(true)
         emailjs.sendForm(
             "service_xs9j53r",
             "template_tu150qc",
@@ -122,12 +123,17 @@ export default function Newsletter1() {
             (result) => {
                 console.log(result.text);
                 console.log("message sent");
+                setSubmitted(true)
                 toast.success("Email Sent")
             },
             (error) => {
                 console.log(error.text);
             }
         );
+    };
+
+    const refreshPage = () => {
+        window.location.reload();
     };
 
     return (
@@ -149,7 +155,8 @@ export default function Newsletter1() {
                                     <input type="email" placeholder="Enter your email address" />
                                     <button type="submit" className="btn">Subscribe <span /></button>
                                 </form> */}
-                                <form ref={formRef} onSubmit={step === 5 ? sendEmail : nextStep} className="">
+                                {!submitted ? 
+                                    <form ref={formRef} onSubmit={step === 5 ? sendEmail : nextStep} className="">
                             {step === 1 && (
                         <div className="flex flex-col md:flex-row gap-y-4 mb-4 gap-x-4">
                             <div className="relative z-0 w-full group">
@@ -273,7 +280,13 @@ export default function Newsletter1() {
                     </div>
 
 
-                            </form>
+                            </form> : 
+                            <div className="thank-you-message">
+                                <h3 className="text-3xl text-center font-bold text-white mb-4">THANK YOU!</h3>
+                                <p className="text-2xl text-white  mb-4">Your form has been successfully submitted. We will get back to you soon.</p>
+                                <button onClick={refreshPage} className="text-blue-600 text-white  underline">Go back</button>
+                            </div>
+                            }
                             </div>
                         </div>
                     </div>
