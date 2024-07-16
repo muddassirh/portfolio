@@ -12,6 +12,7 @@ import phoneIcon from '../components/assets/img/icon/phone_icon03.png';
 
 export default function Contact() {
 
+    const [submitted, setSubmitted] = useState(false)
   const [inputStyle, setInputStyle] = useState({
     width: '100%',
     padding: '2.5rem',
@@ -84,7 +85,7 @@ const handlePhoneChange = (value) => {
 const sendEmail = (e) => {
     e.preventDefault();
 
-
+  
     emailjs.sendForm(
         "service_xs9j53r",
         "template_tu150qc",
@@ -94,6 +95,7 @@ const sendEmail = (e) => {
         (result) => {
             console.log(result.text);
             console.log("message sent");
+            setSubmitted(true)
             toast.success("Email Sent")
         },
         (error) => {
@@ -102,6 +104,10 @@ const sendEmail = (e) => {
     );
 };
 
+
+const refreshPage = () => {
+    window.location.reload();
+};
     return (
         <>
             <Layout breadcrumbTitle="Contact Us" footerStyle={2} bShape breadcrumbCls="breadcrumb-area-four pt-175 pb-160">
@@ -137,7 +143,8 @@ const sendEmail = (e) => {
                                             </div>
                                             <button type="submit" className="btn">Send Message <span /></button>
                                         </form> */}
-                                        <form ref={formRef} onSubmit={sendEmail} className="">
+                                        {!submitted ? 
+                                            <form ref={formRef} onSubmit={sendEmail} className="">
                 
                 <div className="flex flex-col md:flex-row gap-y-4 md:my-4 gap-x-4">
                     <div className="relative z-0 w-full group">
@@ -247,7 +254,13 @@ const sendEmail = (e) => {
                 <div className={`flex md:justify-start gap-x-4`}>
                 <button type="submit" className='btn'>SUBMIT<span/></button>
             </div>
-        </form>
+        </form> : 
+        <div className="thank-you-message">
+                                <h3 className="text-3xl text-center font-bold mb-4">THANK YOU!</h3>
+                                <p className="text-2xl  mb-4">Your form has been successfully submitted. We will get back to you soon.</p>
+                                <button onClick={refreshPage} className="text-blue-600   underline">Go back</button>
+                            </div>
+        }
                                     </div>
                                     <div id="contact-map">
                                         <iframe 
