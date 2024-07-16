@@ -141,7 +141,7 @@ const Banner1 = () => {
     };
 
     return (
-        <section className="banner-area banner-bg" style={{ backgroundImage: `url(${bannerbg})` }}>
+        <section className="sm:banner-area banner-bg" style={{ backgroundImage: `url(${bannerbg})` }}>
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-lg-6">

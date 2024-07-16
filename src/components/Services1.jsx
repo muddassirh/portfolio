@@ -7,7 +7,7 @@ import icon4 from './assets/img/icon/services_icon04.png';
 export default function Services1() {
     return (
         <>
-            <section className="services-area px-24 pt-35 pb-95">
+            <section className="services-area sm:px-24 pt-35 pb-95">
                 <div className="container ">
                     <div className="row justify-content-center">
                         <div className="col-xl-3 col-lg-4 col-md-6 col-sm-10">
