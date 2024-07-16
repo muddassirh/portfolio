@@ -1,37 +1,61 @@
 import React, { useEffect } from 'react';
-
+// import './MouseCursor.css'; // Assuming you have styles for mouse cursor
 
 const MouseCursor = () => {
     useEffect(() => {
         const handleMouseMove = (e) => {
-            const rippleContainer = document.querySelector('.ripple-container');
-            const ripple = document.createElement('div');
-            ripple.className = 'ripple';
+            const innerCursor = document.querySelector('.cursor-inner');
+            const outerCursor = document.querySelector('.cursor-outer');
 
-            // Randomly select an element type
-            const elements = ['fire'];
-            const randomElement = elements[Math.floor(Math.random() * elements.length)];
-            ripple.classList.add(randomElement);
+            if (!innerCursor || !outerCursor) return;
 
-            ripple.style.left = `${e.clientX - 15}px`; // Center the ripple
-            ripple.style.top = `${e.clientY - 15}px`; // Center the ripple
-
-            rippleContainer.appendChild(ripple);
-
-            setTimeout(() => {
-                ripple.remove();
-            }, 1000); // Match this with the animation duration
+            outerCursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+            innerCursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
         };
 
-        document.addEventListener('mousemove', handleMouseMove);
+        const handleElementMouseEnter = () => {
+            const innerCursor = document.querySelector('.cursor-inner');
+            const outerCursor = document.querySelector('.cursor-outer');
 
-        // Cleanup function
+            if (!innerCursor || !outerCursor) return;
+
+            innerCursor.classList.add('cursor-hover');
+            outerCursor.classList.add('cursor-hover');
+        };
+
+        const handleElementMouseLeave = (e) => {
+            const innerCursor = document.querySelector('.cursor-inner');
+            const outerCursor = document.querySelector('.cursor-outer');
+
+            if (!innerCursor || !outerCursor) return;
+
+            if (e.target.closest('.cursor-pointer')) return;
+
+            innerCursor.classList.remove('cursor-hover');
+            outerCursor.classList.remove('cursor-hover');
+        };
+
+        window.addEventListener('mousemove', handleMouseMove);
+        document.querySelectorAll('button, a, .cursor-pointer').forEach((element) => {
+            element.addEventListener('mouseenter', handleElementMouseEnter);
+            element.addEventListener('mouseleave', handleElementMouseLeave);
+        });
+
         return () => {
-            document.removeEventListener('mousemove', handleMouseMove);
+            window.removeEventListener('mousemove', handleMouseMove);
+            document.querySelectorAll('button, a, .cursor-pointer').forEach((element) => {
+                element.removeEventListener('mouseenter', handleElementMouseEnter);
+                element.removeEventListener('mouseleave', handleElementMouseLeave);
+            });
         };
     }, []);
 
-    return <div className="ripple-container"></div>;
+    return (
+        <>
+            <div className="mouseCursor cursor-outer" style={{ visibility: 'visible' }} />
+            <div className="mouseCursor cursor-inner" style={{ visibility: 'visible' }} />
+        </>
+    );
 };
 
 export default MouseCursor;
