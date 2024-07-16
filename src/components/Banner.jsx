@@ -136,6 +136,10 @@ const Banner1 = () => {
         );
     };
 
+    const refreshPage = () => {
+        window.location.reload();
+    };
+
     return (
         <section className="banner-area banner-bg" style={{ backgroundImage: `url(${bannerbg})` }}>
             <div className="container">
@@ -284,7 +288,7 @@ const Banner1 = () => {
                             : <div className="thank-you-message">
                                 <h3 className="text-3xl text-center font-bold mb-4">THANK YOU!</h3>
                                 <p className="text-2xl  mb-4">Your form has been successfully submitted. We will get back to you soon.</p>
-                                <Link to="/" className="text-blue-600 underline">Go back to home</Link>
+                                <button onClick={refreshPage} className="text-blue-600 underline">Go back</button>
                             </div>
                         }
                         </div>
