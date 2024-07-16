@@ -117,7 +117,7 @@ const Banner1 = () => {
         e.preventDefault();
 
         
-
+// setSubmitted(true)
         emailjs.sendForm(
             "service_xs9j53r",
             "template_tu150qc",
@@ -267,22 +267,11 @@ const Banner1 = () => {
                             {errors.hearAboutUs && <span className="text-red-500">{errors.hearAboutUs}</span>}
                         </div>
                     )}
-                    <div className="mt-4">
+                    <div className={`flex  ${ step > 1 && 'justify-center'} md:justify-start gap-x-4 mt-4`}>
                         {step > 1 && (
-                            <button
-                                type="button"
-                                onClick={prevStep}
-                                className="text-white bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-600 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800"
-                            >
-                                Previous
-                            </button>
+                            <button type="button" onClick={prevStep} className="btn wow fadeInUp" data-wow-delay=".6s">BACK <span/></button>
                         )}
-                        <button
-                            type="submit"
-                            className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
-                        >
-                            {step === 5 ? "Submit" : "Next"}
-                        </button>
+                        <button type="submit" data-wow-delay=".6s" className="btn wow fadeInUp">{step === 5 ? 'SUBMIT' : 'NEXT'} <span/></button>
                     </div>
                 </form>
                             : <div className="thank-you-message">
