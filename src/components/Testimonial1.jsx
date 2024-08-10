@@ -84,15 +84,15 @@ export default function Testimonial1() {
                             <SwiperSlide>
                                 <div className="testimonial-item">
                                     <div className="testimonial-content">
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and “</p>
+                                        <p>They did a great job building our new website, we are very happy and it looks great. The price was great also.“</p>
                                     </div>
                                     <div className="testimonial-info">
                                         <div className="thumb">
                                             <img src={TestAvatar2} alt="" />
                                         </div>
                                         <div className="content">
-                                            <h4 className="title">Davis Levin</h4>
-                                            <p>CEO Kawasaki Inc.</p>
+                                            <h4 className="title">Tyson Bellamy</h4>
+                                            <p>CEO T Y</p>
                                         </div>
                                     </div>
                                 </div>
@@ -116,15 +116,15 @@ export default function Testimonial1() {
                             <SwiperSlide>
                                 <div className="testimonial-item">
                                     <div className="testimonial-content">
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and “</p>
+                                        <p>Muhammad is a good guy. Does really excellent work and will definitely use again. He worked on some flash (not easy) and HTML elements. Very pro look“</p>
                                     </div>
                                     <div className="testimonial-info">
                                         <div className="thumb">
                                             <img src={TestAvatar4} alt="" />
                                         </div>
                                         <div className="content">
-                                            <h4 className="title">Davis Levin</h4>
-                                            <p>CEO Kawasaki Inc.</p>
+                                            <h4 className="title">Phillip Colin</h4>
+                                            <p>P C</p>
                                         </div>
                                     </div>
                                 </div>
@@ -132,15 +132,15 @@ export default function Testimonial1() {
                             <SwiperSlide>
                                 <div className="testimonial-item">
                                     <div className="testimonial-content">
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and “</p>
+                                        <p>Great web developer! Great communication and very quick! Definetly will do business again.“</p>
                                     </div>
                                     <div className="testimonial-info">
                                         <div className="thumb">
                                             <img src={TestAvatar2} alt="" />
                                         </div>
                                         <div className="content">
-                                            <h4 className="title">Davis Levin</h4>
-                                            <p>CEO Kawasaki Inc.</p>
+                                            <h4 className="title">Whilly Bermudez</h4>
+                                            <p>CEO. Whilly Bermudez</p>
                                         </div>
                                     </div>
                                 </div>
@@ -148,15 +148,15 @@ export default function Testimonial1() {
                             <SwiperSlide>
                                 <div className="testimonial-item">
                                     <div className="testimonial-content">
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and “</p>
+                                        <p>Excellent vendor who works hard to complete the project on time and on budget. No complaints at all and would use again in the future.“</p>
                                     </div>
                                     <div className="testimonial-info">
                                         <div className="thumb">
                                             <img src={TestAvatar3} alt="" />
                                         </div>
                                         <div className="content">
-                                            <h4 className="title">Davis Levin</h4>
-                                            <p>CEO Kawasaki Inc.</p>
+                                            <h4 className="title">Dan G.</h4>
+                                            <p>DG45</p>
                                         </div>
                                     </div>
                                 </div>

@@ -6793,7 +6793,11 @@ label {
 .footer-bottom {
     background: var(--tg-white);
 }
-
+.footer-us{
+    margin-bottom: 20px;
+    color        : var(--tg-white);
+    font-size    : 14px;
+}
 .footer-bottom p {
     margin-bottom: 0;
     color        : var(--tg-white);
