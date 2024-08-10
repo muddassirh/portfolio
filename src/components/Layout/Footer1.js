@@ -21,17 +21,10 @@ const Footer1 = () => {
                                     </div>
                                     <div className='footer-us'>
                                     At Genxsmedia Solutions, we've spent over 15 years perfecting our craft, providing innovative and results-driven creative design, frontend development, branding, and AI solutions to businesses seeking to elevate their online presence and drive growth.
-                                    </div>
-                                    <div className="footer-social">
-                                        <ul className="list-wrap">
-                                            <li><Link to="/#"><i className="fab fa-facebook-f" /></Link></li>
-                                            <li className="active"><Link to="/#"><i className="fab fa-twitter" /></Link></li>
-                                            <li><Link to="/#"><i className="fab fa-linkedin-in" /></Link></li>
-                                        </ul>
-                                    </div>
+                                    </div>                                    
                                 </div>
                             </div>
-                            <div className="col-lg-4 col-sm-6">
+                            <div className="col-lg-2 col-sm-6">
                                 <div className="footer-widget">
                                     <h4 className="fw-title">Navigate</h4>
                                     <div className="fw-link">
@@ -43,13 +36,25 @@ const Footer1 = () => {
                                     </div>
                                 </div>
                             </div>
+                            <div className="col-lg-2 col-sm-6">
+                                <div className="footer-widget">
+                                    <h4 className="fw-title">We Are Social</h4>
+                                    <div className="footer-social">
+                                        <ul className="list-wrap">
+                                            <li><Link to="/#"><i className="fab fa-facebook-f" /></Link></li>
+                                            <li className="active"><Link to="/#"><i className="fab fa-twitter" /></Link></li>
+                                            <li><Link to="/#"><i className="fab fa-linkedin-in" /></Link></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                             <div className="col-lg-4 col-sm-6">
                                 <div className="footer-widget">
                                     <h4 className="fw-title">You Can Reach Us</h4>                                    
                                     <div className="footer-about">
                                         <ul className="list-wrap">
                                             <li><img src={phoneIcon} alt="Phone Icon" /><Link to="tel:0123456789">8 (495) 989—20—11</Link></li>
-                                            <li><img src={mailIcon} alt="Mail Icon" /><Link to="mailto:company@gmail.com">company@gmail.com</Link></li>
+                                            <li><img src={mailIcon} alt="Mail Icon" /><Link to="mailto:marketing@genxsmedia.com">marketing@genxsmedia.com</Link></li>
                                             <li><img src={locationIcon} alt="Location Icon" /><span>Ranelagh Place, Liverpool, L3 5UL, England</span></li>
                                         </ul>
                                     </div>                                   

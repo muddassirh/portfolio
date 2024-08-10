@@ -15,10 +15,10 @@ export default function Consultation1() {
                             <div className="consultation-content">
                                 <div className="section-title mb-25">
                                     <img src={ConsultIcon1} alt="" />
-                                    <span className="sub-title">95% Accuracy</span>
-                                    <h2 className="title">Worldwide Best Digital Marketing Agency</h2>
+                                    <span className="sub-title">Committed to Delivering Results</span>
+                                    <h2 className="title">Elevate Your Online Presence</h2>
                                 </div>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and</p>
+                                <p>Our Think. Ideate. Elevate. approach ensures that our clients receive tailored solutions that drive real growth, increase brand visibility, and foster meaningful connections with their audiences. Let us help you achieve your goals and elevate your success!</p>
                                 <div className="consultation-list">
                                     <ul className="list-wrap">
                                         <li>
@@ -27,16 +27,16 @@ export default function Consultation1() {
                                                 <span>12x</span>
                                             </div>
                                             <div className="content">
-                                                <h6 className="title">Faster Order Processing</h6>
+                                                <h6 className="title">Faster Reply</h6>
                                             </div>
                                         </li>
                                         <li>
                                             <div className="icon">
                                                 <img src={ConsultIcon3} alt="" />
-                                                <span>95%</span>
+                                                <span>100%</span>
                                             </div>
                                             <div className="content">
-                                                <h6 className="title">Processing Accuracy</h6>
+                                                <h6 className="title">Provide Free Quote</h6>
                                             </div>
                                         </li>
                                     </ul>
