@@ -14,7 +14,7 @@ const Footer = () => {
                 <p className='text-[14px]'>The company is owned by Mudd a renowned and top-rated UX/UI designer. Providing complete solutions to all your problem. If you have projects get a free quote today.</p>
             </div>
             <div className='text-center md:text-right text-[14px]'>
-                <p>Copyright Genxsmedia 2023. All Rights Reserved.</p>
+                <p>Copyright Genxsmedia 2024. All Rights Reserved.</p>
             </div>
         </div>
         </div>
