@@ -425,6 +425,61 @@ label {
     color: var(--tg-white);
 }
 
+.btnblack {
+    user-select   : none;
+    background    : var(--tg-black) none repeat scroll 0 0;
+    border        : medium none;
+    border-radius : 20px;
+    color         : var(--tg-white);
+    cursor        : pointer;
+    display       : inline-block;
+    font-size     : 16px;
+    font-weight   : 600;
+    letter-spacing: 0;
+    line-height   : 1;
+    margin-bottom : 0px;
+    padding       : 28px 55px;
+    text-align    : center;
+    text-transform: capitalize;
+    touch-action  : manipulation;
+    transition    : all 700ms ease 0s;
+    vertical-align: middle;
+    white-space   : nowrap;
+    position      : relative;
+    overflow      : hidden;
+    z-index       : 1;
+}
+
+
+.btnblack span {
+    background        : var(--tg-primary-color) none repeat scroll 0 0;
+    border-radius     : 50%;
+    display           : block;
+    height            : 0;
+    position          : absolute;
+    transform         : translate(-50%, -50%);
+    -moz-transform    : translate(-50%, -50%);
+    -webkit-transform : translate(-50%, -50%);
+    -ms-transform     : translate(-50%, -50%);
+    -o-transform      : translate(-50%, -50%);
+    transition        : width 0.6s ease 0s, height 0.6s ease 0s;
+    -moz-transition   : width 0.6s ease 0s, height 0.6s ease 0s;
+    -webkit-transition: width 0.6s ease 0s, height 0.6s ease 0s;
+    -ms-transition    : width 0.6s ease 0s, height 0.6s ease 0s;
+    -o-transition     : width 0.6s ease 0s, height 0.6s ease 0s;
+    width             : 0;
+    z-index           : -1;
+}
+
+.btnblack:hover>span {
+    height: 562.5px;
+    width : 562.5px;
+}
+
+.btnblack:hover {
+    color: var(--tg-white);
+}
+
 .breadcrumb>.active {
     color: var(--tg-primary-color);
 }
@@ -2474,7 +2529,7 @@ label {
 
 .about-content-bottom .read-more-btn {
     width     : 45%;
-    text-align: right;
+    /* text-align: right; */
 }
 
 .about-content-bottom .read-more-btn .btn {
@@ -7091,3 +7146,4 @@ label {
         opacity: 0.9;
     }
 }
+
