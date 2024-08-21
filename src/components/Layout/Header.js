@@ -44,6 +44,7 @@ export default function Header({ scroll, headercls }) {
                                                     <li><Link to="/team-details">Team Details</Link></li>
                                                     <li><Link to="/project-details">Portfolio Details</Link></li>
                                                     <li><Link to="/services-details">Services Details</Link></li>
+                                                    <li><Link to="/webdesign">Web Design</Link></li>
                                                     <li><Link to="/contact">Contact Us</Link></li>
                                                 </ul>
                                             </li>
