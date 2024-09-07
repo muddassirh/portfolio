@@ -4,7 +4,7 @@ const PageHead = ({ headTitle }) => {
     return (
         <head>
             <title>
-                {headTitle ? headTitle : "Xolio - Creative Agency HTML5 Template"}
+                {headTitle ? headTitle : "Genxsmedia - Fullstack Design and Development Agency"}
             </title>
         </head>
     );

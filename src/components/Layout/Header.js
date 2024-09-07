@@ -37,17 +37,16 @@ export default function Header({ scroll, headercls }) {
                                             </li>
                                             <li><Link to="/about-us">About Us</Link></li>
                                             <li className="menu-item-has-children">
-                                                <Link to="/">Pages</Link>
+                                                <Link to="/">Expertise</Link>
                                                 <ul className="sub-menu">
-                                                    <li><Link to="/about-me">About Me</Link></li>
-                                                    <li><Link to="/team">Team Page</Link></li>
-                                                    <li><Link to="/team-details">Team Details</Link></li>
-                                                    <li><Link to="/project-details">Portfolio Details</Link></li>
-                                                    <li><Link to="/services-details">Services Details</Link></li>
-                                                    <li><Link to="/webdesign">Web Design</Link></li>
-                                                    <li><Link to="/contact">Contact Us</Link></li>
+                                                    <li><a href="/about-me">Fullstack Design and Development</a></li>
+                                                    <li><a href="/about-me">UX/UI Design</a></li>
+                                                    <li><a href="/team">Print Media Design</a></li>
+                                                    <li><a href="/team-details">Digital Marketing</a></li>
+                                                    <li><a href="/project-details">Mobile app Development</a></li>
                                                 </ul>
                                             </li>
+                                            <li><Link to="/about-us">Work</Link></li>
                                             {/* <li className="menu-item-has-children">
                                                 <Link to="/">News</Link>
                                                 <ul className="sub-menu">

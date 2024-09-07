@@ -49,7 +49,7 @@ const Header = () => {
               to="/about-me"
               className={({ isActive }) => (isActive ? "text-blue-700" : "")}
             >
-              About Me
+              About Us
             </NavLink>
           </li>
           <li>
@@ -57,7 +57,7 @@ const Header = () => {
               to="/contact"
               className={({ isActive }) => (isActive ? "text-blue-700" : "")}
             >
-              Contact Me
+              Contact Us
             </NavLink>
           </li>
         </ul>
@@ -88,7 +88,7 @@ const Header = () => {
               to="/about-me"
               className={({ isActive }) => (isActive ? "text-blue-700" : "")}
             >
-              About Me
+              About Us
             </NavLink>
           </li>
           <li>
@@ -96,7 +96,7 @@ const Header = () => {
               to="/contact"
               className={({ isActive }) => (isActive ? "text-blue-700" : "")}
             >
-              Contact Me
+              Contact Us
             </NavLink>
           </li>
         </ul>
