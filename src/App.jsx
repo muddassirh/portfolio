@@ -10,6 +10,7 @@ import TeamDetails from "./pages/TeamDetails";
 import ProjectDetails from "./pages/ProjectDetails";
 import ServiceDetails from "./pages/ServicesDetails";
 import WebDesign from "./pages/WebDesign";
+import FullStackDesignDevelopment from "./pages/FullStackDesignDevelopment";
 function App() {
   return (
     <>
@@ -25,6 +26,7 @@ function App() {
           <Route path="/services-details"  element={<ServiceDetails/>}></Route>
           <Route path="/portfolio" element={<Portfolio />}></Route>
           <Route path="/webdesign" element={<WebDesign/>}></Route>
+          <Route path="/full-stack-design-development" element={<FullStackDesignDevelopment/>}></Route>
           <Route path="/contact" element={<Contact />}></Route>
         </Routes>
       </BrowserRouter>
