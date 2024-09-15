@@ -39,7 +39,7 @@ export default function Header({ scroll, headercls }) {
                                             <li className="menu-item-has-children">
                                                 <Link to="/">Expertise</Link>
                                                 <ul className="sub-menu">
-                                                    <li><a href="/about-me">Fullstack Design and Development</a></li>
+                                                    <li><a href="/full-stack-design-development">Fullstack Design and Development</a></li>
                                                     <li><a href="/about-me">UX/UI Design</a></li>
                                                     <li><a href="/team">Print Media Design</a></li>
                                                     <li><a href="/team-details">Digital Marketing</a></li>

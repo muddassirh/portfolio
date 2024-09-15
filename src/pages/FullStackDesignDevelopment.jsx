@@ -96,13 +96,13 @@ const swiperOptions = {
 function FullStackDesignDevelopment() {
   return (
     <Layout breadcrumbTitle="Fullstack Design and Development" breadcrumbCls=" breadcrumb-area-two pt-175">
-          <section className="webdesign-area px-0 pt-120">
+          <section className="webdesign-area px-0 pt-10 md:pt-120">
                <div className="container mb-12">
                 <div className="row justify-content-center ">
                     <div className="col-xl-6 col-lg-8 ">
                         <div className="section-title title-style-two text-center mb-55">
                         <span className="sub-title">Front-End Development Services</span>
-                            <h2 className="text-4xl">Elevate your brand with our expert full-stack design and development</h2>
+                            <h2 className="text-[1.5rem] md:text-4xl">Elevate your brand with our expert full-stack design and development</h2>
                             <p className='text-lg'>Fullstack design and development is essential for businesses that want to create a robust and engaging digital presence. It involves combining design and development skills to build comprehensive websites or applications that offer a seamless user experience.</p>
                         </div>
                         <div className='flex justify-center gap-x-8'>
@@ -149,7 +149,7 @@ function FullStackDesignDevelopment() {
             </div>
               </div>
                
-                 <section className="webdesign-area-two px-24 pb-120">
+                 <section className="webdesign-area-two px-4 md:px-24 pb-120">
             <div className="container">
                 <div className="row align-items-center justify-content-center">
                     <div className="col-lg-6 col-md-9">
@@ -162,7 +162,7 @@ function FullStackDesignDevelopment() {
                         <div className="">
                             <div className="flex flex-col gap-y-4 mb-2">
                                 <span className="text-[#3482FF] text-lg uppercase">Why You Need Fullstack Design and Development</span>
-                                <h2 className="text-[2.5rem] font-light">A strong full-stack foundation is the cornerstone <span className='text-[#3482FF] font-semibold'> of a successful digital presence.</span></h2>
+                                <h2 className="text-[1.5rem] md:text-[2.5rem] font-light">A strong full-stack foundation is the cornerstone <span className='text-[#3482FF] font-semibold'> of a successful digital presence.</span></h2>
                             </div>
                             <div className="w-16">
                                         <hr style={{ height: '2px', backgroundColor: '#000000', border: 'none', opacity: 1 }} />
