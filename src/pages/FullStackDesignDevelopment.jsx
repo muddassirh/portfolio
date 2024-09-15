@@ -97,9 +97,9 @@ function FullStackDesignDevelopment() {
   return (
     <Layout breadcrumbTitle="Fullstack Design and Development" breadcrumbCls=" breadcrumb-area-two pt-175">
           <section className="webdesign-area px-0 pt-10 md:pt-120">
-               <div className="container mb-12">
-                <div className="row justify-content-center ">
-                    <div className="col-xl-6 col-lg-8 ">
+               <div className="container-xl mx-auto mb-12">
+                <div className="columns-1 justify-content-center ">
+                    <div className="">
                         <div className="section-title title-style-two text-center mb-55">
                         <span className="sub-title">Front-End Development Services</span>
                             <h2 className="text-[1.5rem] md:text-4xl">Elevate your brand with our expert full-stack design and development</h2>
@@ -149,7 +149,7 @@ function FullStackDesignDevelopment() {
             </div>
               </div>
                
-                 <section className="webdesign-area-two px-4 md:px-24 pb-120">
+                 <section className="webdesign-area-two px-4 md:px-24 pb-5 md:pb-120">
             <div className="container">
                 <div className="row align-items-center justify-content-center">
                     <div className="col-lg-6 col-md-9">
@@ -183,13 +183,13 @@ function FullStackDesignDevelopment() {
                 </section>
 
                 {/* project-area */}
-                <section className="inner-projcet-area-two px-24 pt-140 pb-125">
+                <section className="px-5 md:px-24 pt-5 md:pt-140 pb-5 md:pb-125">
             <div className="container">
                 <div className="row align-items-center">
-                    <div className="col-md-8">
+                    <div className="col-md-5">
                         <div className="section-title title-style-two mb-70">
-                            <span className="sub-title">My Latest Project</span>
-                            <h2 className="title">Our Best Professional <br /> UI/UX Design</h2>
+                            <span className="sub-title">Latest Project</span>
+                            <h2 className="text-[1.5rem] md:text-4xl">Explore More Trending Design and Development Work</h2>
                         </div>
                     </div>
                     <div className="col-md-4">
@@ -313,21 +313,21 @@ function FullStackDesignDevelopment() {
                     <div className="col-lg-6">
                         <div className="flex flex-col gap-y-4 justify-center items-center text-center mb-50">
                             <span className="text-[#3482FF] text-lg uppercase">Your website is the foundation of your digital brand.</span>
-                            <h2 className="text-[2.5rem] font-light"> <b className='font-semibold'>Full-stack design and development</b> ensures it's built to last.</h2>
+                            <h2 className="text-[1.5rem] md:text-[2.5rem] font-light"> <b className='font-semibold'>Full-stack design and development</b> ensures it's built to last.</h2>
                             <div className="w-16">
                                         <hr style={{ height: '2px', backgroundColor: '#000000', border: 'none', opacity: 1 }} />
                                         </div>
-                            <div className='' >
+                            <div className='px-3 md:px-24' >
                             At Genxsmedia Services, we offer a comprehensive fullstack design and development service that combines our expertise in creative design, front-end development, branding, and AI solutions. Our team of skilled professionals is dedicated to crafting exceptional digital products that not only look stunning but also deliver exceptional user experiences.
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="tools-item-wrap px-24">
-                    <div className="grid grid-cols-3 gap-4">
+                <div className="tools-item-wrap px-3 md:px-24">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                         <div className="">
                             <div className="">
-                                <div className="grid grid-cols-3">
+                                <div className="grid grid-cols-1 md:grid-cols-3">
                                     <img src={PhotoshopIcon} alt="Photoshop" />
                                     <div className=" col-span-2">
                                     <h3 className="text-[#3482FF] text-xl">Deep Industry Knowledge</h3>
@@ -339,7 +339,7 @@ function FullStackDesignDevelopment() {
                         </div>
                         <div className="">
                             <div className="">
-                            <div className="grid grid-cols-3">
+                            <div className="grid grid-cols-1 md:grid-cols-3">
                                     <img src={IllustratorIcon} alt="Illustrator" />
                                     <div className="col-span-2">
                                     <h3 className="text-[#3482FF] text-xl">Customized Solutions</h3>
@@ -351,7 +351,7 @@ function FullStackDesignDevelopment() {
                         </div>                        
                         <div className="">
                             <div className="">
-                            <div className="grid grid-cols-3">
+                            <div className="grid grid-cols-1 md:grid-cols-3">
                                     <img src={SketchIcon} alt="sketch" />
                                     <div className="col-span-2">
                                     <h3 className="text-[#3482FF] text-xl">Results-Driven Focus</h3>
@@ -376,13 +376,13 @@ function FullStackDesignDevelopment() {
               
                 <section className="about-area py-16">
                 <div className="container servieces-container">
-                    <div className="services-inner">
+                    <div className="bg-amber-400 py-8 md:py-20 px-8 md:px-20 rounded-[20px] md:rounded-[50px]">
                         <div className="grid grid-cols-1 gap-4">                           
                             <div className="">
                                 <div className="about-content">
                                     <div className="section-title mb-25">
                                         <span className="sub-title-white">Steps Involved in Fullstack Design and Development</span>
-                                        <h2 className="text-3xl">Discover the convenience of full-stack expertise at Genxsmedia. Our team delivers well-defined strategies for each stack, driving success for your business.</h2>
+                                        <h2 className="text-[1.2rem] md:text-3xl">Discover the convenience of full-stack expertise at Genxsmedia. Our team delivers well-defined strategies for each stack, driving success for your business.</h2>
                                     </div>
                                     <div className="w-16">
                                         <hr style={{ height: '2px', backgroundColor: '#000000', border: 'none', opacity: 1 }} />
@@ -431,7 +431,7 @@ function FullStackDesignDevelopment() {
                                             </div>
                                             </div>
                                         </div>  
-                                   <h3 className="text-2xl">Choose Genxsmedia as your trusted partner for fullstack design and development. Let's create a digital solution that drives your business forward.</h3>
+                                   <h3 className="text-[1.2rem] md:text-2xl">Choose Genxsmedia as your trusted partner for fullstack design and development. Let's create a digital solution that drives your business forward.</h3>
                                     <div className="about-content-bottom">
                                         <div className="read-more-btn">
                                             <Link to="/about-us" className="btn">Get a Free Quote<span /></Link>

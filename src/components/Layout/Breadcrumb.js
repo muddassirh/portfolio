@@ -10,11 +10,11 @@ export default function Breadcrumb({ breadcrumbTitle, bShape, breadcrumbCls, blo
     return (
         <>
             <section className={`breadcrumb-area ${breadcrumbCls ? breadcrumbCls : ""}`}>
-                <div className="container">
-                    <div className="row">
-                        <div className="col-12">
+                <div className="container ">
+                    <div className="columns-1">
+                        <div className="">
                             <div className="breadcrumb-content">
-                                <h2 className="title">{breadcrumbTitle}</h2>
+                                <h2 className="text-[1.90rem] pb-5 md:text-6xl">{breadcrumbTitle}</h2>
                                 <nav aria-label="breadcrumb">
                                     <ol className="breadcrumb">
                                         <li className="breadcrumb-item"><Link to="/">Home</Link></li>
