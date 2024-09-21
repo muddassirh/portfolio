@@ -24,32 +24,15 @@ import innerTwoProject07 from '../components/assets/img/project/inner_two_projec
 import innerTwoProject08 from '../components/assets/img/project/inner_two_project08.jpg';
 import innerTwoProject09 from '../components/assets/img/project/inner_two_project09.jpg';
 import innerTwoProject10 from '../components/assets/img/project/inner_two_project10.jpg';
-import FigmaIcon from '../components/assets/img/icon/tools_icon03.png';
 import SketchIcon from '../components/assets/img/icon/tools_icon04.png';
-import PremiereProIcon from '../components/assets/img/icon/tools_icon05.png';
-import AfterEffectsIcon from '../components/assets/img/icon/tools_icon06.png';
-import HTML5Icon from '../components/assets/img/icon/tools_icon07.png';
-import BlenderIcon from '../components/assets/img/icon/tools_icon08.png';
-import AboutIMG from "../components/assets/img/images/about_img.png";
 import icon1 from "../components/assets/img/step1-01.svg";
 import icon2 from "../components/assets/img/step2-01.svg";
 import icon3 from "../components/assets/img/step3-01.svg";
 import icon4 from "../components/assets/img/step4-01.svg";
 import icon5 from "../components/assets/img/step5-01.svg";
 import icon6 from "../components/assets/img/step6-01.svg";
-import newsletterBgShape from '../components/assets/img/images/newsletter_bg_shape.png'; // Adjust the path according to your file structure
-import newsletterShape01 from '../components/assets/img/images/newsletter_shape01.png';
-import newsletterShape02 from '../components/assets/img/images/newsletter_shape02.png';
-import newsletterShape03 from '../components/assets/img/images/newsletter_shape03.png';
-import newsletterShape04 from '../components/assets/img/images/newsletter_shape04.png';
-import newsletterShape05 from '../components/assets/img/images/newsletter_shape05.png';
-import newsletterShape06 from '../components/assets/img/images/newsletter_shape06.png';
 import Newsletter1 from '../components/Newsletter1';
-import TaskAltOutlinedIcon from '@mui/icons-material/TaskAltOutlined';
-
-
-
-
+import Faqs from '../components/FaqsFullStack';
 const swiperOptions = {
     modules: [Autoplay],
     slidesPerView: 5,
@@ -97,7 +80,7 @@ function FullStackDesignDevelopment() {
   return (
     <Layout breadcrumbTitle="Fullstack Design and Development" breadcrumbCls=" breadcrumb-area-two pt-175">
           <section className="webdesign-area px-0 pt-10 md:pt-120">
-               <div className="container-xl mx-auto mb-12">
+               <div className="container-sm mx-auto mb-12">
                 <div className="columns-1 justify-content-center ">
                     <div className="">
                         <div className="section-title title-style-two text-center mb-55">
@@ -373,7 +356,7 @@ function FullStackDesignDevelopment() {
                 </div>
             </div>
                 </section>
-              
+            
                 <section className="about-area py-16">
                 <div className="container servieces-container">
                     <div className="bg-amber-400 py-8 md:py-20 px-8 md:px-20 rounded-[20px] md:rounded-[50px]">
@@ -442,9 +425,10 @@ function FullStackDesignDevelopment() {
                         </div>
                     </div>
                 </div>
-                </section>
-                
-            
+                </section>                
+                <section className='py-10'>
+                <Faqs/>
+              </section>
 
 
 

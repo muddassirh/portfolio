@@ -4593,7 +4593,7 @@ label {
 }
 
 .faq-wrap {
-    margin-left: 80px;
+    position: relative;
 }
 
 .faq-wrap .accordion-item {
