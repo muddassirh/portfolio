@@ -11,6 +11,8 @@ import ProjectDetails from "./pages/ProjectDetails";
 import ServiceDetails from "./pages/ServicesDetails";
 import WebDesign from "./pages/WebDesign";
 import FullStackDesignDevelopment from "./pages/FullStackDesignDevelopment";
+import UXUIDesignServices from "./pages/UXUIDesignServices";
+import PrintMediaDesign from "./pages/PrintMediaDesign";
 function App() {
   return (
     <>
@@ -26,7 +28,9 @@ function App() {
           <Route path="/services-details"  element={<ServiceDetails/>}></Route>
           <Route path="/portfolio" element={<Portfolio />}></Route>
           <Route path="/webdesign" element={<WebDesign/>}></Route>
+          <Route path="/print-media-design-services" element={<PrintMediaDesign/>}></Route>
           <Route path="/full-stack-design-development" element={<FullStackDesignDevelopment/>}></Route>
+          <Route path="/ux-ui-design-and-consulting-services" element={<UXUIDesignServices/>}></Route>
           <Route path="/contact" element={<Contact />}></Route>
         </Routes>
       </BrowserRouter>

@@ -40,10 +40,10 @@ export default function Header({ scroll, headercls }) {
                                                 <Link to="/">Expertise</Link>
                                                 <ul className="sub-menu">
                                                     <li><a href="/full-stack-design-development">Fullstack Design and Development</a></li>
-                                                    <li><a href="/about-me">UX/UI Design</a></li>
-                                                    <li><a href="/team">Print Media Design</a></li>
+                                                    <li><a href="/ux-ui-design-and-consulting-services">UX/UI Design</a></li>
+                                                    <li><a href="/print-media-design-services">Print Media Design</a></li>
                                                     <li><a href="/team-details">Digital Marketing</a></li>
-                                                    <li><a href="/project-details">Mobile app Development</a></li>
+                                                    <li><a href="/project-details">App Development</a></li>
                                                 </ul>
                                             </li>
                                             <li><Link to="/about-us">Work</Link></li>
