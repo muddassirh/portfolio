@@ -81,7 +81,7 @@ export default function PrintmediaTools() {
                     </div>
                 </div>
                 <div className="tools-item-wrap px-24">
-                    <div className='flex flex-col md:flex-row gap-4'>
+                    <div className='flex flex-col md:flex-row gap-4 content-stretch'>
                         <div className="basis-1/2 md:basis-1/3">
                         <div className="tools-item">
                                 <div className="tools-icon">
@@ -99,8 +99,8 @@ export default function PrintmediaTools() {
                                     <img src={IllustratorIcon} alt="Illustrator" />
                                 </div>
                                 <div className="tools-content">
-                                    <h3 className="title">Illustrator</h3>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                    <h3 className="title">Brochures and Flyers: Engaging Your Audience</h3>
+                                    <p>Our designers specialize in creating brochures and flyers that are both informative and visually appealing. We use strategic layout, captivating imagery, and compelling copy to effectively communicate your products or services and drive engagement. Whether you need a simple one-pager or a multi-page brochure, we'll deliver a design that leaves a lasting impression.</p>
                                 </div>
                             </div>
                         </div>
@@ -110,8 +110,8 @@ export default function PrintmediaTools() {
                                     <img src={FigmaIcon} alt="Figma" />
                                 </div>
                                 <div className="tools-content">
-                                    <h3 className="title">Figma</h3>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                    <h3 className="title">Packaging Design: Making a Statement</h3>
+                                    <p>Packaging is the first thing your customers see and touch. Our packaging design experts create visually striking and functional packaging that enhances your brand's appeal and protects your products. We consider factors such as material, shape, and color to create packaging that is both aesthetically pleasing and practical.</p>
                                 </div>
                             </div>                        
                         </div>
@@ -123,8 +123,8 @@ export default function PrintmediaTools() {
                                     <img src={SketchIcon} alt="Sketch" />
                                 </div>
                                 <div className="tools-content">
-                                    <h3 className="title">Sketch</h3>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                    <h3 className="title">Catalogs and Lookbooks: Showcasing Your Offerings</h3>
+                                    <p>Our team excels in creating catalogs and lookbooks that showcase your products in a visually stunning and informative way. We use high-quality imagery, clear product descriptions, and a user-friendly layout to create catalogs that are both engaging and informative.</p>
                                 </div>
                             </div>
                         </div>
@@ -134,8 +134,8 @@ export default function PrintmediaTools() {
                                     <img src={PremiereProIcon} alt="Premiere Pro" />
                                 </div>
                                 <div className="tools-content">
-                                    <h3 className="title">Premiere Pro</h3>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                    <h3 className="title">Posters and Banners: Making a Big Impact</h3>
+                                    <p>Whether you need posters for events or banners for outdoor advertising, our designers can create eye-catching visuals that grab attention and deliver your message. We use bold typography, striking imagery, and strategic placement to ensure your posters and banners are effective marketing tools.</p>
                                 </div>
                             </div>
                         </div>
@@ -145,8 +145,8 @@ export default function PrintmediaTools() {
                                     <img src={AfterEffectsIcon} alt="After Effects" />
                                 </div>
                                 <div className="tools-content">
-                                    <h3 className="title">After Effects</h3>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                    <h3 className="title">Stationery Design: Building a Professional Image</h3>
+                                    <p>Our stationery design services include letterheads, envelopes, business cards, and notepads. We create stationery that complements your brand identity and leaves a professional impression on your clients. Our designers pay attention to detail and ensure that your stationery is both visually appealing and functional.</p>
                                 </div>
                             </div>
                         </div>
