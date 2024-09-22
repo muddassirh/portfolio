@@ -81,7 +81,7 @@ export default function PrintmediaTools() {
                     </div>
                 </div>
                 <div className="tools-item-wrap px-24">
-                    <div className='flex flex-col md:flex-row gap-4 content-stretch'>
+                    <div className='flex flex-col md:flex-row gap-4 items-stretch '>
                         <div className="basis-1/2 md:basis-1/3">
                         <div className="tools-item">
                                 <div className="tools-icon">
