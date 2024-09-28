@@ -14,11 +14,10 @@ const Sidebar = () => {
             <li className={`menu-item-has-children ${isActive === "2" ? "active" : ""}`}>
                 <a href="#">Expertise</a>
                 <ul className="sub-menu" style={{ display: isActive === "2" ? "block" : "none" }}>
-                    <li><a href="/about-me">Fullstack Design and Development</a></li>
-                    <li><a href="/about-me">UX/UI Design</a></li>
-                    <li><a href="/team">Print Media Design</a></li>
-                    <li><a href="/team-details">Digital Marketing</a></li>
-                    <li><a href="/project-details">Mobile app Development</a></li>
+                    <li><a href="/full-stack-design-development">Fullstack Design and Development</a></li>
+                    <li><a href="/ux-ui-design-and-consulting-services">UX/UI Design</a></li>
+                    <li><a href="/print-media-design-services">Print Media Design</a></li>
+                    <li><a href="/digital-marketing-services">Digital Marketing Services</a></li>
                 </ul>
                 <div className="dropdown-btn" onClick={() => handleToggle("2")}><span className="fa fa-angle-down" /></div>
             </li>

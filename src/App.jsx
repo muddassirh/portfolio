@@ -13,6 +13,7 @@ import WebDesign from "./pages/WebDesign";
 import FullStackDesignDevelopment from "./pages/FullStackDesignDevelopment";
 import UXUIDesignServices from "./pages/UXUIDesignServices";
 import PrintMediaDesign from "./pages/PrintMediaDesign";
+import DigitalMarketing from "./pages/DigitalMarketing";
 function App() {
   return (
     <>
@@ -31,6 +32,7 @@ function App() {
           <Route path="/print-media-design-services" element={<PrintMediaDesign/>}></Route>
           <Route path="/full-stack-design-development" element={<FullStackDesignDevelopment/>}></Route>
           <Route path="/ux-ui-design-and-consulting-services" element={<UXUIDesignServices/>}></Route>
+          <Route path="/digital-marketing-services" element={<DigitalMarketing/>}></Route>
           <Route path="/contact" element={<Contact />}></Route>
         </Routes>
       </BrowserRouter>
