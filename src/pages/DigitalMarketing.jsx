@@ -75,7 +75,7 @@ function DigitalMarketing() {
                 <div className="columns-1 justify-content-center ">
                     <div className="">
                         <div className="section-title title-style-two text-center mb-55">
-                        <span className="sub-title">Digital Marketing</span>
+                        <span className="sub-title">Is Your Business Struggling to Reach Your Target Audience Online?</span>
                             <h2 className="text-[1.5rem] md:text-4xl">Tailored Marketing Approaches to Drive Business Growth</h2>
                             <p className='text-lg'>Genxsmedia is a premier digital marketing agency committed to empowering businesses to reach their full potential in the digital world. With a team of skilled professionals and a proven track record, we offer a comprehensive suite of digital marketing services tailored to meet your unique needs.</p>
                         </div>
@@ -148,7 +148,7 @@ function DigitalMarketing() {
 
  marketing (SMM), content marketing, email marketing, and more. In today's interconnected world, digital marketing has become an essential component of any successful business strategy.
                                 </p>       
-                                <p>ssss</p>                                                      
+                                <p>Genxsmedia crafts visually stunning and user-friendly websites that capture your brand's essence, driving engagement and conversions. Our expert designers and developers utilize the latest technologies to create responsive, mobile-friendly, and SEO-optimized websites that elevate your online presence.</p>                                                      
                             </div>
                         </div>
                     </div>
@@ -286,13 +286,13 @@ function DigitalMarketing() {
                 <div className="row justify-content-center">
                     <div className="col-lg-6">
                         <div className="flex flex-col gap-y-4 justify-center items-center text-center mb-50">
-                            <span className="text-[#3482FF] text-lg uppercase">The Print Studio - Where Design Dreams Are Made</span>
-                            <h2 className="text-[1.5rem] md:text-[2.5rem] font-light"> <b className='font-semibold'>From Brainwave to Broadcast,</b> Effective Print Media Design Solutions</h2>
+                            <span className="text-[#3482FF] text-lg uppercase">Maximize Your ROI</span>
+                            <h2 className="text-[1.5rem] md:text-[2.5rem] font-light">The Power of<b className='font-semibold'> Personalized</b> Digital Marketing</h2>
                             <div className="w-16">
                                         <hr style={{ height: '2px', backgroundColor: '#000000', border: 'none', opacity: 1 }} />
                                         </div>
                             <div className='px-3 md:px-24' >
-                            At Genxsmedia Services, we believe that print design is more than just aesthetics; it's a strategic tool to leave a lasting impression on your audience. Our team of skilled designers combines creativity, technical expertise, and a client-centric approach to deliver exceptional print solutions that help you achieve your goals.
+                            In today's digital age, businesses of all sizes must leverage the power of effective digital marketing strategies to thrive. By understanding and implementing the various techniques available, you can significantly enhance your online presence, attract new customers, and drive business growth.
                             </div>
                         </div>
                     </div>
@@ -304,8 +304,8 @@ function DigitalMarketing() {
                                 <div className="grid grid-cols-1 md:grid-cols-3">
                                     <img src={PhotoshopIcon} alt="Photoshop" />
                                     <div className=" col-span-2">
-                                    <h3 className="text-[#3482FF] text-xl">Creative Vision</h3>
-                                    <p >Our designers possess a unique ability to transform your brand's essence into visually captivating designs. With a passion for innovation and a keen eye for detail, we create print materials that are both visually stunning and strategically effective. We understand that each brand has its own distinct personality, and we strive to capture and communicate that essence through our designs.</p>
+                                    <h3 className="text-[#3482FF] text-xl">Search Engine Optimization (SEO)</h3>
+                                    <p >Search Engine Optimization (SEO) is a cornerstone of digital marketing, ensuring your website appears prominently in search engine results pages (SERPs). By optimizing your content and website structure, you can increase your visibility and attract organic traffic.</p>
                                 </div>
                                 </div>
 
@@ -316,8 +316,8 @@ function DigitalMarketing() {
                             <div className="grid grid-cols-1 md:grid-cols-3">
                                     <img src={IllustratorIcon} alt="Illustrator" />
                                     <div className="col-span-2">
-                                    <h3 className="text-[#3482FF] text-xl">Technical Proficiency</h3>
-                                    <p>Our team is equipped with the latest design software and printing techniques, ensuring that your print materials are produced to the highest standards of quality. We stay up-to-date with industry trends and advancements to deliver cutting-edge designs that are both visually appealing and technically sound. From initial concept to final production, we oversee every step of the process to guarantee exceptional results.</p>
+                                    <h3 className="text-[#3482FF] text-xl">Pay-Per-Click (PPC) Advertising</h3>
+                                    <p>Pay-Per-Click (PPC) Advertising offers a targeted approach to reach potential customers. By creating and managing effective PPC campaigns, you can drive immediate results and measure your return on investment (ROI).</p>
                                 </div>
                                 </div>
 
@@ -328,8 +328,47 @@ function DigitalMarketing() {
                             <div className="grid grid-cols-1 md:grid-cols-3">
                                     <img src={SketchIcon} alt="sketch" />
                                     <div className="col-span-2">
-                                    <h3 className="text-[#3482FF] text-xl">Client-Centric Approach</h3>
-                                    <p>We believe in building strong partnerships with our clients. We work closely with you to understand your goals, target audience, and brand message. By collaborating with you throughout the design process, we ensure that your print materials accurately reflect your vision and resonate with your desired audience. Your satisfaction is our top priority, and we are committed to providing personalized service that exceeds your expectations.</p>
+                                    <h3 className="text-[#3482FF] text-xl">Social Media Marketing (SMM)</h3>
+                                    <p>Social Media Marketing (SMM) is essential for engaging with your audience on various platforms. By sharing valuable content and building relationships, you can increase brand awareness, drive website traffic, and generate leads.</p>
+                                </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div className="">
+                            <div className="">
+                                <div className="grid grid-cols-1 md:grid-cols-3">
+                                    <img src={PhotoshopIcon} alt="Photoshop" />
+                                    <div className=" col-span-2">
+                                    <h3 className="text-[#3482FF] text-xl">Content Marketing</h3>
+                                    <p >Content Marketing is about creating and distributing valuable content that attracts and engages your target audience. By producing high-quality content, you can establish yourself as an industry expert and build trust with potential customers.</p>
+                                </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div className="">
+                            <div className="">
+                            <div className="grid grid-cols-1 md:grid-cols-3">
+                                    <img src={IllustratorIcon} alt="Illustrator" />
+                                    <div className="col-span-2">
+                                    <h3 className="text-[#3482FF] text-xl">Email Marketing</h3>
+                                    <p>Email Marketing remains a powerful tool for nurturing leads and building customer relationships. By sending targeted email campaigns, you can drive conversions, promote your products or services, and keep your brand top of mind.</p>
+                                </div>
+                                </div>
+
+                            </div>
+                        </div>                        
+                        <div className="">
+                            <div className="">
+                            <div className="grid grid-cols-1 md:grid-cols-3">
+                                    <img src={SketchIcon} alt="sketch" />
+                                    <div className="col-span-2">
+                                    <h3 className="text-[#3482FF] text-xl">Analytics and Measurement</h3>
+                                    <p>Analytics and Measurement are crucial for understanding the effectiveness of your digital marketing efforts. By tracking key metrics and analyzing data, you can identify areas for improvement and optimize your campaigns.</p>
                                 </div>
                                 </div>
 
@@ -338,6 +377,7 @@ function DigitalMarketing() {
                         
                     </div>
                 </div>
+                
                 <div className='flex flex-col gap-y-8 justify-center items-center text-center mb-50'>                    
                     <div className='flex justify-center gap-x-8'>
                         <Link to="/contact" className="btnblack">Collaborate With Us<span /></Link>
@@ -345,10 +385,8 @@ function DigitalMarketing() {
                     <div></div>
                 </div>
             </div>
-                </section>            
-                <section className='py-10'>
-                <PrintmediaTools/>
-              </section>          
+                </section>
+                      
                 <section className='py-10'>
                 <Faqs/>
               </section>
