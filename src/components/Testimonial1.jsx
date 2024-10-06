@@ -67,7 +67,7 @@ export default function Testimonial1() {
                             <SwiperSlide>
                                 <div className="testimonial-item">
                                     <div className="testimonial-content">
-                                        <p>Fundikonde“</p>
+                                        <p>Skilled web developer! Strong communication skills and fast delivery. I'll certainly be repeating business with them!</p>
                                     </div>
                                     <div className="testimonial-info">
                                         <div className="thumb">
@@ -95,23 +95,7 @@ export default function Testimonial1() {
                                         </div>
                                     </div>
                                 </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div className="testimonial-item">
-                                    <div className="testimonial-content">
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and “</p>
-                                    </div>
-                                    <div className="testimonial-info">
-                                        <div className="thumb">
-                                            <img src={TestAvatar3} alt="" />
-                                        </div>
-                                        <div className="content">
-                                            <h4 className="title">Davis Levin</h4>
-                                            <p>CEO Kawasaki Inc.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </SwiperSlide>
+                            </SwiperSlide>                            
                             <SwiperSlide>
                                 <div className="testimonial-item">
                                     <div className="testimonial-content">
