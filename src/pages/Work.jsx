@@ -29,7 +29,12 @@ const Work = () => {
 
     return (
         <>
-            <Layout breadcrumbTitle="Work" breadcrumbCls="pt-175 pb-140">
+            <Layout breadcrumbTitle="Work" breadcrumbCls="pt-175 pb-70">
+                <section>
+        <h1 className='text-2xl md:text-3xl font-medium text-center'>Check out what we can do for your business</h1>
+        <span className='max-w-[6em] py-[.7px] block bg-[#2779fc] mt-5 mb-4 mx-auto'></span>
+
+                </section>
                 <div className="container mx-auto p-6">
                     {/* Search Bar */}
                     {/* <div className="mb-6">
