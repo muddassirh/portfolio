@@ -208,7 +208,7 @@ export let info = {
     {
       "name": "LAZY5VETS",
       "description": "Explore cutting-edge motion graphics design.",
-      "image": innerTwoProject02,
+      "image": 'https://redkite.design/wp-content/uploads/2022/07/hq-portal-bg@2x-scaled.jpg',
       "link": "https://lazy5vets.com/",
       "category": "frontend",
       "year": "2022"
@@ -216,7 +216,7 @@ export let info = {
   {
       "name": "Project Two",
       "description": "This is a description for project two.",
-      "image": innerTwoProject03,
+      "image": "https://redkite.design/wp-content/uploads/2022/07/hq-portal-bg@2x-scaled.jpg",
       "link": "https://lazy5vets.com/",
       "category": "backend",
       "year": "2023"

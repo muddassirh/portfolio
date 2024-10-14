@@ -62,7 +62,7 @@ const Work = () => {
                             {filteredProjects.map((project, index) => (
 
                                 <div
-                                    class="relative border  flex items-center rounded-lg drop-shadow-xl justify-center"
+                                    class="relative border h-[24em]  flex items-center rounded-lg drop-shadow-xl justify-center"
                                 >
                                     <div
                                         class="group absolute left-1/2 top-1/2 flex h-[6em] w-[6em] -translate-x-1/2 -translate-y-1/2 items-center justify-center overflow-hidden rounded-[3.5em] border-[1px] border-[#ffffffaa] bg-black/50 backdrop-blur-[6px] duration-[500ms] hover:h-[10em] hover:w-[16em] hover:rounded-[1.5em]"
@@ -112,7 +112,7 @@ const Work = () => {
                                     <img
                                         src={project.image}
                                         alt={project.name}
-                                        className=" object-cover w-full !rounded-lg"
+                                        className="object-cover h-full w-full !rounded-lg"
                                     />
                                 </div>
                             ))}
