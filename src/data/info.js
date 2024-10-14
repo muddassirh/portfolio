@@ -204,4 +204,22 @@ export let info = {
         },
       ],
   ],
+  works:[
+    {
+      "name": "LAZY5VETS",
+      "description": "Explore cutting-edge motion graphics design.",
+      "image": innerTwoProject02,
+      "link": "https://lazy5vets.com/",
+      "category": "frontend",
+      "year": "2022"
+  },
+  {
+      "name": "Project Two",
+      "description": "This is a description for project two.",
+      "image": innerTwoProject03,
+      "link": "https://lazy5vets.com/",
+      "category": "backend",
+      "year": "2023"
+  },
+  ]
 };

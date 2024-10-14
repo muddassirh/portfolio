@@ -14,6 +14,7 @@ import FullStackDesignDevelopment from "./pages/FullStackDesignDevelopment";
 import UXUIDesignServices from "./pages/UXUIDesignServices";
 import PrintMediaDesign from "./pages/PrintMediaDesign";
 import DigitalMarketing from "./pages/DigitalMarketing";
+import Work from "./pages/Work";
 function App() {
   return (
     <>
@@ -34,6 +35,7 @@ function App() {
           <Route path="/ux-ui-design-and-consulting-services" element={<UXUIDesignServices/>}></Route>
           <Route path="/digital-marketing-services" element={<DigitalMarketing/>}></Route>
           <Route path="/contact" element={<Contact />}></Route>
+          <Route path="/work" element={<Work />}></Route>
         </Routes>
       </BrowserRouter>
       {/* <Footer /> */}
