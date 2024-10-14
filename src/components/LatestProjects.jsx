@@ -73,13 +73,13 @@ const LatestProjects = ({ title, description, projects }) => {
                         }`}
                       >
                         <div className="inner-project-thumb">
-                          <Link to={`/project-details/${project.link}`}>
+                          <Link to={`${project.link}`}>
                             <img src={project.image} alt={project.title} />
                           </Link>
                         </div>
                         <div className="inner-project-content">
                           <h3 className="title">
-                            <Link to={`/project-details/${project.link}`}>
+                            <Link to={`${project.link}`}>
                               {project.title}
                             </Link>
                           </h3>

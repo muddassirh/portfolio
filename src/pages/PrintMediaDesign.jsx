@@ -5,13 +5,7 @@ import { Autoplay, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import Layout from '../components/Layout/Layout';
-import brandImg01 from '../components/assets/img/brand/h3_brand_img01.png';
-import brandImg02 from '../components/assets/img/brand/h3_brand_img02.png';
-import brandImg03 from '../components/assets/img/brand/h3_brand_img03.png';
-import brandImg04 from '../components/assets/img/brand/h3_brand_img04.png';
-import brandImg05 from '../components/assets/img/brand/h3_brand_img05.png';
-import brandImg06 from '../components/assets/img/brand/h3_brand_img06.png';
-import testimonialImg from '../components/assets/img/images/testimonial_img.jpg';
+import Printmedia from '../components/assets/img/images/printmedia.webp';
 import PhotoshopIcon from '../components/assets/img/icon/tools_icon01.png';
 import IllustratorIcon from '../components/assets/img/icon/tools_icon02.png';
 import innerTwoProject01 from '../components/assets/img/project/inner_two_project01.jpg';
@@ -25,12 +19,6 @@ import innerTwoProject08 from '../components/assets/img/project/inner_two_projec
 import innerTwoProject09 from '../components/assets/img/project/inner_two_project09.jpg';
 import innerTwoProject10 from '../components/assets/img/project/inner_two_project10.jpg';
 import SketchIcon from '../components/assets/img/icon/tools_icon04.png';
-import icon1 from "../components/assets/img/step1-01.svg";
-import icon2 from "../components/assets/img/step2-01.svg";
-import icon3 from "../components/assets/img/step3-01.svg";
-import icon4 from "../components/assets/img/step4-01.svg";
-import icon5 from "../components/assets/img/step5-01.svg";
-import icon6 from "../components/assets/img/step6-01.svg";
 import Newsletter1 from '../components/Newsletter1';
 import Faqs from '../components/FaqsFullStack';
 import PrintmediaTools from '../components/PrintmediaTools';
@@ -96,49 +84,12 @@ function PrintMediaDesign() {
                 </div>
                </div>
               {/* brand-area */}
-              <div className="brand-area px-24 pb-12">
-            <div className="container">
-                <div className="row brand-active">
-                    <div className="col-xl-2 col-sm-4 my-3">
-                        <div className="brand-item-two">
-                            <img src={brandImg01} alt="" />
-                        </div>
-                    </div>
-                    <div className="col-xl-2 col-sm-4 my-3">
-                        <div className="brand-item-two">
-                            <img src={brandImg02} alt="" />
-                        </div>
-                    </div>
-                    <div className="col-xl-2 col-sm-4 my-3">
-                        <div className="brand-item-two">
-                            <img src={brandImg03} alt="" />
-                        </div>
-                    </div>
-                    <div className="col-xl-2 col-sm-4 my-3">
-                        <div className="brand-item-two">
-                            <img src={brandImg04} alt="" />
-                        </div>
-                    </div>
-                    <div className="col-xl-2 col-sm-4 my-3">
-                        <div className="brand-item-two">
-                            <img src={brandImg05} alt="" />
-                        </div>
-                    </div>
-                    <div className="col-xl-2 col-sm-4 my-3">
-                        <div className="brand-item-two">
-                            <img src={brandImg06} alt="" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-              </div>
-               
                  <section className="webdesign-area-two px-4 md:px-24 pb-5 md:pb-120">
             <div className="container">
                 <div className="row align-items-center justify-content-center">
                     <div className="col-lg-6 col-md-9">
                         <div className="">
-                            <img src={testimonialImg} className='rounded-full' alt="Testimonial Image" />
+                            <img src={Printmedia} className='' alt="Print Media Design Services" />
                           
                         </div>
                     </div>

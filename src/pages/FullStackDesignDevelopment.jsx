@@ -5,26 +5,15 @@ import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import Layout from "../components/Layout/Layout";
-import brandImg01 from "../components/assets/img/brand/h3_brand_img01.png";
-import brandImg02 from "../components/assets/img/brand/h3_brand_img02.png";
-import brandImg03 from "../components/assets/img/brand/h3_brand_img03.png";
-import brandImg04 from "../components/assets/img/brand/h3_brand_img04.png";
-import brandImg05 from "../components/assets/img/brand/h3_brand_img05.png";
-import brandImg06 from "../components/assets/img/brand/h3_brand_img06.png";
-import testimonialImg from "../components/assets/img/images/testimonial_img.jpg";
-import PhotoshopIcon from "../components/assets/img/icon/tools_icon01.png";
-import IllustratorIcon from "../components/assets/img/icon/tools_icon02.png";
-import innerTwoProject01 from "../components/assets/img/project/inner_two_project01.jpg";
-import innerTwoProject02 from "../components/assets/img/project/inner_two_project02.jpg";
-import innerTwoProject03 from "../components/assets/img/project/inner_two_project03.jpg";
-import innerTwoProject04 from "../components/assets/img/project/inner_two_project04.jpg";
-import innerTwoProject05 from "../components/assets/img/project/inner_two_project05.jpg";
-import innerTwoProject06 from "../components/assets/img/project/inner_two_project06.jpg";
-import innerTwoProject07 from "../components/assets/img/project/inner_two_project07.jpg";
-import innerTwoProject08 from "../components/assets/img/project/inner_two_project08.jpg";
-import innerTwoProject09 from "../components/assets/img/project/inner_two_project09.jpg";
-import innerTwoProject10 from "../components/assets/img/project/inner_two_project10.jpg";
-import SketchIcon from "../components/assets/img/icon/tools_icon04.png";
+import brandImg01 from "../components/assets/img/brand/nextjs.png";
+import brandImg02 from "../components/assets/img/brand/angular.png";
+import brandImg03 from "../components/assets/img/brand/reactjs.png";
+import brandImg04 from "../components/assets/img/brand/nuxtjs.png";
+import brandImg05 from "../components/assets/img/brand/vuejs.png";
+import FullStackDev from "../components/assets/img/images/full-stack-1.webp";
+import DeepIndustry from "../components/assets/img/icon/deep-industry.webp";
+import Customized from "../components/assets/img/icon/customized.webp";
+import Results from "../components/assets/img/icon/result-driven.webp";
 import icon1 from "../components/assets/img/step1-01.svg";
 import icon2 from "../components/assets/img/step2-01.svg";
 import icon3 from "../components/assets/img/step3-01.svg";
@@ -110,17 +99,12 @@ function FullStackDesignDevelopment() {
         {/* brand-area */}
         <div className="brand-area px-24 pb-12">
           <div className="container">
-            <div className="row brand-active">
+            <div className="row brand-active justify-content-center">
               <div className="col-xl-2 col-sm-4 my-3">
                 <div className="brand-item-two">
                   <img src={brandImg01} alt="" />
                 </div>
-              </div>
-              <div className="col-xl-2 col-sm-4 my-3">
-                <div className="brand-item-two">
-                  <img src={brandImg02} alt="" />
-                </div>
-              </div>
+              </div>              
               <div className="col-xl-2 col-sm-4 my-3">
                 <div className="brand-item-two">
                   <img src={brandImg03} alt="" />
@@ -138,7 +122,7 @@ function FullStackDesignDevelopment() {
               </div>
               <div className="col-xl-2 col-sm-4 my-3">
                 <div className="brand-item-two">
-                  <img src={brandImg06} alt="" />
+                  <img src={brandImg02} alt="" />
                 </div>
               </div>
             </div>
@@ -151,9 +135,9 @@ function FullStackDesignDevelopment() {
               <div className="col-lg-6 col-md-9">
                 <div className="">
                   <img
-                    src={testimonialImg}
-                    className="rounded-full"
-                    alt="Testimonial Image"
+                    src={FullStackDev}
+                    className=""
+                    alt="Fullstack Design and Development"
                   />
                 </div>
               </div>
@@ -263,7 +247,7 @@ function FullStackDesignDevelopment() {
                 <div className="">
                   <div className="">
                     <div className="grid grid-cols-1 md:grid-cols-3">
-                      <img src={PhotoshopIcon} alt="Photoshop" />
+                      <img src={DeepIndustry} alt="Photoshop" />
                       <div className=" col-span-2">
                         <h3 className="text-[#3482FF] text-xl">
                           Deep Industry Knowledge
@@ -280,7 +264,7 @@ function FullStackDesignDevelopment() {
                 <div className="">
                   <div className="">
                     <div className="grid grid-cols-1 md:grid-cols-3">
-                      <img src={IllustratorIcon} alt="Illustrator" />
+                      <img src={Customized} alt="Illustrator" />
                       <div className="col-span-2">
                         <h3 className="text-[#3482FF] text-xl">
                           Customized Solutions
@@ -297,7 +281,7 @@ function FullStackDesignDevelopment() {
                 <div className="">
                   <div className="">
                     <div className="grid grid-cols-1 md:grid-cols-3">
-                      <img src={SketchIcon} alt="sketch" />
+                      <img src={Results} alt="sketch" />
                       <div className="col-span-2">
                         <h3 className="text-[#3482FF] text-xl">
                           Results-Driven Focus

@@ -200,7 +200,7 @@ export let info = {
           title: "cfgdrfgerg",
           image: innerTwoProject03,
           description: "Explore cutting-edge motion graphics design.",
-          link: "https://lazy5vets.com/",
+          link: "https://www.lazy5vets.com/",
         },
       ],
   ],

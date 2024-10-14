@@ -5,15 +5,15 @@ import { Autoplay, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import Layout from '../components/Layout/Layout';
-import brandImg01 from '../components/assets/img/brand/h3_brand_img01.png';
-import brandImg02 from '../components/assets/img/brand/h3_brand_img02.png';
-import brandImg03 from '../components/assets/img/brand/h3_brand_img03.png';
-import brandImg04 from '../components/assets/img/brand/h3_brand_img04.png';
-import brandImg05 from '../components/assets/img/brand/h3_brand_img05.png';
-import brandImg06 from '../components/assets/img/brand/h3_brand_img06.png';
-import testimonialImg from '../components/assets/img/images/testimonial_img.jpg';
-import PhotoshopIcon from '../components/assets/img/icon/tools_icon01.png';
-import IllustratorIcon from '../components/assets/img/icon/tools_icon02.png';
+import brandImg01 from '../components/assets/img/brand/figma-logo.png';
+import brandImg02 from '../components/assets/img/brand/sketch.png';
+import brandImg03 from '../components/assets/img/brand/adobe-xd.png';
+import brandImg04 from '../components/assets/img/brand/blasmiq.png';
+import brandImg05 from '../components/assets/img/brand/invision.png';
+import UXUIDesign from '../components/assets/img/images/ux-ui-design-services.webp';
+import Deepkow from '../components/assets/img/icon/uxui-know.webp';
+import Proven from '../components/assets/img/icon/proven-result.webp';
+import EndtoEnd from '../components/assets/img/icon/endtoend.webp';
 import innerTwoProject01 from '../components/assets/img/project/inner_two_project01.jpg';
 import innerTwoProject02 from '../components/assets/img/project/inner_two_project02.jpg';
 import innerTwoProject03 from '../components/assets/img/project/inner_two_project03.jpg';
@@ -24,7 +24,6 @@ import innerTwoProject07 from '../components/assets/img/project/inner_two_projec
 import innerTwoProject08 from '../components/assets/img/project/inner_two_project08.jpg';
 import innerTwoProject09 from '../components/assets/img/project/inner_two_project09.jpg';
 import innerTwoProject10 from '../components/assets/img/project/inner_two_project10.jpg';
-import SketchIcon from '../components/assets/img/icon/tools_icon04.png';
 import icon1 from "../components/assets/img/step1-01.svg";
 import icon2 from "../components/assets/img/step2-01.svg";
 import icon3 from "../components/assets/img/step3-01.svg";
@@ -97,7 +96,7 @@ function UXUIDesignServices() {
               {/* brand-area */}
               <div className="brand-area px-24 pb-12">
             <div className="container">
-                <div className="row brand-active">
+                <div className="row brand-active justify-content-center">
                     <div className="col-xl-2 col-sm-4 my-3">
                         <div className="brand-item-two">
                             <img src={brandImg01} alt="" />
@@ -123,11 +122,6 @@ function UXUIDesignServices() {
                             <img src={brandImg05} alt="" />
                         </div>
                     </div>
-                    <div className="col-xl-2 col-sm-4 my-3">
-                        <div className="brand-item-two">
-                            <img src={brandImg06} alt="" />
-                        </div>
-                    </div>
                 </div>
             </div>
               </div>
@@ -137,7 +131,7 @@ function UXUIDesignServices() {
                 <div className="row align-items-center justify-content-center">
                     <div className="col-lg-6 col-md-9">
                         <div className="">
-                            <img src={testimonialImg} className='rounded-full' alt="Testimonial Image" />
+                            <img src={UXUIDesign} alt="UX & UI Design and Consulting Services" />
                           
                         </div>
                     </div>
@@ -311,7 +305,7 @@ function UXUIDesignServices() {
                         <div className="">
                             <div className="">
                                 <div className="grid grid-cols-1 md:grid-cols-3">
-                                    <img src={PhotoshopIcon} alt="Photoshop" />
+                                    <img src={Deepkow} alt="Deep Industry Knowledge of UXUI" />
                                     <div className=" col-span-2">
                                     <h3 className="text-[#3482FF] text-xl">Deep Industry Knowledge</h3>
                                     <p >Our designs are driven by data-backed insights and a deep understanding of your target audience. We prioritize creating experiences that not only look good but also deliver tangible results.</p>
@@ -323,7 +317,7 @@ function UXUIDesignServices() {
                         <div className="">
                             <div className="">
                             <div className="grid grid-cols-1 md:grid-cols-3">
-                                    <img src={IllustratorIcon} alt="Illustrator" />
+                                    <img src={Proven} alt="Proven UX/UI Expertise" />
                                     <div className="col-span-2">
                                     <h3 className="text-[#3482FF] text-xl">Proven Expertise</h3>
                                     <p>With years of experience in the industry, our team has a proven track record of success in delivering high-quality UX/UI designs across various sectors.</p>
@@ -335,7 +329,7 @@ function UXUIDesignServices() {
                         <div className="">
                             <div className="">
                             <div className="grid grid-cols-1 md:grid-cols-3">
-                                    <img src={SketchIcon} alt="sketch" />
+                                    <img src={EndtoEnd} alt="UX/UI End-to-End Design Services" />
                                     <div className="col-span-2">
                                     <h3 className="text-[#3482FF] text-xl">End-to-End Design Services</h3>
                                     <p>From initial concept development to final implementation, we offer a comprehensive range of design services, including UX/UI design, front-end design, and app design.</p>
@@ -372,14 +366,14 @@ function UXUIDesignServices() {
                                         </div>
                                         <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
                                             <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
-                                                <img src={icon1} alt="sketch" />
+                                                <img src={icon1} alt="Discovery and Research" />
                                                 <div className="col-span-2">
                                                 <h3 className="text-[#fff] text-xl">Discovery and Research</h3>
                                                 <p>We begin by understanding your business objectives, target audience, and existing brand identity. This involves conducting market research, user interviews, and competitive analysis.</p>
                                             </div>
                                             </div>
                                             <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
-                                                <img src={icon2} alt="sketch" />
+                                                <img src={icon2} alt="User Persona Development" />
                                                 <div className="col-span-2">
                                                 <h3 className="text-[#fff] text-xl">User Persona Development</h3>
                                                 <p>We create detailed profiles of your ideal users to gain a deeper understanding of their needs, behaviors, and pain points.
@@ -387,28 +381,28 @@ function UXUIDesignServices() {
                                             </div>
                                             </div>
                                             <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
-                                                <img src={icon3} alt="sketch" />
+                                                <img src={icon3} alt="Information Architecture" />
                                                 <div className="col-span-2">
                                                 <h3 className="text-[#fff] text-xl">Information Architecture</h3>
                                                 <p>We organize the content and structure of your digital product to ensure a seamless user experience.</p>
                                             </div>
                                             </div>
                                             <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
-                                                <img src={icon4} alt="sketch" />
+                                                <img src={icon4} alt="Wireframing & Prototyping" />
                                                 <div className="col-span-2">
                                                 <h3 className="text-[#fff] text-xl">Wireframing & Prototyping</h3>
                                                 <p>We create low-fidelity wireframes to visualize the basic layout and functionality of your design. These wireframes are then refined into high-fidelity prototypes for testing.</p>
                                             </div>
                                             </div>
                                             <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
-                                                <img src={icon5} alt="sketch" />
+                                                <img src={icon5} alt="Design and Development" />
                                                 <div className="col-span-2">
                                                 <h3 className="text-[#fff] text-xl">Design and Development</h3>
                                                 <p>Our design team brings your vision to life by creating visually appealing and intuitive interfaces. The design is then handed off to our development team for implementation.</p>
                                             </div>
                                             </div>
                                             <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
-                                                <img src={icon6} alt="sketch" />
+                                                <img src={icon6} alt="Testing and Iteration" />
                                                 <div className="col-span-2">
                                                 <h3 className="text-[#fff] text-xl">Testing and Iteration</h3>
                                                 <p>We conduct rigorous testing to identify any usability issues and gather feedback from users. Based on the insights gained, we make necessary iterations to improve the design.</p>

@@ -31,7 +31,7 @@ export default function Team1() {
                                     <h2 className="title">Empowering Your Success with Creative Excellence</h2>
                                 </div>
                                 <p>At Genxsmedia, we pride ourselves on having a team that embodies the spirit of creative excellence. Our talented professionals are the backbone of our success, and we're proud to showcase their strengths.</p>
-                                <Link to="/team" className="btn">Meet Our Team <span /></Link>
+                                <Link to="/contact" className="btn">Get a Free Quote<span /></Link>
                             </div>
                         </div>
                     </div>
