@@ -13,6 +13,8 @@ import Testimonial1 from '../components/Testimonial1';
 import Consultation1 from '../components/Consultation1';
 import Blog1 from '../components/Blog1';
 import Newsletter1 from '../components/Newsletter1';
+import { info } from '../data/info';
+import DynamicTestimonial from '../components/DynamicTestimonial';
 const Home = () => {
     return (
         <div>
@@ -22,7 +24,7 @@ const Home = () => {
             <About1/>
             <Team1/>
             <Project1/>
-            <Testimonial1/>
+            <DynamicTestimonial testimonials={info.testimonials}/>
             <Consultation1/>
             <Blog1/>
             <Newsletter1/>

@@ -6,6 +6,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import CounterUp from '../components/elements/CounterUp';
 import Layout from '../components/Layout/Layout'; 
+import { info } from '../data/info';
 
 // Import images
 import innerCounterIcon01 from '../components/assets/img/icon/inner_counter_icon01.png';
@@ -47,6 +48,7 @@ import brandImg03 from '../components/assets/img/brand/h3_brand_img03.png';
 import brandImg04 from '../components/assets/img/brand/h3_brand_img04.png';
 import brandImg05 from '../components/assets/img/brand/h3_brand_img05.png';
 import brandImg06 from '../components/assets/img/brand/h3_brand_img06.png';
+import DynamicTestimonial from '../components/DynamicTestimonial';
 
 
 const swiperOptions = {
@@ -395,79 +397,7 @@ export default function AboutUs() {
                 </section>*/}
                 {/* history-area-end */}
             {/* testimonial-area */}
-            <section className="testimonial-area-three testimonial-area-four">
-                <div className="container">
-                    <div className="row align-items-center">
-                        <div className="col-md-8">
-                            <div className="section-title title-style-two mb-45">
-                                <h2 className="title">What Our Client’s Say</h2>
-                            </div>
-                        </div>
-                        <div className="col-md-4">
-                            <div className="testimonial-nav">
-                                <button className="swiper-button-prev" />
-                                <button className="swiper-button-next" />
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-lg-12">
-                            <div className="swiper-container testimonial-active-three">
-                                <Swiper {...swiperOptions}>
-                                    <SwiperSlide>
-                                        <div className="testimonial-item-three">
-                                            <div className="testimonial-thumb-three">
-                                                <img src={testimonialAvatar1} alt="" />
-                                            </div>
-                                            <div className="testimonial-content-three">
-                                                <h4 className="title">James Botosh</h4>
-                                                <span>Product Designer</span>
-                                                <p>“We seek to get involved early in the design phase so that we can manage the project more efficiently, provide effective building solutions”</p>
-                                            </div>
-                                        </div>
-                                    </SwiperSlide>
-                                    <SwiperSlide>
-                                        <div className="testimonial-item-three">
-                                            <div className="testimonial-thumb-three">
-                                                <img src={testimonialAvatar2} alt="" />
-                                            </div>
-                                            <div className="testimonial-content-three">
-                                                <h4 className="title">James Botosh</h4>
-                                                <span>Product Designer</span>
-                                                <p>“We seek to get involved early in the design phase so that we can manage the project more efficiently, provide effective building solutions”</p>
-                                            </div>
-                                        </div>
-                                    </SwiperSlide>
-                                    <SwiperSlide>
-                                        <div className="testimonial-item-three">
-                                            <div className="testimonial-thumb-three">
-                                                <img src={testimonialAvatar3} alt="" />
-                                            </div>
-                                            <div className="testimonial-content-three">
-                                                <h4 className="title">James Botosh</h4>
-                                                <span>Product Designer</span>
-                                                <p>“We seek to get involved early in the design phase so that we can manage the project more efficiently, provide effective building solutions”</p>
-                                            </div>
-                                        </div>
-                                    </SwiperSlide>
-                                    <SwiperSlide>
-                                        <div className="testimonial-item-three">
-                                            <div className="testimonial-thumb-three">
-                                                <img src={testimonialAvatar1} alt="" />
-                                            </div>
-                                            <div className="testimonial-content-three">
-                                                <h4 className="title">James Botosh</h4>
-                                                <span>Product Designer</span>
-                                                <p>“We seek to get involved early in the design phase so that we can manage the project more efficiently, provide effective building solutions”</p>
-                                            </div>
-                                        </div>
-                                    </SwiperSlide>
-                                </Swiper>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+          <DynamicTestimonial testimonials={info.testimonials}/>
             {/* testimonial-area-end */}
             {/* brand-area */}
             <div className="brand-area px-24 pb-120">

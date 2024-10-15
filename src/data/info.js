@@ -1,6 +1,9 @@
 import mudd from "../images/itsme.png";
 import innerTwoProject02 from "../components/assets/img/project/inner_two_project02.jpg";
 import innerTwoProject03 from "../components/assets/img/project/inner_two_project03.jpg";
+import testimonialAvatar1 from '../components/assets/img/images/testimonial_avatar01.png';
+import testimonialAvatar2 from '../components/assets/img/images/testimonial_avatar02.png';
+import testimonialAvatar3 from '../components/assets/img/images/testimonial_avatar03.png';
 export let info = {
   firstName: "Muddassir",
   lastName: "Hassan",
@@ -230,5 +233,37 @@ export let info = {
     "year": "2024"
 },
 
+  ],
+  testimonials :[
+    {
+      quote: "Skilled web developer! Strong communication skills and fast delivery. I'll certainly be repeating business with them!",
+      author: "Charles K",
+      title: "CEO Quaint Energy",
+      avatar: testimonialAvatar1
+    },
+    {
+      quote: "They did a great job building our new website, we are very happy and it looks great. The price was great also.",
+      author: "Tyson Bellamy",
+      title: "CEO T Y",
+      avatar: testimonialAvatar2
+    },
+    {
+      quote: "Muhammad is a good guy. Does really excellent work and will definitely use again. He worked on some flash (not easy) and HTML elements. Very pro look.",
+      author: "Phillip Colin",
+      title: "P C",
+      avatar: testimonialAvatar3
+    },
+    {
+      quote: "Great web developer! Great communication and very quick! Definetly will do business again.",
+      author: "Whilly Bermudez",
+      title: "CEO. Whilly Bermudez",
+      avatar: testimonialAvatar2
+    },
+    {
+      quote: "Excellent vendor who works hard to complete the project on time and on budget. No complaints at all and would use again in the future.",
+      author: "Dan G.",
+      title: "DG45",
+      avatar: testimonialAvatar3
+    }
   ]
 };
