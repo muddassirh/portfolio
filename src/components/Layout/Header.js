@@ -39,7 +39,7 @@ export default function Header({ scroll, headercls }) {
                                                 <Link to="/about-us">About Us</Link>
                                             </li>
                                             <li className="menu-item-has-children">
-                                                <Link to="/">Expertise</Link>
+                                                <Link to="">Expertise</Link>
                                                 <ul className="sub-menu">
                                                     <li className={location.pathname === "/full-stack-design-development" ? "active" : ""}>
                                                         <Link to="/full-stack-design-development">Fullstack Design and Development</Link>
