@@ -49,7 +49,7 @@ const Work = () => {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                             {filteredProjects.map((project, index) => (
                                 <div
-                                    className="relative border h-[24em] flex items-center rounded-lg drop-shadow-xl justify-center"
+                                    className="relative overflow-hidden group border h-[24em] flex items-center rounded-lg drop-shadow-xl justify-center"
                                     key={index}
                                 >
                                  
@@ -77,7 +77,7 @@ const Work = () => {
                                     <img
                                         src={project.image}
                                         alt={project.name}
-                                        className="object-cover -z-[2] h-full w-full !rounded-lg"
+                                        className="object-cover group-hover:scale-105 -z-[2] h-full w-full !rounded-lg"
                                     />
                                     <div className='absolute inset-0 bg-black/70 -z-[1] rounded-lg'></div>
                                 </div>
