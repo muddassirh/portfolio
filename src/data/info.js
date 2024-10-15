@@ -204,4 +204,31 @@ export let info = {
         },
       ],
   ],
+  works:[
+    {
+      "name": "LAZY5VETS",
+      "description": "Explore cutting-edge motion graphics design.",
+      "image": 'https://redkite.design/wp-content/uploads/2022/07/hq-portal-bg@2x-scaled.jpg',
+      "link": "https://lazy5vets.com/",
+      "category": "frontend",
+      "year": "2022"
+  },
+  {
+      "name": "Project Two",
+      "description": "This is a description for project two.",
+      "image": "https://redkite.design/wp-content/uploads/2022/07/hq-portal-bg@2x-scaled.jpg",
+      "link": "https://lazy5vets.com/",
+      "category": "backend",
+      "year": "2023"
+  },
+  {
+    "name": "Bulk BuyBack",
+    "description": "This is a description for project two.",
+    "image": "https://bulkbuyback.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FSoftwareAppImg.89afef3a.png&w=1920&q=75",
+    "link": "https://bulkbuyback.com/",
+    "category": "nextjs",
+    "year": "2024"
+},
+
+  ]
 };

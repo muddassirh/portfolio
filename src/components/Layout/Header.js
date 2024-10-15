@@ -46,7 +46,7 @@ export default function Header({ scroll, headercls }) {
                                                     {/*<li><a href="/project-details">App Development</a></li>*/}
                                                 </ul>
                                             </li>
-                                            <li><Link to="/about-us">Work</Link></li>
+                                            <li><Link to="/work">Work</Link></li>
                                             {/* <li className="menu-item-has-children">
                                                 <Link to="/">News</Link>
                                                 <ul className="sub-menu">
