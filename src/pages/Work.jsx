@@ -52,56 +52,34 @@ const Work = () => {
                                     className="relative border h-[24em] flex items-center rounded-lg drop-shadow-xl justify-center"
                                     key={index}
                                 >
+                                 
                                     <div
-                                        className="group absolute left-1/2 top-1/2 flex h-[6em] w-[6em] -translate-x-1/2 -translate-y-1/2 items-center justify-center overflow-hidden rounded-[3.5em] border-[1px] border-[#ffffffaa] bg-black/50 backdrop-blur-[6px] duration-[500ms] hover:h-[10em] hover:w-[16em] hover:rounded-[1.5em]"
-                                    >
-                                        <svg
-                                            className="h-[2.5em] w-[2.5em] duration-300 group-hover:opacity-0"
-                                            viewBox="0 0 48 48"
-                                            fill="none"
-                                            height="48"
-                                            width="48"
-                                            xmlns="http://www.w3.org/2000/svg"
+                                            className="w-full absolute bottom-0 left-0" 
                                         >
-                                            <g clipPath="url(#a)">
-                                                <path
-                                                    clipRule="evenodd"
-                                                    d="M21.6 36h4.8V21.6h-4.8V36ZM24 0C10.8 0 0 10.8 0 24s10.8 24 24 24 24-10.8 24-24S37.2 0 24 0Zm0 43.2C13.44 43.2 4.8 34.56 4.8 24 4.8 13.44 13.44 4.8 24 4.8c10.56 0 19.2 8.64 19.2 19.2 0 10.56-8.64 19.2-19.2 19.2Zm-2.4-26.4h4.8V12h-4.8v4.8Z"
-                                                    fillRule="evenodd"
-                                                    fill="#fff"
-                                                ></path>
-                                            </g>
-                                            <defs>
-                                                <clipPath id="a">
-                                                    <path d="M0 0h48v48H0z" fill="#fff"></path>
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                        <div
-                                            className="items-left duration-600 absolute left-0 top-0 flex h-[10em] w-[16em] translate-y-[100%] flex-col justify-between p-[1.5em] font-nunito text-[hsl(0,0%,85%)] group-hover:translate-y-0"
-                                        >
-                                            <div className="items-left flex flex-col justify-center">
-                                                <h1 className="text-[1.5em] text-white font-bold leading-[0.8em]">{project.name}</h1>
+                                            <div className="items-left  flex flex-col p-5 justify-center">
+                                                <span className='text-xl font-bold text-white mb-3'>{project.category}</span>
+                                                <h1 className="text-[1.5em] text-white  font-bold leading-[0.8em]">{project.name}</h1>
                                                 <p className="text-[0.9em] text-white font-light">
                                                     {project.description}
                                                 </p>
-                                            </div>
-
-                                            <a
+                                                <a
                                                 href={project.link}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="text-[#3482FF] hover:underline"
+                                                className="text-white flex hover:!text-[#1073ff] duration-500 transition-color  items-center hover:underline"
                                             >
-                                                View Project
+                                                <span className='w-16 bg-white block h-[2px] me-4'></span> View Project
                                             </a>
+                                            </div>
+
+                                            
                                         </div>
-                                    </div>
                                     <img
                                         src={project.image}
                                         alt={project.name}
-                                        className="object-cover h-full w-full !rounded-lg"
+                                        className="object-cover -z-[2] h-full w-full !rounded-lg"
                                     />
+                                    <div className='absolute inset-0 bg-black/70 -z-[1] rounded-lg'></div>
                                 </div>
                             ))}
                         </div>
