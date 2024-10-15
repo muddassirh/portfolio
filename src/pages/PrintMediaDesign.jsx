@@ -5,9 +5,9 @@ import { Autoplay, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import Layout from '../components/Layout/Layout';
-import Printmedia from '../components/assets/img/images/printmedia.webp';
-import PhotoshopIcon from '../components/assets/img/icon/tools_icon01.png';
-import IllustratorIcon from '../components/assets/img/icon/tools_icon02.png';
+import Creative from '../components/assets/img/icon/creative-vision.webp';
+import Technical from '../components/assets/img/icon/technical.webp';
+import Client from '../components/assets/img/icon/client-centric.webp';
 import innerTwoProject01 from '../components/assets/img/project/inner_two_project01.jpg';
 import innerTwoProject02 from '../components/assets/img/project/inner_two_project02.jpg';
 import innerTwoProject03 from '../components/assets/img/project/inner_two_project03.jpg';
@@ -18,7 +18,7 @@ import innerTwoProject07 from '../components/assets/img/project/inner_two_projec
 import innerTwoProject08 from '../components/assets/img/project/inner_two_project08.jpg';
 import innerTwoProject09 from '../components/assets/img/project/inner_two_project09.jpg';
 import innerTwoProject10 from '../components/assets/img/project/inner_two_project10.jpg';
-import SketchIcon from '../components/assets/img/icon/tools_icon04.png';
+import Printmedia from '../components/assets/img/images/printmedia.webp';
 import Newsletter1 from '../components/Newsletter1';
 import Faqs from '../components/FaqsFullStack';
 import PrintmediaTools from '../components/PrintmediaTools';
@@ -260,7 +260,7 @@ function PrintMediaDesign() {
                         <div className="">
                             <div className="">
                                 <div className="grid grid-cols-1 md:grid-cols-3">
-                                    <img src={PhotoshopIcon} alt="Photoshop" />
+                                    <img src={Creative} alt="Creative Vision" />
                                     <div className=" col-span-2">
                                     <h3 className="text-[#3482FF] text-xl">Creative Vision</h3>
                                     <p >Our designers possess a unique ability to transform your brand's essence into visually captivating designs. With a passion for innovation and a keen eye for detail, we create print materials that are both visually stunning and strategically effective. We understand that each brand has its own distinct personality, and we strive to capture and communicate that essence through our designs.</p>
@@ -272,7 +272,7 @@ function PrintMediaDesign() {
                         <div className="">
                             <div className="">
                             <div className="grid grid-cols-1 md:grid-cols-3">
-                                    <img src={IllustratorIcon} alt="Illustrator" />
+                                    <img src={Technical} alt="Technical Proficiency" />
                                     <div className="col-span-2">
                                     <h3 className="text-[#3482FF] text-xl">Technical Proficiency</h3>
                                     <p>Our team is equipped with the latest design software and printing techniques, ensuring that your print materials are produced to the highest standards of quality. We stay up-to-date with industry trends and advancements to deliver cutting-edge designs that are both visually appealing and technically sound. From initial concept to final production, we oversee every step of the process to guarantee exceptional results.</p>
@@ -284,7 +284,7 @@ function PrintMediaDesign() {
                         <div className="">
                             <div className="">
                             <div className="grid grid-cols-1 md:grid-cols-3">
-                                    <img src={SketchIcon} alt="sketch" />
+                                    <img src={Client} alt="Client-Centric Approach" />
                                     <div className="col-span-2">
                                     <h3 className="text-[#3482FF] text-xl">Client-Centric Approach</h3>
                                     <p>We believe in building strong partnerships with our clients. We work closely with you to understand your goals, target audience, and brand message. By collaborating with you throughout the design process, we ensure that your print materials accurately reflect your vision and resonate with your desired audience. Your satisfaction is our top priority, and we are committed to providing personalized service that exceeds your expectations.</p>
