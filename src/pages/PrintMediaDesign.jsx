@@ -18,6 +18,7 @@ import innerTwoProject07 from '../components/assets/img/project/inner_two_projec
 import innerTwoProject08 from '../components/assets/img/project/inner_two_project08.jpg';
 import innerTwoProject09 from '../components/assets/img/project/inner_two_project09.jpg';
 import innerTwoProject10 from '../components/assets/img/project/inner_two_project10.jpg';
+
 import Printmedia from '../components/assets/img/images/printmedia.webp';
 import Newsletter1 from '../components/Newsletter1';
 import Faqs from '../components/FaqsFullStack';

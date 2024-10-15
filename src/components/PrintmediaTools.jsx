@@ -2,14 +2,17 @@ import React, {useState, useEffect} from 'react';
 import { Autoplay, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import PhotoshopIcon from '../components/assets/img/icon/tools_icon01.png';
 import IllustratorIcon from '../components/assets/img/icon/tools_icon02.png';
 import FigmaIcon from '../components/assets/img/icon/tools_icon03.png';
 import SketchIcon from '../components/assets/img/icon/tools_icon04.png';
 import PremiereProIcon from '../components/assets/img/icon/tools_icon05.png';
 import AfterEffectsIcon from '../components/assets/img/icon/tools_icon06.png';
-import HTML5Icon from '../components/assets/img/icon/tools_icon07.png';
-import BlenderIcon from '../components/assets/img/icon/tools_icon08.png';
+import icon1 from "../components/assets/img/step1-01.svg";
+import icon2 from "../components/assets/img/step2-01.svg";
+import icon3 from "../components/assets/img/step3-01.svg";
+import icon4 from "../components/assets/img/step4-01.svg";
+import icon5 from "../components/assets/img/step5-01.svg";
+import icon6 from "../components/assets/img/step6-01.svg";
 
 const swiperOptions = {
     modules: [Autoplay],
@@ -85,7 +88,7 @@ export default function PrintmediaTools() {
                         <div className="basis-1/2 md:basis-1/3">
                         <div className="tools-item">
                                 <div className="tools-icon">
-                                    <img src={PhotoshopIcon} alt="Photoshop" />
+                                <img src={icon1} alt="Brand Identity" />
                                 </div>
                                 <div className="tools-content">
                                     <h3 className="title">Brand Identity: Defining Your Visual Voice</h3>
@@ -96,7 +99,7 @@ export default function PrintmediaTools() {
                         <div className="basis-1/2 md:basis-1/3">
                         <div className="tools-item">
                                 <div className="tools-icon">
-                                    <img src={IllustratorIcon} alt="Illustrator" />
+                                <img src={icon2} alt="Brand Identity" />
                                 </div>
                                 <div className="tools-content">
                                     <h3 className="title">Brochures and Flyers: Engaging Your Audience</h3>
@@ -107,7 +110,7 @@ export default function PrintmediaTools() {
                         <div className="basis-1/2 md:basis-1/3">
                         <div className="tools-item">
                                 <div className="tools-icon">
-                                    <img src={FigmaIcon} alt="Figma" />
+                                <img src={icon3} alt="Brand Identity" />
                                 </div>
                                 <div className="tools-content">
                                     <h3 className="title">Packaging Design: Making a Statement</h3>
@@ -120,7 +123,7 @@ export default function PrintmediaTools() {
                         <div className="basis-1/2 md:basis-1/3">
                         <div className="tools-item">
                                 <div className="tools-icon">
-                                    <img src={SketchIcon} alt="Sketch" />
+                                <img src={icon4} alt="Brand Identity" />
                                 </div>
                                 <div className="tools-content">
                                     <h3 className="title">Catalogs and Lookbooks: Showcasing Your Offerings</h3>
@@ -131,7 +134,7 @@ export default function PrintmediaTools() {
                         <div className="basis-1/2 md:basis-1/3">
                         <div className="tools-item">
                                 <div className="tools-icon">
-                                    <img src={PremiereProIcon} alt="Premiere Pro" />
+                                <img src={icon5} alt="Brand Identity" />
                                 </div>
                                 <div className="tools-content">
                                     <h3 className="title">Posters and Banners: Making a Big Impact</h3>
@@ -142,7 +145,7 @@ export default function PrintmediaTools() {
                         <div className="basis-1/2 md:basis-1/3">
                         <div className="tools-item">
                                 <div className="tools-icon">
-                                    <img src={AfterEffectsIcon} alt="After Effects" />
+                                <img src={icon6} alt="Brand Identity" />
                                 </div>
                                 <div className="tools-content">
                                     <h3 className="title">Stationery Design: Building a Professional Image</h3>

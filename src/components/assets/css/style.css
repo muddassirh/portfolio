@@ -3349,7 +3349,7 @@ label {
 }
 
 .tools-icon {
-    margin-bottom: 75px;
+    margin-bottom: 25px;
     transform    : translateY(0px);
     transition   : .3s linear;
 }
@@ -3365,7 +3365,7 @@ label {
 .tools-content .title {
     font-size    : 24px;
     margin-bottom: 15px;
-    color        : var(--tg-white);
+    color        : var(--tg-orange);
 }
 
 .tools-content p {
