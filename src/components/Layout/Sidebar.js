@@ -34,7 +34,7 @@ const Sidebar = () => {
                 </ul>
                 <div className="dropdown-btn" onClick={() => handleToggle("2")}><span className="fa fa-angle-down" /></div>
             </li>*/}
-            <li><a href="/contact">Work</a></li>
+            <li><a href="/work">Work</a></li>
             <li><a href="/contact">Contact Us</a></li>
         </ul>
     );
