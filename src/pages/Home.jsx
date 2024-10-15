@@ -2,7 +2,6 @@ import React from 'react';
 import Banner from '../components/Banner';
 import HomePortfolio from '../components/HomePortfolio';
 import ServicesBody from '../components/ServicesBody';
-import Testimonials from '../components/Testimonials';
 import Services from '../components/Services';
 import Layout from '../components/Layout/Layout';
 import Services1 from '../components/Services1';
@@ -22,7 +21,6 @@ const Home = () => {
             <About1/>
             <Team1/>
             <Project1/>
-            <Testimonial1/>
             <Consultation1/>
             <Blog1/>
             <Newsletter1/>

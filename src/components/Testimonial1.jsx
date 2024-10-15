@@ -48,11 +48,42 @@ const swiperOptions = {
         },
     }
 }
-
+const testimonials = [
+    {
+      quote: "Skilled web developer! Strong communication skills and fast delivery. I'll certainly be repeating business with them!",
+      author: "Charles K",
+      title: "CEO Quaint Energy",
+      avatar: TestAvatar1
+    },
+    {
+      quote: "They did a great job building our new website, we are very happy and it looks great. The price was great also.",
+      author: "Tyson Bellamy",
+      title: "CEO T Y",
+      avatar: TestAvatar2
+    },
+    {
+      quote: "Muhammad is a good guy. Does really excellent work and will definitely use again. He worked on some flash (not easy) and HTML elements. Very pro look.",
+      author: "Phillip Colin",
+      title: "P C",
+      avatar: TestAvatar4
+    },
+    {
+      quote: "Great web developer! Great communication and very quick! Definetly will do business again.",
+      author: "Whilly Bermudez",
+      title: "CEO. Whilly Bermudez",
+      avatar: TestAvatar2
+    },
+    {
+      quote: "Excellent vendor who works hard to complete the project on time and on budget. No complaints at all and would use again in the future.",
+      author: "Dan G.",
+      title: "DG45",
+      avatar: TestAvatar3
+    }
+  ];
 export default function Testimonial1() {
     return (
         <>
-            <section className="testimonial-area px-24 pt-110 pb-120">
+            <section className="testimonial-area bg-white px-24 pt-110 pb-120">
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-xl-6">
@@ -62,88 +93,30 @@ export default function Testimonial1() {
                             </div>
                         </div>
                     </div>
-                    <div className="testimonial-item-wrap">
+                    <div className="testimonial-item-wrap ">
                         <Swiper {...swiperOptions} className="testimonial-active">
-                            <SwiperSlide>
-                                <div className="testimonial-item">
+                           { 
+                            testimonials.map(testimonial=>{
+return(
+                     <SwiperSlide >
+                                <div className="testimonial-item ">
                                     <div className="testimonial-content">
-                                        <p>Skilled web developer! Strong communication skills and fast delivery. I'll certainly be repeating business with them!</p>
+                                        <p>{testimonial.quote}</p>
                                     </div>
                                     <div className="testimonial-info">
                                         <div className="thumb">
-                                            <img src={TestAvatar1} alt="" />
+                                            <img src={testimonial.avatar} alt="" />
                                         </div>
                                         <div className="content">
-                                            <h4 className="title">Charles K</h4>
-                                            <p>CEO Quaint Energy.</p>
+                                            <h4 className="title">{testimonial.author}</h4>
+                                            <p>{testimonial.title}</p>
                                         </div>
                                     </div>
                                 </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div className="testimonial-item">
-                                    <div className="testimonial-content">
-                                        <p>They did a great job building our new website, we are very happy and it looks great. The price was great also.“</p>
-                                    </div>
-                                    <div className="testimonial-info">
-                                        <div className="thumb">
-                                            <img src={TestAvatar2} alt="" />
-                                        </div>
-                                        <div className="content">
-                                            <h4 className="title">Tyson Bellamy</h4>
-                                            <p>CEO T Y</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </SwiperSlide>                            
-                            <SwiperSlide>
-                                <div className="testimonial-item">
-                                    <div className="testimonial-content">
-                                        <p>Muhammad is a good guy. Does really excellent work and will definitely use again. He worked on some flash (not easy) and HTML elements. Very pro look“</p>
-                                    </div>
-                                    <div className="testimonial-info">
-                                        <div className="thumb">
-                                            <img src={TestAvatar4} alt="" />
-                                        </div>
-                                        <div className="content">
-                                            <h4 className="title">Phillip Colin</h4>
-                                            <p>P C</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div className="testimonial-item">
-                                    <div className="testimonial-content">
-                                        <p>Great web developer! Great communication and very quick! Definetly will do business again.“</p>
-                                    </div>
-                                    <div className="testimonial-info">
-                                        <div className="thumb">
-                                            <img src={TestAvatar2} alt="" />
-                                        </div>
-                                        <div className="content">
-                                            <h4 className="title">Whilly Bermudez</h4>
-                                            <p>CEO. Whilly Bermudez</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div className="testimonial-item">
-                                    <div className="testimonial-content">
-                                        <p>Excellent vendor who works hard to complete the project on time and on budget. No complaints at all and would use again in the future.“</p>
-                                    </div>
-                                    <div className="testimonial-info">
-                                        <div className="thumb">
-                                            <img src={TestAvatar3} alt="" />
-                                        </div>
-                                        <div className="content">
-                                            <h4 className="title">Dan G.</h4>
-                                            <p>DG45</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </SwiperSlide>
+                            </SwiperSlide>)
+                            })}
+                            
+                          
                         </Swiper>
                         <div className="mt-30 text-center">
                             <div className="swiper-pagination3"></div>
