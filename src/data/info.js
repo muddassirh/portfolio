@@ -4,6 +4,13 @@ import innerTwoProject03 from "../components/assets/img/project/inner_two_projec
 import testimonialAvatar1 from '../components/assets/img/images/testimonial_avatar01.png';
 import testimonialAvatar2 from '../components/assets/img/images/testimonial_avatar02.png';
 import testimonialAvatar3 from '../components/assets/img/images/testimonial_avatar03.png';
+import cellularIMG from "../components/assets/img/project/cellular-optics.webp";
+import cellercertifiedIMG from '../components/assets/img/project/celler-certified.webp';
+import skuopticsdIMG from '../components/assets/img/project/sku-optics.webp';
+import outsetIMG from '../components/assets/img/project/out-set.webp';
+import recommercedIMG from '../components/assets/img/project/upcycle-it.webp';
+import chronoIMG from '../components/assets/img/project/crown-chrono.webp';
+import ASdesignIMG from '../components/assets/img/project/AS-design.webp';
 export let info = {
   firstName: "Muddassir",
   lastName: "Hassan",
@@ -211,7 +218,7 @@ export let info = {
     {
       "name": "Cellular Optics",
       "description": "Diagonastic Testing Software for Used Devices",
-      "image": '../components/assets/img/project/cellular-optics.webp',
+      "image": cellularIMG,
       "link": "https://cellularoptics.com/",
       "category": "Web Development",
       "technology": "React, Node.JS, MangoDB",
@@ -220,7 +227,7 @@ export let info = {
   {
       "name": "Celler Certified",
       "description": "Buy or Sell Used Devices With Confidence",
-      "image": '../components/assets/img/project/cellular-optics.webp',
+      "image": cellercertifiedIMG,
       "link": "https://www.cellercertified.com/",
       "category": "Web Development",
       "technology": "React, Node.JS, MangoDB",
@@ -229,7 +236,7 @@ export let info = {
   {
     "name": "SKU Optics",
     "description": "E-commerce Inventory Software Solution",
-    "image": '../components/assets/img/project/cellular-optics.webp',
+    "image":skuopticsdIMG,
     "link": "https://www.skuoptics.com/",
     "category": "Web Development",
     "technology": "NextJS, Node.JS, Express",
@@ -238,7 +245,7 @@ export let info = {
 {
   "name": "AS Design",
   "description": "Home Remodeling Solutions Provider in Long Island",
-  "image": '../components/assets/img/project/cellular-optics.webp',
+  "image":ASdesignIMG ,
   "link": "https://asdesignli.com/",
   "category": "Web Development",
   "technology": "WordPress, Divi Theme, Custom Design",
@@ -247,7 +254,7 @@ export let info = {
 {
   "name": "Recommerced",
   "description": "Solutions to repurpose their IT Assets",
-  "image": '../components/assets/img/project/cellular-optics.webp',
+  "image": recommercedIMG,
   "link": "https://www.skuoptics.com/",
   "category": "Web Development",
   "technology": "NextJS, Node.JS, Express",
@@ -256,7 +263,7 @@ export let info = {
 {
   "name": "Outset Ventures",
   "description": "Providing investment fund and a physical space for technology incubation.",
-  "image": '../components/assets/img/project/cellular-optics.webp',
+  "image": outsetIMG,
   "link": "https://outset.ventures/",
   "category": "Web Development",
   "technology": "WordPress, Divi Theme, Custom Design",
@@ -265,7 +272,7 @@ export let info = {
 {
   "name": "Crown Chrono Bands",
   "description": "Deals in Customized Bands of L:uxry Watches",
-  "image": '../components/assets/img/project/cellular-optics.webp',
+  "image": chronoIMG,
   "link": "https://www.crownchronobands.com/",
   "category": "Web Development",
   "technology": "WordPress, Divi Theme, Custom Design",
