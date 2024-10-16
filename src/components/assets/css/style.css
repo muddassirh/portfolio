@@ -3404,10 +3404,15 @@ label {
 }
 
 .brand-item-two {
-    min-height     : 47px;
+    min-height: 119px;
     display        : flex;
     align-items    : center;
     justify-content: center;
+    border-radius: 20px;
+}
+.brand-area .brand-item-two {
+    border:1px solid;
+    border-color: var(--tg-gray-eight);
 }
 
 .brand-item-two img {
