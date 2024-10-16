@@ -58,7 +58,7 @@ const Work = () => {
                                             className="w-full absolute bottom-0 left-0" 
                                         >
                                             <div className="items-left  flex flex-col p-5 justify-center">
-                                                <span className='text-xl font-bold text-white mb-3'>{project.category}</span>
+                                                <span className='text-[0.85em] font-bold text-blue-400 mb-1'>{project.category}</span>
                                                 <h1 className="text-[1.5em] text-white  font-bold leading-[0.8em]">{project.name}</h1>
                                                 <p className="text-[0.9em] text-white font-light mb-1">
                                                     {project.description}

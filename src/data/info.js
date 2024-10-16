@@ -11,6 +11,7 @@ import outsetIMG from '../components/assets/img/project/out-set.webp';
 import recommercedIMG from '../components/assets/img/project/upcycle-it.webp';
 import chronoIMG from '../components/assets/img/project/crown-chrono.webp';
 import ASdesignIMG from '../components/assets/img/project/AS-design.webp';
+import nexusperformanceIMG from '../components/assets/img/project/nexus-performance.webp';
 export let info = {
   firstName: "Muddassir",
   lastName: "Hassan",
@@ -278,7 +279,15 @@ export let info = {
   "technology": "WordPress, Divi Theme, Custom Design",
   "year": "2022"
 },
-
+{
+  "name": "Nexus Performance",
+  "description": "Professional GYM Trainner in Ottawa",
+  "image": nexusperformanceIMG,
+  "link": "http://www.nexusperformancecentre.ca/",
+  "category": "Web Development",
+  "technology": "WordPress, Divi Theme, Custom Design",
+  "year": "2022"
+},
 
   ],
   testimonials :[
