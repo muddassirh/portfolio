@@ -209,18 +209,18 @@ export let info = {
   ],
   works:[
     {
-      "name": "LAZY5VETS",
-      "description": "Explore cutting-edge motion graphics design.",
-      "image": 'https://redkite.design/wp-content/uploads/2022/07/hq-portal-bg@2x-scaled.jpg',
-      "link": "https://lazy5vets.com/",
-      "category": "frontend",
+      "name": "Cellular Optics",
+      "description": "Diagonastic Testing Software for Used Devices",
+      "image": 'images/cellular-optics.webp',
+      "link": "https://cellularoptics.com/",
+      "category": "Frontend Development",
       "year": "2022"
   },
   {
       "name": "Project Two",
       "description": "This is a description for project two.",
-      "image": "https://redkite.design/wp-content/uploads/2022/07/hq-portal-bg@2x-scaled.jpg",
-      "link": "https://lazy5vets.com/",
+      "image": "../images/",
+      "link": "https://www.cellercertified.com/",
       "category": "backend",
       "year": "2023"
   },

@@ -11,37 +11,14 @@ import { info } from '../data/info';
 // Import images
 import innerCounterIcon01 from '../components/assets/img/icon/inner_counter_icon01.png';
 import innerCounterIcon02 from '../components/assets/img/icon/inner_counter_icon02.png';
-import innerCounterIcon03 from '../components/assets/img/icon/inner_counter_icon03.png';
-import innerCounterIcon04 from '../components/assets/img/icon/inner_counter_icon04.png';
-import sine from '../components/assets/img/images/sine.png';
+import sine from '../components/assets/img/images/sign.webp';
 import team1 from '../components/assets/img/team/inner_team01.jpg';
 import team2 from '../components/assets/img/team/inner_team02.jpg';
 import team3 from '../components/assets/img/team/inner_team03.jpg';
 import team4 from '../components/assets/img/team/inner_team04.jpg';
 import team5 from '../components/assets/img/team/inner_team05.jpg';
-import testimonialAvatar1 from '../components/assets/img/images/testimonial_avatar01.png';
-import testimonialAvatar2 from '../components/assets/img/images/testimonial_avatar02.png';
-import testimonialAvatar3 from '../components/assets/img/images/testimonial_avatar03.png';
 import ConsultationShape1 from "../components/assets/img/images/consultation_shape01.png";
 import ConsultationShape2 from "../components/assets/img/images/consultation_shape02.png";
-import ServicesIcon1 from "../components/assets/img/icon/inner_services_icon01.png";
-import ServicesIcon2 from "../components/assets/img/icon/inner_services_icon02.png";
-import ServicesIcon3 from "../components/assets/img/icon/inner_services_icon03.png";
-import ServicesIcon4 from "../components/assets/img/icon/inner_services_icon04.png";
-import ServicesIcon5 from "../components/assets/img/icon/inner_services_icon05.png";
-import ServicesIcon6 from "../components/assets/img/icon/inner_services_icon06.png";
-import ServicesIcon7 from "../components/assets/img/icon/inner_services_icon07.png";
-import ServicesIcon8 from "../components/assets/img/icon/inner_services_icon08.png";
-import SuccessImg from "../components/assets/img/images/success_img.png";
-import SuccessIcon1 from "../components/assets/img/icon/success_icon01.png"
-import SuccessIcon2 from "../components/assets/img/icon/success_icon02.png"
-import SuccessIcon3 from "../components/assets/img/icon/success_icon03.png"
-import SuccessIcon4 from "../components/assets/img/icon/success_icon04.png"
-import SuccessShape1 from "../components/assets/img/images/success_shape01.png"
-import SuccessShape2 from "../components/assets/img/images/success_shape02.png"
-import HistoryImg from "../components/assets/img/images/history_img.jpg"
-import HistoryShape1 from "../components/assets/img/images/history_shape01.png"
-import HistoryShape2 from "../components/assets/img/images/history_shape02.png"
 import brandImg01 from '../components/assets/img/brand/h3_brand_img01.png';
 import brandImg02 from '../components/assets/img/brand/h3_brand_img02.png';
 import brandImg03 from '../components/assets/img/brand/h3_brand_img03.png';
@@ -136,8 +113,8 @@ export default function AboutUs() {
                                 <p>Since 2007, we've been dedicated to helping businesses like yours thrive in an ever-changing digital landscape. Let us help you achieve your vision and take your business to new heights.</p>
                                 <img src={sine} alt="" />
                                 <div className="content-bottom">
-                                    <h4 className="title-two">Davis Levin</h4>
-                                    <span>Director Company</span>
+                                    <h4 className="title-two">M. Muddassir Hassan - Mudd</h4>
+                                    <span>CEO, Co-Founder - Genxsmedia Solutions</span>
                                 </div>
                             </div>
                         </div>
@@ -160,10 +137,10 @@ export default function AboutUs() {
                         <SwiperSlide>
                             <div className="team-item">
                                 <div className="team-thumb">
-                                    <Link to="/team-details"><img src={team1} alt="" /></Link>
+                                    <Link to="#"><img src={team1} alt="" /></Link>
                                 </div>
                                 <div className="team-content">
-                                    <h2 className="title"><Link to="/team-details">Muddassir AKA Mudd</Link></h2>
+                                    <h2 className="title"><Link to="#">Muddassir AKA Mudd</Link></h2>
                                     <span>CEO, Founder</span>
                                     <div className="team-social">
                                         <ul className="list-wrap">
@@ -179,10 +156,10 @@ export default function AboutUs() {
                         <SwiperSlide>
                             <div className="team-item">
                                 <div className="team-thumb">
-                                    <Link to="/team-details"><img src={team2} alt="" /></Link>
+                                    <Link to="#"><img src={team2} alt="" /></Link>
                                 </div>
                                 <div className="team-content">
-                                    <h2 className="title"><Link to="/team-details">Danish</Link></h2>
+                                    <h2 className="title"><Link to="#">Danish</Link></h2>
                                     <span>Senior Frontend Engineer</span>
                                     <div className="team-social">
                                         <ul className="list-wrap">
@@ -198,10 +175,10 @@ export default function AboutUs() {
                         <SwiperSlide>
                             <div className="team-item">
                                 <div className="team-thumb">
-                                    <Link to="/team-details"><img src={team3} alt="" /></Link>
+                                    <Link to="#"><img src={team3} alt="" /></Link>
                                 </div>
                                 <div className="team-content">
-                                    <h2 className="title"><Link to="/team-details">Zain</Link></h2>
+                                    <h2 className="title"><Link to="#">Zain</Link></h2>
                                     <span>Senior Frontend Engineer</span>
                                     <div className="team-social">
                                         <ul className="list-wrap">
@@ -217,10 +194,10 @@ export default function AboutUs() {
                         <SwiperSlide>
                             <div className="team-item">
                                 <div className="team-thumb">
-                                    <Link to="/team-details"><img src={team4} alt="" /></Link>
+                                    <Link to="#"><img src={team4} alt="" /></Link>
                                 </div>
                                 <div className="team-content">
-                                    <h2 className="title"><Link to="/team-details">Moanam</Link></h2>
+                                    <h2 className="title"><Link to="#">Moanam</Link></h2>
                                     <span>Frontend Developer</span>
                                     <div className="team-social">
                                         <ul className="list-wrap">
@@ -236,10 +213,10 @@ export default function AboutUs() {
                         <SwiperSlide>
                             <div className="team-item">
                                 <div className="team-thumb">
-                                    <Link to="/team-details"><img src={team5} alt="" /></Link>
+                                    <Link to="#"><img src={team5} alt="" /></Link>
                                 </div>
                                 <div className="team-content">
-                                    <h2 className="title"><Link to="/team-details">Tahir Ali</Link></h2>
+                                    <h2 className="title"><Link to="#">Tahir Ali</Link></h2>
                                     <span>Shopify Developer/Frontend Developer</span>
                                     <div className="team-social">
                                         <ul className="list-wrap">
