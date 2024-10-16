@@ -211,27 +211,67 @@ export let info = {
     {
       "name": "Cellular Optics",
       "description": "Diagonastic Testing Software for Used Devices",
-      "image": 'images/cellular-optics.webp',
+      "image": '../components/assets/img/project/cellular-optics.webp',
       "link": "https://cellularoptics.com/",
-      "category": "Frontend Development",
+      "category": "Web Development",
+      "technology": "React, Node.JS, MangoDB",
       "year": "2022"
   },
   {
-      "name": "Project Two",
-      "description": "This is a description for project two.",
-      "image": "../images/",
+      "name": "Celler Certified",
+      "description": "Buy or Sell Used Devices With Confidence",
+      "image": '../components/assets/img/project/cellular-optics.webp',
       "link": "https://www.cellercertified.com/",
-      "category": "backend",
-      "year": "2023"
+      "category": "Web Development",
+      "technology": "React, Node.JS, MangoDB",
+      "year": "2022"
   },
   {
-    "name": "Bulk BuyBack",
-    "description": "This is a description for project two.",
-    "image": "https://bulkbuyback.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FSoftwareAppImg.89afef3a.png&w=1920&q=75",
-    "link": "https://bulkbuyback.com/",
-    "category": "nextjs",
-    "year": "2024"
+    "name": "SKU Optics",
+    "description": "E-commerce Inventory Software Solution",
+    "image": '../components/assets/img/project/cellular-optics.webp',
+    "link": "https://www.skuoptics.com/",
+    "category": "Web Development",
+    "technology": "NextJS, Node.JS, Express",
+    "year": "2022"
 },
+{
+  "name": "AS Design",
+  "description": "Home Remodeling Solutions Provider in Long Island",
+  "image": '../components/assets/img/project/cellular-optics.webp',
+  "link": "https://asdesignli.com/",
+  "category": "Web Development",
+  "technology": "WordPress, Divi Theme, Custom Design",
+  "year": "2023"
+},
+{
+  "name": "Recommerced",
+  "description": "Solutions to repurpose their IT Assets",
+  "image": '../components/assets/img/project/cellular-optics.webp',
+  "link": "https://www.skuoptics.com/",
+  "category": "Web Development",
+  "technology": "NextJS, Node.JS, Express",
+  "year": "2023"
+},
+{
+  "name": "Outset Ventures",
+  "description": "Providing investment fund and a physical space for technology incubation.",
+  "image": '../components/assets/img/project/cellular-optics.webp',
+  "link": "https://outset.ventures/",
+  "category": "Web Development",
+  "technology": "WordPress, Divi Theme, Custom Design",
+  "year": "2023"
+},
+{
+  "name": "Crown Chrono Bands",
+  "description": "Deals in Customized Bands of L:uxry Watches",
+  "image": '../components/assets/img/project/cellular-optics.webp',
+  "link": "https://www.crownchronobands.com/",
+  "category": "Web Development",
+  "technology": "WordPress, Divi Theme, Custom Design",
+  "year": "2022"
+},
+
 
   ],
   testimonials :[

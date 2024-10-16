@@ -59,8 +59,11 @@ const Work = () => {
                                             <div className="items-left  flex flex-col p-5 justify-center">
                                                 <span className='text-xl font-bold text-white mb-3'>{project.category}</span>
                                                 <h1 className="text-[1.5em] text-white  font-bold leading-[0.8em]">{project.name}</h1>
-                                                <p className="text-[0.9em] text-white font-light">
+                                                <p className="text-[0.9em] text-white font-light mb-1">
                                                     {project.description}
+                                                </p>
+                                                <p className="text-[0.8em] text-white font-light">
+                                                    {project.technology}
                                                 </p>
                                                 <a
                                                 href={project.link}
