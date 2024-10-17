@@ -5,7 +5,7 @@ import { Autoplay, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import Layout from '../components/Layout/Layout';
-import brandImg01 from '../components/assets/img/brand/h3_brand_img01.png';
+import brandImg01 from '../components/assets/img/brand/FB-logo.png';
 import brandImg02 from '../components/assets/img/brand/h3_brand_img02.png';
 import brandImg03 from '../components/assets/img/brand/h3_brand_img03.png';
 import brandImg04 from '../components/assets/img/brand/h3_brand_img04.png';

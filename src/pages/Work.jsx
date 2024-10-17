@@ -1,5 +1,6 @@
 import Layout from '../components/Layout/Layout';
 import React, { useEffect, useState } from 'react';
+import Newsletter from '../components/Newsletter1';
 import { info } from '../data/info';
 
 const Work = () => {
@@ -49,7 +50,7 @@ const Work = () => {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                             {filteredProjects.map((project, index) => (
                                 <div
-                                    className="bg-top bg-cover transition-transform duration-700 ease-out group-hover:scale-110 w-full relative overflow-hidden group border h-[24em] flex items-center rounded-lg drop-shadow-xl justify-center" 
+                                    className="bg-top bg-cover transition-transform duration-700 ease-out bg-hover:scale-110 w-full relative overflow-hidden group border h-[24em] flex items-center rounded-xl drop-shadow-xl justify-center" 
                                     key={index}
                                     
                                     style={{backgroundImage: `url(${project.image})`}} >
@@ -89,7 +90,11 @@ const Work = () => {
                         </div>
                     )}
                 </div>
+                <section className='pt-5'>
+                <Newsletter />
+              </section>   
             </Layout>
+            
         </>
     );
 };
