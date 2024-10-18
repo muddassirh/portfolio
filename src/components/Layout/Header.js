@@ -50,9 +50,9 @@ export default function Header({ scroll, headercls }) {
                                                     <li className={location.pathname === "/print-media-design-services" ? "active" : ""}>
                                                         <Link to="/print-media-design-services">Print Media Design</Link>
                                                     </li>
-                                                    <li className={location.pathname === "/digital-marketing-services" ? "active" : ""}>
+                                                   {/* <li className={location.pathname === "/digital-marketing-services" ? "active" : ""}>
                                                         <Link to="/digital-marketing-services">Digital Marketing</Link>
-                                                    </li>
+                                                    </li>*/}
                                                 </ul>
                                             </li>
                                             <li className={location.pathname === "/work" ? "active" : ""}>

@@ -6,7 +6,7 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Layout from '../components/Layout/Layout';
 import { Link } from 'react-router-dom'; 
-import locationIcon from '../components/assets/img/icon/loction_icon03.png';
+import contactimg from '../components/assets/img/images/contact-img.png';
 import mailIcon from '../components/assets/img/icon/mail_icon03.png'; 
 import phoneIcon from '../components/assets/img/icon/phone_icon03.png'; 
 
@@ -110,14 +110,51 @@ const refreshPage = () => {
 };
     return (
         <>
-            <Layout breadcrumbTitle="Contact Us" footerStyle={2} bShape breadcrumbCls="breadcrumb-area-four pt-175 pb-160">
+            <Layout breadcrumbTitle="Contact Us" footerStyle={1} bShape breadcrumbCls="breadcrumb-area-four pt-175 pb-160">
                 <section className="inner-contact-area px-24">
                     <div className="container">
                         <div className="inner-contact-wrap">
                             <div className="row">
                                 <div className="col-xl-9 col-lg-10">
                                     <div className="section-title title-style-two mb-50">
-                                        <h2 className="title">Have a <span>Cool Project?</span> Get in touch!</h2>
+                                        <h2 className="title">Have a <span>Cool Project?</span> Get in touch with us!</h2>
+                                        <div className="inner-contact-info pt-4">
+                                        <ul className="list-wrap">
+                                            {/*<li>
+                                                <div className="contact-info-item">
+                                                    <div className="icon">
+                                                        <img src={locationIcon} alt="Location Icon" />
+                                                    </div>
+                                                    <div className="content">
+                                                        <h6 className="title">Address</h6>
+                                                        <p>UN82 Dhanmondi Dhaka - 1207</p>
+                                                    </div>
+                                                </div>
+                                            </li>*/}
+                                            <li>
+                                                <div className="contact-info-item">
+                                                    <div className="icon">
+                                                        <img src={mailIcon} alt="Mail Icon" />
+                                                    </div>
+                                                    <div className="content">
+                                                        <h6 className="title">Email</h6>
+                                                        <Link to="mailto:your@email.com">marketing@genxsmedia.com</Link>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div className="contact-info-item">
+                                                    <div className="icon">
+                                                        <img src={phoneIcon} alt="Phone Icon" />
+                                                    </div>
+                                                    <div className="content">
+                                                        <h6 className="title">Phone</h6>
+                                                        <Link to="tel:0123456789">+92 322 5149 149</Link>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
                                     </div>
                                     <div className="inner-contact-form-wrap">
                                         {/* <form action="#">
@@ -263,52 +300,9 @@ const refreshPage = () => {
         }
                                     </div>
                                     <div id="contact-map">
-                                        <iframe 
-                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2643.6895046810805!2d-122.52642526124438!3d38.00014098339506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085976736097a2f%3A0xbe014d20e6e22654!2sSan%20Rafael%2C%20California%2C%20Hoa%20K%E1%BB%B3!5e0!3m2!1svi!2s!4v1678975266976!5m2!1svi!2s" 
-                                            height={570} 
-                                            style={{ border: 0, width: "100%" }} 
-                                            allowFullScreen 
-                                            loading="lazy" 
-                                            referrerPolicy="no-referrer-when-downgrade" 
-                                        />
+                                    <img src={contactimg} alt="" />
                                     </div>
-                                    <div className="inner-contact-info">
-                                        <ul className="list-wrap">
-                                            <li>
-                                                <div className="contact-info-item">
-                                                    <div className="icon">
-                                                        <img src={locationIcon} alt="Location Icon" />
-                                                    </div>
-                                                    <div className="content">
-                                                        <h6 className="title">Address</h6>
-                                                        <p>UN82 Dhanmondi Dhaka - 1207</p>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div className="contact-info-item">
-                                                    <div className="icon">
-                                                        <img src={mailIcon} alt="Mail Icon" />
-                                                    </div>
-                                                    <div className="content">
-                                                        <h6 className="title">Email</h6>
-                                                        <Link to="mailto:your@email.com">your@email.com</Link>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div className="contact-info-item">
-                                                    <div className="icon">
-                                                        <img src={phoneIcon} alt="Phone Icon" />
-                                                    </div>
-                                                    <div className="content">
-                                                        <h6 className="title">Phone</h6>
-                                                        <Link to="tel:0123456789">+12548789300</Link>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
