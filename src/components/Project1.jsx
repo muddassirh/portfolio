@@ -4,9 +4,13 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import ProjectImg1 from "./assets/img/project/project_img01.jpg";
-import ProjectImg2 from "./assets/img/project/project_img02.jpg";
-import ProjectImg3 from "./assets/img/project/project_img03.jpg";
+
+
+import ProjectImg1 from "./assets/img/project/buyback-x.webp";
+import ProjectImg2 from "./assets/img/project/cellular-optics.webp";
+import ProjectImg3 from "./assets/img/project/celler-certified.webp";
+import ProjectImg4 from "./assets/img/project/crown-crono.webp"
+import ProjectImg5 from "./assets/img/project/rowan-funeral.webp"
 import ProjectShape1 from "./assets/img/project/project_shape01.png"
 import ProjectShape2 from "./assets/img/project/project_shape02.png"
 
@@ -69,7 +73,7 @@ export default function Project1() {
                                 </div>
                                 <p>Explore the intersection of creativity and innovation, where ideas come to life and brands thrive. Dive into our portfolio, where passion meets purpose, and discover how we've helped businesses like yours achieve remarkable results. Get inspired by the success stories within, and let's co-create your own!</p>
                                 <div className="content-bottom">
-                                    <Link to="/about-me" className="btn">View All Project <span /></Link>
+                                    <Link to="/work" className="btn">View All Project <span /></Link>
                                     <div className="project-nav">
                                         <button className="swiper-button-prev" />
                                         <button className="swiper-button-next" />
@@ -83,32 +87,27 @@ export default function Project1() {
                                     <Swiper {...swiperOptions} className="swiper-wrapper">
                                         <SwiperSlide>
                                             <div className="project-item">
-                                                <Link to="/project-details"><img src={ProjectImg1} alt="" /></Link>
+                                                <Link to="https://buybackxstores.com/" target="_blank"><img src={ProjectImg1} alt="" /></Link>
                                             </div>
                                         </SwiperSlide>
                                         <SwiperSlide>
                                             <div className="project-item">
-                                                <Link to="/project-details"><img src={ProjectImg2} alt="" /></Link>
+                                                <Link to="https://cellularoptics.com/" target="_blank"><img src={ProjectImg2} alt="" /></Link>
                                             </div>
                                         </SwiperSlide>
                                         <SwiperSlide>
                                             <div className="project-item">
-                                                <Link to="/project-details"><img src={ProjectImg3} alt="" /></Link>
+                                                <Link to="https://www.cellercertified.com/" target="_blank"><img src={ProjectImg3} alt="" /></Link>
                                             </div>
                                         </SwiperSlide>
                                         <SwiperSlide>
                                             <div className="project-item">
-                                                <Link to="/project-details" className="popup-image"><img src={ProjectImg2} alt="" /></Link>
+                                                <Link to="https://www.crownchronobands.com/" target="_blank"><img src={ProjectImg4} alt="" /></Link>
                                             </div>
                                         </SwiperSlide>
                                         <SwiperSlide>
                                             <div className="project-item">
-                                                <Link to="/project-details"><img src={ProjectImg1} alt="" /></Link>
-                                            </div>
-                                        </SwiperSlide>
-                                        <SwiperSlide>
-                                            <div className="project-item">
-                                                <Link to="/project-details"><img src={ProjectImg2} alt="" /></Link>
+                                                <Link to="https://www.rowanfuneralservices.com/" target="_blank"><img src={ProjectImg5} alt="" /></Link>
                                             </div>
                                         </SwiperSlide>
                                     </Swiper>

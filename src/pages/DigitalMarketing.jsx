@@ -156,7 +156,7 @@ function DigitalMarketing() {
             </div>
                 </section>
 
-                {/* project-area */}
+                {/* project-area 
                 <section className="px-5 md:px-24 pt-5 md:pt-140 pb-5 md:pb-125">
             <div className="container">
                 <div className="row align-items-center">
@@ -279,7 +279,7 @@ function DigitalMarketing() {
                 </div>
             </div>
                 </section>
-                {/* project-area-end */}
+                 project-area-end */}
             
                 <section className="">
             <div className="container">

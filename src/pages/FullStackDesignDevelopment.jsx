@@ -201,10 +201,10 @@ function FullStackDesignDevelopment() {
           </div>
         </section>
 
-        {/* project-area */}
+        {/* project-area 
         <LatestProjects title="Latest Projects" description="Explore More Trending Design and Development Work" projects = {info.projects}/>
         
-        {/* project-area-end */}
+       project-area-end */}
 
         <section className="">
           <div className="container">

@@ -5,6 +5,7 @@ import { Autoplay, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import CounterUp from '../components/elements/CounterUp';
+import Consultation1 from '../components/Consultation1';
 import Layout from '../components/Layout/Layout'; 
 import { info } from '../data/info';
 
@@ -233,65 +234,8 @@ export default function AboutUs() {
                 </div>
             </section>
             {/* team-area-end */}
-                {/* consultation-area */}
-                <section className="consultation-area consultation-area-two px-24 pt-120 pb-120">
-                    <div className="container">
-                        <div className="row align-items-center">
-                            <div className="col-lg-7">
-                                <div className="consultation-content">
-                                    <div className="section-title mb-25">
-                                        <span className="sub-title">95% Accuracy</span>
-                                        <h2 className="title">Worldwide Best Digital Marketing Agency</h2>
-                                    </div>
-                                    <p>Lorem ipsum dolor sit amet, sed nulla ante amet, elementum tincidunt arcu sed laoreet, natoque ac eget imperdiet. Ac
-                                        scelerisque nibh dolores consectetuer, nulla aptent est pede. Scelerisque euismod varius mi, congue eget sed vestibulum, ornare cras sed nec.</p>
-                                    <div className="consultation-list">
-                                        <ul className="list-wrap">
-                                            <li>
-                                                <h6 className="title">12X</h6>
-                                                <p>Faster Order <span>Processing</span></p>
-                                            </li>
-                                            <li>
-                                                <h6 className="title">99%</h6>
-                                                <p>Processing <span>Accuracy</span></p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-5">
-                                <div className="consultation-form-wrap">
-                                    <h4 className="title">Free Consultation</h4>
-                                    <form action="#">
-                                        <div className="form-grp">
-                                            <input type="text" placeholder="Name" />
-                                        </div>
-                                        <div className="form-grp">
-                                            <input type="email" placeholder="Email Address" />
-                                        </div>
-                                        <div className="form-grp">
-                                            <input type="text" placeholder="Phone Number" />
-                                        </div>
-                                        <div className="form-grp">
-                                            <select id="shortBy" name="select" className="form-select" aria-label="Default select example">
-                                                <option value>Subject</option>
-                                                <option>Subject One</option>
-                                                <option>Subject Two</option>
-                                                <option>Subject Three</option>
-                                                <option>Subject Four</option>
-                                            </select>
-                                        </div>
-                                        <button className="btn" type="submit">Consultation</button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="consultation-shape-wrap">
-                        <img src={ConsultationShape1} alt="" className="shape-one ribbonRotate" />
-                        <img src={ConsultationShape2} alt="" className="shape-two float-bob-x" />
-                    </div>
-                </section>
+                {/* <Consultation1/> */}
+                
                 {/* consultation-area-end */}
                 {/* services-area */}
                 

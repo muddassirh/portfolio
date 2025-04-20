@@ -30,7 +30,13 @@ const Footer1 = () => {
                                     <div className="fw-link">
                                         <ul className="list-wrap">
                                             <li><Link to="/about-us">About</Link></li>
-                                            <li><Link to="/contact">Services</Link></li>
+                                            <li><Link to="#">Expertise</Link>
+                                            <ul className="list-wrap">
+                                            <li><Link to="/full-stack-design-development">Fullstack Design and Development</Link></li>
+                                            <li><Link to="/ux-ui-design-and-consulting-services">UX/UI Design</Link></li>
+                                            <li><Link to="/print-media-design-services">Print Media Design</Link></li>
+                                            </ul>
+                                            </li>
                                             <li><Link to="/contact">Contact</Link></li>
                                         </ul>
                                     </div>
@@ -53,9 +59,8 @@ const Footer1 = () => {
                                     <h4 className="fw-title">You Can Reach Us</h4>                                    
                                     <div className="footer-about">
                                         <ul className="list-wrap">
-                                            <li><img src={phoneIcon} alt="Phone Icon" /><Link to="tel:0123456789">8 (495) 989—20—11</Link></li>
+                                            <li><img src={phoneIcon} alt="Phone Icon" /><Link to="tel:0123456789">+92 322 5149 149</Link></li>
                                             <li><img src={mailIcon} alt="Mail Icon" /><Link to="mailto:marketing@genxsmedia.com">marketing@genxsmedia.com</Link></li>
-                                            <li><img src={locationIcon} alt="Location Icon" /><span>Ranelagh Place, Liverpool, L3 5UL, England</span></li>
                                         </ul>
                                     </div>                                   
                                 </div>

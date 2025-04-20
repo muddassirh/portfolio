@@ -4010,12 +4010,12 @@ label {
 }
 
 .project-item {
-    width: 416px;
+    width: 535px;
 }
 
 .project-item img {
-    max-width    : 416px;
-    border-radius: 38px;
+    max-width    : 535px;
+    border-radius: 50px;
     max-height   : 579px;
 }
 
@@ -4424,12 +4424,14 @@ label {
     width     : 410px;
     height    : 333px;
     object-fit: cover;
+    object-position: top;
 }
 
 .inner-project-item.vertical-item .inner-project-thumb img {
     width     : 410px;
-    height    : 502px;
+    /*height    : 502px;*/
     object-fit: cover;
+    object-position: top;
 }
 
 .inner-project-item {
@@ -6808,10 +6810,12 @@ label {
 
 .fw-link .list-wrap li {
     position     : relative;
-    padding-left : 20px;
+    padding-left : 0px;
     margin-bottom: 10px;
 }
-
+.fw-link .list-wrap li ul{
+    padding-left : 10px;
+}
 .fw-link .list-wrap li:last-child {
     margin-bottom: 0;
 }
@@ -6822,7 +6826,7 @@ label {
     transition: .3s linear;
 }
 
-.fw-link .list-wrap li a::before {
+/*.fw-link .list-wrap li a::before {
     content      : "";
     position     : absolute;
     left         : 6px;
@@ -6834,7 +6838,7 @@ label {
     background   : var(--tg-silver);
     transition   : .3s linear;
 }
-
+*/
 .fw-link .list-wrap li a:hover {
     color: var(--tg-primary-color);
 }

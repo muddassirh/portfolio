@@ -4,15 +4,15 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import ProjectImg1 from "../components/assets/img/project/project_img01.jpg";
-import ProjectImg2 from "../components/assets/img/project/project_img02.jpg";
-import ProjectImg3 from "../components/assets/img/project/project_img03.jpg";
-import ProjectShape1 from "../components/assets/img/project/project_shape01.png"
-import ProjectShape2 from "../components/assets/img/project/project_shape02.png"
+import ProjectImg1 from "../components/assets/img/project/buyback-x.webp";
+import ProjectImg2 from "../components/assets/img/project/cellular-optics.webp";
+import ProjectImg3 from "../components/assets/img/project/celler-certified.webp";
+import ProjectShape1 from "../components/assets/img/project/crown-chrono.webp"
+import ProjectShape2 from "../components/assets/img/project/crown-crono.webp"
 
 const swiperOptions = {
     modules: [Autoplay, Pagination, Navigation],
-    slidesPerView: 3,
+    slidesPerView: 2,
     spaceBetween: 0,
     autoplay: {
         delay: 2500,

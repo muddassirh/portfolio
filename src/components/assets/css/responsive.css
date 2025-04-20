@@ -1882,7 +1882,7 @@
 }
 .inner-project-item.vertical-item .inner-project-thumb img {
 	width: 100%;
-	min-height: 450px;
+	/*min-height: 450px;*/
 	object-fit: cover;
 }
 .inner-project-nav {

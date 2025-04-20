@@ -25,8 +25,8 @@ const Home = () => {
             <Team1/>
             <Project1/>
             <DynamicTestimonial testimonials={info.testimonials}/>
-            <Consultation1/>
-            <Blog1/>
+           {/*  <Consultation1/>
+            <Blog1/> */}
             <Newsletter1/>
             {/* <ServicesBody/> */}
             {/* <HomePortfolio/>

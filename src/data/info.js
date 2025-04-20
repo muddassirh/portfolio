@@ -1,5 +1,13 @@
 import mudd from "../images/itsme.png";
-import innerTwoProject02 from "../components/assets/img/project/inner_two_project02.jpg";
+import proje4 from "../components/assets/img/project/proj-4.webp";
+import proje2 from "../components/assets/img/project/proj-2.webp";
+import proje3 from "../components/assets/img/project/proj-3.webp";
+import proje5 from "../components/assets/img/project/proj-5.webp";
+import proje1 from "../components/assets/img/project/proj-1.webp";
+import proje6 from "../components/assets/img/project/proj-6.webp";
+import proje7 from "../components/assets/img/project/proj-7.webp";
+import proje8 from "../components/assets/img/project/proj-8.webp";
+import proje0 from "../components/assets/img/project/proj-9.webp";
 import innerTwoProject03 from "../components/assets/img/project/inner_two_project03.jpg";
 import testimonialAvatar1 from '../components/assets/img/images/testimonial_avatar01.png';
 import testimonialAvatar2 from '../components/assets/img/images/testimonial_avatar02.png';
@@ -137,24 +145,47 @@ export let info = {
     [
       {
         id: 1,
-        title: "LAZY5VETS",
-        image: innerTwoProject02,
-        description: "Explore cutting-edge motion graphics design.",
-        link: "https://lazy5vets.com/",
+        title: "BuyBack X",
+        image: proje4,
+        description: "NextJS, MangoDB",
+        link: "https://buybackxstores.com/",
       },
       {
         id: 2,
-        title: "cfgdrfgerg",
-        image: innerTwoProject03,
-        description: "Explore cutting-edge motion graphics design.",
-        link: "https://lazy5vets.com/",
+        title: "Celler Certified",
+        image: proje6,
+        description: "ReactJS, MangoDB",
+        link: "https://www.cellercertified.com/",
+      },
+      {
+        id: 2,
+        title: "Celler Certifieds",
+        image: proje6,
+        description: "ReactJS, MangoDB",
+        link: "https://www.cellercertified.com/",
       },
     ],
     [
         {
           id: 1,
           title: "LAZY5VETS",
-          image: innerTwoProject02,
+          image: proje7,
+          description: "Explore cutting-edge motion graphics design.",
+          link: "https://lazy5vets.com/",
+        },
+        {
+          id: 2,
+          title: "cfgdrfgerg",
+          image: proje8,
+          description: "Explore cutting-edge motion graphics design.",
+          link: "https://lazy5vets.com/",
+        },
+      ],
+      [
+        {
+          id: 1,
+          title: "LAZY5VETS",
+          image: proje0,
           description: "Explore cutting-edge motion graphics design.",
           link: "https://lazy5vets.com/",
         },
@@ -170,7 +201,7 @@ export let info = {
         {
           id: 1,
           title: "LAZY5VETS",
-          image: innerTwoProject02,
+          image: proje1,
           description: "Explore cutting-edge motion graphics design.",
           link: "https://lazy5vets.com/",
         },
@@ -186,23 +217,7 @@ export let info = {
         {
           id: 1,
           title: "LAZY5VETS",
-          image: innerTwoProject02,
-          description: "Explore cutting-edge motion graphics design.",
-          link: "https://lazy5vets.com/",
-        },
-        {
-          id: 2,
-          title: "cfgdrfgerg",
-          image: innerTwoProject03,
-          description: "Explore cutting-edge motion graphics design.",
-          link: "https://lazy5vets.com/",
-        },
-      ],
-      [
-        {
-          id: 1,
-          title: "LAZY5VETS",
-          image: innerTwoProject02,
+          image: proje2,
           description: "Explore cutting-edge motion graphics design.",
           link: "https://lazy5vets.com/",
         },
