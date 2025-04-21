@@ -47,9 +47,9 @@ const Footer1 = () => {
                                     <h4 className="fw-title">We Are Social</h4>
                                     <div className="footer-social">
                                         <ul className="list-wrap">
-                                            <li><Link to="/#"><i className="fab fa-facebook-f" /></Link></li>
-                                            <li className="active"><Link to="/#"><i className="fab fa-twitter" /></Link></li>
-                                            <li><Link to="/#"><i className="fab fa-linkedin-in" /></Link></li>
+                                            <li><Link to="https://www.facebook.com/profile.php?id=61550279789491" target='_blank'><i className="fab fa-facebook-f" /></Link></li>
+                                            <li className="active"><Link to="https://x.com/genxsmedia" target='_blank'><i className="fab fa-twitter" /></Link></li>
+                                            <li><Link to="https://www.linkedin.com/company/genxsmedia-solutions" target='_blank'><i className="fab fa-linkedin-in" /></Link></li>
                                         </ul>
                                     </div>
                                 </div>
