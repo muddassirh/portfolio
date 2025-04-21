@@ -116,15 +116,16 @@ const Banner1 = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        
+        console.log(e.target);
 // setSubmitted(true)
-        emailjs.sendForm(
+        emailjs.send(
             "service_xs9j53r",
             "template_tu150qc",
-            formRef.current,
+            formData,
             "SsMpfjuxC-v27-HjT"
         ).then(
             (result) => {
+                
                 console.log(result.text);
                 console.log("message sent");
                 setSubmitted(true)
@@ -139,6 +140,8 @@ const Banner1 = () => {
     const refreshPage = () => {
         window.location.reload();
     };
+
+   // console.log("Form Data:", formData);
 
     return (
         <section className="sm:banner-area banner-bg" style={{ backgroundImage: `url(${bannerbg})` }}>

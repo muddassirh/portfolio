@@ -1,10 +1,14 @@
 import React, { useState, useEffect } from 'react';
+import emailjs from "@emailjs/browser";
 import 'react-phone-input-2/lib/style.css';
 import PhoneInput from 'react-phone-input-2';
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const GetTouch = () => {
 
     const [step, setStep] = useState(1);
+    const [submitted, setSubmitted] =  useState(false);
     const [formData, setFormData] = useState({
         firstName: '',
         email: '',
@@ -97,14 +101,39 @@ const GetTouch = () => {
         setStep(step - 1);
     };
 
+    const sendEmail = (e) => {
+        e.preventDefault();
 
+        console.log(e.target);
+// setSubmitted(true)
+        emailjs.send(
+            "service_xs9j53r",
+            "template_tu150qc",
+            formData,
+            "SsMpfjuxC-v27-HjT"
+        ).then(
+            (result) => {
+                
+                console.log(result.text);
+                console.log("message sent");
+                setSubmitted(true)
+                toast.success("Email Sent")
+            },
+            (error) => {
+                console.log(error.text);
+            }
+        );
+    };
+
+
+console.log(formData)
 
     return (
         <div className='w-full bg-[#0d74e2] py-14'>
             <div className='max-w-[1040px] text-center md:text-start py-[40px] md:py-[70px] text-white px-5 md:px-10'>
                 <h2 className='text-[30px] md:text-[100px] font-black md:leading-[100px]'>Get In Touch With Us</h2>
                 <h3 className='text-[20px] whitespace-nowrap md:text-[28px] font-thin'>Let’s Start Your Next Project</h3>
-                <form onSubmit={nextStep} className="">
+                <form onSubmit={step === 5 ? sendEmail : nextStep} className="">
                     {step === 1 && (
                         <div className="flex flex-col md:flex-row gap-y-4 my-5 gap-x-4">
                             <div className="relative z-0 w-full group">
@@ -123,11 +152,11 @@ const GetTouch = () => {
                                 <input 
                                     type="email" 
                                     name="email" 
-                                    id="email" 
+                                    id="emaill" 
                                     value={formData.email}
                                     onChange={handleChange}
                                     className="block p-4 md:p-6 w-full text-xl md:text-2xl text-gray-900 bg-[#FAFAFA] border-2 border-gray-300 rounded-lg dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-                                <label htmlFor="email" 
+                                <label htmlFor="emaill" 
                                      className="peer-focus:font-medium absolute text-xl md:text-2xl text-gray-900 dark:text-gray-400 duration-300 transform -translate-y-4 md:-translate-y-6 scale-75 top-4 md:top-6 left-4 md:left-6 z-10 origin-[0] peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 md:peer-focus:-translate-y-6">Email *</label>
                                 {errors.email && <span className="text-red-500">{errors.email}</span>}
                             </div>
