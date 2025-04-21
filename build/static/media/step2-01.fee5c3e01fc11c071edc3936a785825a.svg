@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd' [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg enable-background="new 0 0 100 100" version="1.1" viewBox="0 0 100 100" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+<switch>
+	<foreignObject width="1" height="1" requiredExtensions="http://ns.adobe.com/AdobeIllustrator/10.0/">
+		
+	</foreignObject>
+	<g>
+		<circle cx="50" cy="49.9" r="48.1" fill="#fff"/>
+		
+			<path d="m34.2 74.3c3-3.1 6-6.1 8.8-9s5.3-5.6 7.6-8.3c2.2-2.7 4-5.3 5.3-7.8s2-4.9 2-7.3c0-1-0.2-2-0.6-2.8s-0.9-1.5-1.5-2.1c-0.7-0.6-1.4-1-2.4-1.4-0.9-0.3-1.9-0.5-3.1-0.5-1.1 0-2.1 0.2-3 0.5s-1.6 0.7-2.2 1.3c-0.6 0.5-1 1.1-1.4 1.8-0.3 0.6-0.5 1.3-0.5 2 0 1.6 0.3 3 0.8 4.2s1.2 2.3 2.1 3.2l-6.6 6c-1.4-0.7-2.6-1.8-3.6-3.5-1-1.6-1.8-3.3-2.3-5.1s-0.8-3.3-0.8-4.5c0-2.7 0.7-5.3 2.2-7.7 1.5-2.5 3.7-4.5 6.6-6 2.9-1.6 6.4-2.4 10.5-2.4 3.4 0 6.3 0.8 8.8 2.3s4.5 3.5 5.9 6 2.1 5.1 2.1 7.9c0 2.2-0.3 4.3-1 6.4s-1.6 4.1-2.8 6.1-2.6 4-4.1 5.9-3.1 3.9-4.7 5.9l-5-1.4h18.1v10.3h-35.2z"/>
+		
+	</g>
+</switch>
+
+</svg>
