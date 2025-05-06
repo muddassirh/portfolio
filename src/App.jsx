@@ -22,7 +22,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/about-us" element={<About />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/aboutme" element={<AboutMe />} />
@@ -31,9 +31,9 @@ function App() {
         <Route path="/project/:id" element={<ProjectDetails />} />
         <Route path="/service/:id" element={<ServiceDetails />} />
         <Route path="/web-design" element={<WebDesign />} />
-        <Route path="/full-stack" element={<FullStackDesignDevelopment />} />
-        <Route path="/ux-ui" element={<UXUIDesignServices />} />
-        <Route path="/print-media" element={<PrintMediaDesign />} />
+        <Route path="/full-stack-design-development" element={<FullStackDesignDevelopment />} />
+        <Route path="/ux-ui-design-and-consulting-services" element={<UXUIDesignServices />} />
+        <Route path="/print-media-design-services" element={<PrintMediaDesign />} />
         <Route path="/digital-marketing" element={<DigitalMarketing />} />
         <Route path="/work" element={<Work />} />
       </Routes>
