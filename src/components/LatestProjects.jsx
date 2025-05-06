@@ -69,7 +69,7 @@ const LatestProjects = ({ title, description, projects }) => {
                     <>
                       <div
                         className={`inner-project-item ${
-                          index == 1 ? "vertical-item" : "horizoital-item"
+                          index === 1 ? "vertical-item" : "horizoital-item"
                         }`}
                       >
                         <div className="inner-project-thumb">

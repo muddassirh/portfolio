@@ -1,5 +1,6 @@
 import "./App.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
@@ -15,31 +16,28 @@ import UXUIDesignServices from "./pages/UXUIDesignServices";
 import PrintMediaDesign from "./pages/PrintMediaDesign";
 import DigitalMarketing from "./pages/DigitalMarketing";
 import Work from "./pages/Work";
+
 function App() {
   return (
-    <>
-      <BrowserRouter>
-        {/* <Header /> */}
-        <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/about-us" element={<About />}></Route>
-          <Route path="/about-me" element={<AboutMe />}></Route>
-          <Route path="/team-details"  element={<TeamDetails/>}></Route>
-          <Route path="/team"  element={<Team/>}></Route>
-          <Route path="/project-details"  element={<ProjectDetails/>}></Route>
-          <Route path="/services-details"  element={<ServiceDetails/>}></Route>
-          <Route path="/portfolio" element={<Portfolio />}></Route>
-          <Route path="/webdesign" element={<WebDesign/>}></Route>
-          <Route path="/print-media-design-services" element={<PrintMediaDesign/>}></Route>
-          <Route path="/full-stack-design-development" element={<FullStackDesignDevelopment/>}></Route>
-          <Route path="/ux-ui-design-and-consulting-services" element={<UXUIDesignServices/>}></Route>
-          <Route path="/digital-marketing-services" element={<DigitalMarketing/>}></Route>
-          <Route path="/contact" element={<Contact />}></Route>
-          <Route path="/work" element={<Work />}></Route>
-        </Routes>
-      </BrowserRouter>
-      {/* <Footer /> */}
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/aboutme" element={<AboutMe />} />
+        <Route path="/team" element={<Team />} />
+        <Route path="/team/:id" element={<TeamDetails />} />
+        <Route path="/project/:id" element={<ProjectDetails />} />
+        <Route path="/service/:id" element={<ServiceDetails />} />
+        <Route path="/web-design" element={<WebDesign />} />
+        <Route path="/full-stack" element={<FullStackDesignDevelopment />} />
+        <Route path="/ux-ui" element={<UXUIDesignServices />} />
+        <Route path="/print-media" element={<PrintMediaDesign />} />
+        <Route path="/digital-marketing" element={<DigitalMarketing />} />
+        <Route path="/work" element={<Work />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
