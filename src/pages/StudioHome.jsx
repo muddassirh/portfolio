@@ -74,7 +74,8 @@ function HeroObject() {
     }
     renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.7));
     renderer.setSize(canvas.clientWidth, canvas.clientHeight, false);
-    renderer.outputColorSpace = THREE.SRGBColorSpace;
+    if (THREE.SRGBColorSpace) renderer.outputColorSpace = THREE.SRGBColorSpace;
+    else if (THREE.sRGBEncoding) renderer.outputEncoding = THREE.sRGBEncoding;
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(38, canvas.clientWidth / canvas.clientHeight, 0.1, 100);
     camera.position.z = 8;
@@ -183,7 +184,7 @@ function StudioHeader() {
   );
 }
 
-function CaseSection({ study, index }) {
+function CaseSection({ study }) {
   return (
     <section className={`studio-section case-section case-${study.theme}`} id={`case-${study.slug}`} data-bg={study.theme === "lime" ? "#c9f36c" : study.theme === "ink" ? "#12151b" : "#ddd0ff"}>
       <div className="case-inner">
@@ -206,7 +207,7 @@ function CaseSection({ study, index }) {
 export default function StudioHome() {
   useMotion();
   return (
-    <div className="studio-site">
+    <div className="studio-site" id="top">
       <div className="studio-color-layer" aria-hidden="true" />
       <StudioHeader />
       <main>
@@ -228,7 +229,7 @@ export default function StudioHome() {
             <div className="intro-bottom" data-reveal><p>From first idea to final interaction, we connect sharp thinking with expressive design and solid engineering.</p><span>THREE STORIES. ONE CREATIVE PARTNER.</span></div>
           </div>
         </section>
-        {studies.map((study, index) => <CaseSection key={study.slug} study={study} index={index} />)}
+        {studies.map((study) => <CaseSection key={study.slug} study={study} />)}
         <section className="studio-section studio-section-about" id="studio" data-bg="#f3f0e8">
           <div className="about-wrap"><div className="section-index" data-reveal><span>02 — THE STUDIO</span><span>THINK · IDEATE · ELEVATE</span></div><div className="about-grid"><h2 data-reveal>Small studio.<br/><em>Full spectrum.</em></h2><div className="about-copy" data-reveal><p>Genxsmedia is an independent design and development studio led by Muddassir Hassan. For more than 15 years, we’ve helped ambitious teams turn complex ideas into clear digital experiences.</p><p>We bring product thinking, visual identity, UX/UI, frontend development, and AI workflows together under one roof.</p><a href="https://genxsmedia.com/work" target="_blank" rel="noreferrer" className="text-link">See more of our work <span>↗</span></a></div></div><div className="service-strip" data-reveal><span>01 / BRAND & DIGITAL STRATEGY</span><span>02 / PRODUCT & UX/UI DESIGN</span><span>03 / WEB DEVELOPMENT</span><span>04 / AI & AUTOMATION</span></div></div>
         </section>
