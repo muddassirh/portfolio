@@ -72,6 +72,7 @@ function HeroObject() {
     } catch (error) {
       return undefined;
     }
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.7));
     renderer.setSize(canvas.clientWidth, canvas.clientHeight, false);
     if (THREE.SRGBColorSpace) renderer.outputColorSpace = THREE.SRGBColorSpace;
@@ -123,7 +124,7 @@ function HeroObject() {
     };
     window.addEventListener("pointermove", onMove, { passive: true });
     const animate = () => {
-      frame = window.requestAnimationFrame(animate);
+      if (!reducedMotion) frame = window.requestAnimationFrame(animate);
       group.rotation.y += 0.0027;
       group.rotation.x += (pointerY - group.rotation.x) * 0.018;
       group.rotation.z += (pointerX - group.rotation.z) * 0.018;
