@@ -156,6 +156,7 @@ function useMotion() {
     const ScrollTrigger = window.ScrollTrigger;
     if (ScrollTrigger) gsap.registerPlugin(ScrollTrigger);
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (!reduced && ScrollTrigger) document.documentElement.classList.add("gsap-ready");
     const ctx = gsap.context(() => {
       if (!reduced) {
         gsap.from(".hero-kicker, .hero-title, .hero-lede, .hero-actions", { y: 28, opacity: 0, duration: 0.9, stagger: 0.14, ease: "power3.out", delay: 0.16 });
@@ -168,7 +169,10 @@ function useMotion() {
         gsap.utils.toArray(".case-visual").forEach((visual) => gsap.fromTo(visual, { y: 30, scale: 0.97 }, { y: 0, scale: 1, ease: "none", scrollTrigger: { trigger: visual, start: "top bottom", end: "bottom top", scrub: 0.8 } }));
       }
     });
-    return () => ctx.revert();
+    return () => {
+      ctx.revert();
+      document.documentElement.classList.remove("gsap-ready");
+    };
   }, []);
 }
 
