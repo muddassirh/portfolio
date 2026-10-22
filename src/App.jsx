@@ -1,7 +1,7 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-import Home from "./pages/Home";
+import StudioHome from "./pages/StudioHome";
+import CaseStudy from "./pages/CaseStudy";
 import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
@@ -21,7 +21,8 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<StudioHome />} />
+        <Route path="/case-studies/:slug" element={<CaseStudy />} />
         <Route path="/about-us" element={<About />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<Contact />} />
